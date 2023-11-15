@@ -91,10 +91,31 @@ class PersonaGenerator:
         return persona
 
 class Persona():
-    def __init__(self, p_type: PersonaType):
+    def __init__(self, p_type: PersonaType, age=None, gender=None, cultural_background=None, occupation=None, education=None, family_dynamics=None, relationship_status=None, mbti=None, attachment_style=None, emotional_intelligence=None, typical_mood=None, emotional_range=None, stress_triggers=None, coping_strategies=None, significant_events=None, likes_dislikes=None, goals_aspirations=None, physical_health=None, mental_health=None):
         if p_type == PersonaType.CHATBOT:
             self.persona = self._define_chatbot()
         else:
+            # Store the attributes for a user persona
+            self.age = age
+            self.gender = gender
+            self.cultural_background = cultural_background
+            self.occupation = occupation
+            self.education = education
+            self.family_dynamics = family_dynamics
+            self.relationship_status = relationship_status
+            self.mbti = mbti
+            self.attachment_style = attachment_style
+            self.emotional_intelligence = emotional_intelligence
+            self.typical_mood = typical_mood
+            self.emotional_range = emotional_range
+            self.stress_triggers = stress_triggers
+            self.coping_strategies = coping_strategies
+            self.significant_events = significant_events
+            self.likes_dislikes = likes_dislikes
+            self.goals_aspirations = goals_aspirations
+            self.physical_health = physical_health
+            self.mental_health = mental_health
+
             self.persona = self._define_user()
 
     def _define_chatbot(self):
@@ -118,12 +139,10 @@ class Persona():
         pass
         return self.persona
     
-user_persona = Persona(PersonaType.USER)
 
-# Step 2: Invoke the get_persona method to get the generated persona
-generated_persona = user_persona.get_persona()
-
+generator = PersonaGenerator()
+random_persona = generator.generate_persona()
 # Step 3: Output the generated persona
-print(generated_persona)
+print(random_persona)
 
         
