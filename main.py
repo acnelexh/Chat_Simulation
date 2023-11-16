@@ -29,7 +29,7 @@ import time
 
 def main():
     # init engine
-    engine = Engine(save_dir="output")
+    engine = Engine(save_dir=f"output/{time.time()}")
     # start simulation
     engine.start()
   
