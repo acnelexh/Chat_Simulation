@@ -66,7 +66,7 @@ class PersonaGenerator:
         return random.choices(self.relationship_status_categories, weights=weights, k=1)[0]
 
     def generate_persona(self):
-        persona = Persona(
+        persona = PersonaGenerator(
             age=random.randint(2, 80), # when can babies start using computers to estimated age of not being able to use computers
             gender=self.generate_gender(), #based on global population
             cultural_background=self.generate_cultural_background(), #based on global population
@@ -80,15 +80,16 @@ class PersonaGenerator:
             emotional_intelligence=random.randint(1, 5),
             typical_mood=random.randint(1, 5),
             emotional_range=random.randint(1, 5),
-            stress_triggers=random.sample(self.stress_triggers_categories, k=1),
-            coping_strategies=random.sample(self.coping_strategies_categories, k=1),
-            significant_events=random.sample(self.significant_past_events_categories, k=1),
-            likes_dislikes=random.sample(self.likes_dislikes_categories, k=1),
-            goals_aspirations=random.sample(self.goals_passions_aspirations_categories, k=1),
+            stress_triggers=random.sample(self.stress_triggers_categories, k=3),
+            coping_strategies=random.sample(self.coping_strategies_categories, k=3),
+            significant_events=random.sample(self.significant_past_events_categories, k=3),
+            likes_dislikes=random.sample(self.likes_dislikes_categories, k=3),
+            goals_aspirations=random.sample(self.goals_passions_aspirations_categories, k=3),
             physical_health=random.randint(1, 5),
             mental_health=random.randint(1, 5)
         )
         return persona
+
 
 class Persona():
     def __init__(self, p_type: PersonaType, age=None, gender=None, cultural_background=None, occupation=None, education=None, family_dynamics=None, relationship_status=None, mbti=None, attachment_style=None, emotional_intelligence=None, typical_mood=None, emotional_range=None, stress_triggers=None, coping_strategies=None, significant_events=None, likes_dislikes=None, goals_aspirations=None, physical_health=None, mental_health=None):
@@ -139,10 +140,57 @@ class Persona():
         pass
         return self.persona
     
+    def generate_emotions_and_arousals():
+        # Ekman's 6 emotions
+        emotions = ["Surprise", "Happy", "Neural", "Sad", "Fear", "Anger", "Disgust"]
+
+        # arousal levels
+        arousal_levels = ["weak", "medium", "strong"]
+
+        # Randomly choose first emotion
+        emotion1 = random.choice(emotions)
+
+        # Remove emotions within 2 positions of the first emotion
+        emotion_index = emotions.index(emotion1)
+        forbidden_indices = [(emotion_index - 1) % 6, emotion_index, (emotion_index + 1) % 6]
+        allowed_emotions = [emotions[i] for i in range(6) if i not in forbidden_indices]
+
+        # Randomly choose second emotion from allowed emotions
+        emotion2 = random.choice(allowed_emotions)
+
+        # Randomly choose arousal levels for both emotions
+        emotion1_arousal = random.choice(arousal_levels)
+        emotion2_arousal = random.choice(arousal_levels)
+
+        return emotion1, emotion2, emotion1_arousal, emotion2_arousal
+    
 
 generator = PersonaGenerator()
 random_persona = generator.generate_persona()
 # Step 3: Output the generated persona
 print(random_persona)
 
-        
+
+
+        # persona1 = Persona{
+        #     age=30, # when can babies start using computers to estimated age of not being able to use computers
+        #     gender= 'female', #based on global population
+        #     cultural_background= 'European', #based on global population
+        #     occupation= 'Healthcare',  # Based on rough estimate of global occupational distribution
+        #     education= 'Doctorate',  # Based on rough estimate of global education level distribution
+        #     family_dynamics= 'Single Parent',  # Based on rough estimate of global family dynamics
+        #     relationship_status = 'Single',  # Based on rough estimate of global relationship status
+        #     mbti='ENTJ', #based on global population
+        #     attachment_style = 'Avoidant',
+
+        #     emotional_intelligence=3,
+        #     typical_mood=2,
+        #     emotional_range=4,
+        #     stress_triggers = ['Work', 'Finance', 'Family'],
+        #     coping_strategies = ['Exercise', 'Meditation', 'Talking to Friends/Family'],
+        #     significant_events = ['Marriage'], 
+        #     likes_dislikes = ['Technology', 'Nature', 'Reading'],
+        #     goals_aspirations = ['Career Development', 'Health and Well-being', 'Relationships and Family'],
+        #     physical_health= 3,
+        #     mental_health= 5
+        # }
