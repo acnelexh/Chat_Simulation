@@ -67,6 +67,7 @@ class PersonaGenerator:
 
     def generate_persona(self):
         persona = Persona(
+            p_type=PersonaType.USER,
             age=random.randint(2, 80), # when can babies start using computers to estimated age of not being able to use computers
             gender=self.generate_gender(), #based on global population
             cultural_background=self.generate_cultural_background(), #based on global population
@@ -92,7 +93,8 @@ class PersonaGenerator:
 
 class Persona():
     def __init__(self, p_type: PersonaType, age=None, gender=None, cultural_background=None, occupation=None, education=None, family_dynamics=None, relationship_status=None, mbti=None, attachment_style=None, emotional_intelligence=None, typical_mood=None, emotional_range=None, stress_triggers=None, coping_strategies=None, significant_events=None, likes_dislikes=None, goals_aspirations=None, physical_health=None, mental_health=None):
-        if p_type == PersonaType.CHATBOT:
+        self.p_type = p_type
+        if p_type == PersonaType.CHATBOT.value:
             self.persona = self._define_chatbot()
         else:
             # Store the attributes for a user persona
@@ -122,21 +124,68 @@ class Persona():
         '''
         Generate persona for the chatbot
         '''
-        pass
+        # TODO define new prompt for chatbot
+        return "You are a chatbot, skilled in explaining complex programming concepts with creative flair."
     
     def _define_user(self):
         '''
         Generate persona for the chatbot
         '''
-        generator = PersonaGenerator()
-        random_persona = generator.generate_persona()
-        print(random_persona)
+        #generator = PersonaGenerator()
+        #random_persona = generator.generate_persona()
+        #print(random_persona)
+        # format the persona into string
+        # Hardcode for now TODO
+        p_type = 2 # 1 for chatbot, 2 for human
+        age=30 # when can babies start using computers to estimated age of not being able to use computers
+        gender= 'female' #based on global population
+        cultural_background= 'European' #based on global population
+        occupation= 'Healthcare'  # Based on rough estimate of global occupational distribution
+        education= 'Doctorate'  # Based on rough estimate of global education level distribution
+        family_dynamics= 'Single Parent'  # Based on rough estimate of global family dynamics
+        relationship_status = 'Single'  # Based on rough estimate of global relationship status
+        mbti='ENTJ' #based on global population
+        attachment_style = 'Avoidant'
+        emotional_intelligence=3
+        typical_mood=2
+        emotional_range=4
+        stress_triggers = ['Work', 'Finance', 'Family']
+        coping_strategies = ['Exercise', 'Meditation', 'Talking to Friends/Family']
+        significant_events = ['Marriage']
+        likes_dislikes = ['Technology', 'Nature', 'Reading']
+        goals_aspirations = ['Career Development', 'Health and Well-being', 'Relationships and Family']
+        physical_health= 3
+        mental_health= 5
+
+        # format the above into persona string
+        person_description = ""
+        person_description += f"Age: {age}\n"
+        person_description += f"Gender: {gender}\n"
+        person_description += f"Cultural Background: {cultural_background}\n"
+        person_description += f"Occupation: {occupation}\n"
+        person_description += f"Education: {education}\n"
+        person_description += f"Family Dynamics: {family_dynamics}\n"
+        person_description += f"Relationship Status: {relationship_status}\n"
+        person_description += f"MBTI: {mbti}\n"
+        person_description += f"Attachment Style: {attachment_style}\n"
+        person_description += f"Emotional Intelligence: {emotional_intelligence} out of 5\n"
+        person_description += f"Typical Mood: {typical_mood} out of 5\n"
+        person_description += f"Emotional Range: {emotional_range} out of 5\n"
+        person_description += f"Stress Triggers: {stress_triggers}\n"
+        person_description += f"Coping Strategies: {coping_strategies}\n"
+        person_description += f"Significant Events: {significant_events}\n"
+        person_description += f"Likes/Dislikes: {likes_dislikes}\n"
+        person_description += f"Goals/Aspirations: {goals_aspirations}\n"
+        person_description += f"Physical Health: {physical_health} out of 5\n"
+        person_description += f"Mental Health: {mental_health} out of 5\n"
+        
+        return person_description
+        
     
     def get_persona(self):
         '''
         Get persona for the chatbot
         '''
-        pass
         return self.persona
     
 
