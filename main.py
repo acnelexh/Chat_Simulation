@@ -31,7 +31,7 @@ def main():
     # init engine
     engine = Engine(save_dir=f"output/{time.time()}")
     # start simulation
-    engine.start()
+    engine.start(5)
   
 if __name__ == "__main__":
     main()

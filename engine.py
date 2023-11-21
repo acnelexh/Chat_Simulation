@@ -10,8 +10,6 @@ class Engine:
     def __init__(self, save_dir: str):
         # init two personas
         self.users = self._init_user()
-        # init random context
-        #self.context = self._init_context()
         # init conversaion with chitchat
         chitchat = ['How are you?', 'Whats up', 'How is your day?', 'How is the weather?', 'Hows your weekend?']
         # chatbot dont need no emotion
@@ -33,16 +31,6 @@ class Engine:
         '''
         user_persona = [Persona(1), Persona(2)]
         return user_persona
-    
-    def _init_context(self) -> str:
-        '''
-        REDACTED
-        initialize context randomly
-        return:
-            context: nlp description of the context
-        '''
-        context = []
-        return context
 
     def get_previous_conversation(self, chatbot):
         '''
@@ -65,9 +53,8 @@ class Engine:
         return conversation.strip()
 
     def get_persona(self, turn):
+        # TODO possibly modify the prompt
         persona = "Forget all previous instructions. You are now taking on the role of a persona with the following information.\n"
-        # TODO add persona from get_persona in persona.py
-        #persona += "Age: 20\nPhysical Health: Go to gym\nStress Trigger:Deadline\nLikes:Sushi and beaches\ndislike:bugs\n"
         persona += self.users[turn].get_persona()
         return persona + '\n'
 
@@ -76,10 +63,15 @@ class Engine:
         generate mood for the user
         '''
         # randomly generate mood TODO
-        # CONST SAD for now
+        # CONST SAD for now, need to define a function 
+        # for mood generation, like valence = 9, arousal = 1, mood = happy
+        # based on some function
         return 'SAD' # make it sad
     
     def is_chatbot_turn(self, turn):
+        '''
+        Prompt differntly based on chatbot or human
+        '''
         if self.users[turn % 2].p_type == 1:
             return True
         return False
@@ -90,6 +82,7 @@ class Engine:
         '''
         # TODO randomly generate emotion parameters
         # only human should have emotion
+        # TODO potentially add more parameters
         if chatbot:
             params = {
                 'RESPONSE LENGTH': 'SHORT'
@@ -113,7 +106,7 @@ class Engine:
         msg = f"Generate a 1-sentence response that remains consistent with the mood and previous dialogues, aligning with your persona.\nPresent it in the format: {format}"
         content = f"{previous_conversation}\n\n{parameter}\n\n{msg}"
         persona = self.get_persona(turn%2)
-        # save to tmp to see format
+        # save to tmp to see format, sanity check
         with open(f'{self.output_dir}/{turn}.txt', 'w') as f:
             f.write("SYSTEM:\n")
             f.write(persona)
@@ -127,7 +120,7 @@ class Engine:
 
     def process_response(self, response, chatbot):
         '''
-        process response
+        process response from chatgpt, assume response is in the right format
         '''
         if chatbot:
             content = response.split(':')[1]
@@ -137,11 +130,10 @@ class Engine:
             mood = header.split(' ')[1]
         return mood.strip("[").strip(']'), content.strip()
 
-    def start(self):
+    def start(self, turn = 100):
         # end conversation after 100 turn
-        for i in range(1,5):
-            # user turn
-            response = self.user_turn(i) # assuming two users
+        for i in range(1,turn):
+            response = self.user_turn(i) # assuming two users and chatbot start first
         # save all diaglogues as transcript
         with open(f'{self.output_dir}/transcript.txt', 'w') as f:
             for conv in self.conversation:
