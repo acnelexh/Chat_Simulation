@@ -188,37 +188,49 @@ class Persona:
         persona = "You are a chatbot, skilled in explaining complex programming concepts with creative flair."
         return persona
     
-    def generate_emotions_and_arousals():
-        # Ekman's 6 emotions + neutral
-        #neutral_emotions = ["Neural"]
-        positive_emotions = ["Surprise", "Happy"]
-        negative_emotions = ["Sad", "Fear", "Anger", "Disgust"]
+def generate_emotions_and_arousals():
+    # Ekman's 6 emotions + neutral
+    #neutral_emotions = ["Neural"]
+    positive_emotions = ["Surprise", "Happy"]
+    negative_emotions = ["Sad", "Fear", "Anger", "Disgust"]
 
-        # Generate combinations: Positive to Negative
-        positive_to_negative = [(pe, ne) for pe in positive_emotions for ne in negative_emotions]
+    # Generate combinations: Positive to Negative
+    positive_to_negative = [(pe, ne) for pe in positive_emotions for ne in negative_emotions]
 
-        # Generate combinations: Negative to Positive
-        negative_to_positive = [(ne, pe) for pe in positive_emotions for ne in negative_emotions]
+    # Generate combinations: Negative to Positive
+    negative_to_positive = [(ne, pe) for pe in positive_emotions for ne in negative_emotions]
 
-        # Combine both lists
-        drastic_changes = positive_to_negative + negative_to_positive
+    # Combine both lists
+    drastic_changes = positive_to_negative + negative_to_positive
 
-        # Assuming you have your drastic_changes list ready
-        arousal_levels = ['weak', 'medium', 'strong']
+    # Assuming you have your drastic_changes list ready
+    arousal_levels = ['weak', 'medium', 'strong']
 
-        # Generate combinations of each emotion with an arousal level
-        emotion_arousal_combinations = list(itertools.product(arousal_levels, repeat=2))
+    # Generate combinations of each emotion with an arousal level
+    emotion_arousal_combinations = list(itertools.product(arousal_levels, repeat=2))
 
-        # Now pair each emotion change with each arousal level combination
-        all_combinations = list(itertools.product(drastic_changes, emotion_arousal_combinations))
+    # Now pair each emotion change with each arousal level combination
+    all_combinations = list(itertools.product(drastic_changes, emotion_arousal_combinations))
 
-        # for combo in all_combinations:
-        #     emotion_pair, arousal_pair = combo
-        #     print(f"Emotions: {emotion_pair}, Arousals: {arousal_pair}")
+    # for combo in all_combinations:
+    #     emotion_pair, arousal_pair = combo
+    #     print(f"Emotions: {emotion_pair}, Arousals: {arousal_pair}")
 
-        return all_combinations
+    return all_combinations
     
 
     # generator = PersonaGenerator()
     # random_persona = generator.generate_persona()
     # print(random_persona)
+
+    def generate_emotion_target(user_turn):
+        # TODO
+        '''
+        Args:
+            user turn: int, the number of turn user will have in the conversation
+        Return:
+            emotion_target: list of len == user_turn, each element is a tuple of emotion and arousal
+            i.e. if target is (happy) -> (sad) and turn is 3
+                emotion_target = [(happy, medium), (sad, medium), (sad, medium)]
+        '''
+        pass

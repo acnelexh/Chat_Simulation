@@ -3,13 +3,14 @@ import enum
 import time
 from pathlib import Path
 from openai import OpenAI
-from persona import Persona, PersonaGenerator
+from persona import PersonaGenerator, generate_emotions_and_arousals
 # simulate conversation between two users for now
 
 class Engine:
     def __init__(self, save_dir: str):
         # init two personas
         self.agents = self._init_agents()
+        self.tmp = generate_emotions_and_arousals()
         # init conversaion with chitchat
         chitchat = ['How are you?', 'Whats up', 'How is your day?', 'How is the weather?', 'Hows your weekend?']
         # chatbot dont need no emotion
@@ -89,12 +90,13 @@ class Engine:
                 'RESPONSE LENGTH': 'SHORT'
             }
         else:
+            # Add in mood generation for human user
             params = {
                 'MOOD': self.mood_generation(),
                 'RESPONSE LENGTH': 'SHORT'
             }
         params = ''.join([f'{k}: {v}\n' for k, v in params.items()])
-        return "PARAMETER:\n" + params
+        return "PARAMETER:\n" + params.strip()
 
     def take_turn(self, turn):
         # get user input
@@ -104,13 +106,15 @@ class Engine:
         # format based on chatbot or human persona
         format = "You: [...]" if chatbot_turn else "You [$MOOD]: [...]"
         # prompt for message generation
-        msg = f"Generate a 1-sentence response that remains consistent with the mood and previous dialogues, aligning with your persona.\nPresent it in the format: {format}"
+        msg = f"Generate a 1-sentence response that remains consistent with (1) mood and (2) previous dialogues, aligning with your (3) persona.\nPresent it in the format: {format}"
         content = f"{previous_conversation}\n\n{parameter}\n\n{msg}"
         persona = self.get_persona(turn%2)
         # save to tmp to see format, sanity check
         with open(f'{self.output_dir}/{turn}.txt', 'w') as f:
+            f.write("============================================\n")
             f.write("SYSTEM:\n")
             f.write(persona)
+            f.write("============================================\n")
             f.write("CONTENT:\n")
             f.write(content)
         # send to gpt
