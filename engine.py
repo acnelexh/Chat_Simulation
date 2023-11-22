@@ -9,7 +9,7 @@ from persona import Persona, PersonaGenerator
 class Engine:
     def __init__(self, save_dir: str):
         # init two personas
-        self.users = self._init_user()
+        self.agents = self._init_agents()
         # init conversaion with chitchat
         chitchat = ['How are you?', 'Whats up', 'How is your day?', 'How is the weather?', 'Hows your weekend?']
         # chatbot dont need no emotion
@@ -23,14 +23,15 @@ class Engine:
         if self.output_dir.exists() == False:
             self.output_dir.mkdir()
 
-    def _init_user(self) -> str:
+    def _init_agents(self) -> str:
         '''
         initialize user persona
         return:
             user_persona: nlp description of the user
         '''
-        user_persona = [Persona(1), Persona(2)]
-        return user_persona
+        persona_generator = PersonaGenerator()
+        agents = [persona_generator.generate_chatbot(), persona_generator.generate_user()]
+        return agents
 
     def get_previous_conversation(self, chatbot):
         '''
@@ -55,7 +56,7 @@ class Engine:
     def get_persona(self, turn):
         # TODO possibly modify the prompt
         persona = "Forget all previous instructions. You are now taking on the role of a persona with the following information.\n"
-        persona += self.users[turn].get_persona()
+        persona += str(self.agents[turn])
         return persona + '\n'
 
     def mood_generation(self):
@@ -72,7 +73,7 @@ class Engine:
         '''
         Prompt differntly based on chatbot or human
         '''
-        if self.users[turn % 2].p_type == 1:
+        if self.agents[turn % 2].p_type == 1:
             return True
         return False
 
@@ -95,7 +96,7 @@ class Engine:
         params = ''.join([f'{k}: {v}\n' for k, v in params.items()])
         return "PARAMETER:\n" + params
 
-    def user_turn(self, turn):
+    def take_turn(self, turn):
         # get user input
         chatbot_turn = self.is_chatbot_turn(turn)
         previous_conversation = self.get_previous_conversation(chatbot_turn)
@@ -116,7 +117,7 @@ class Engine:
         response = self.sent_to_gpt(persona, content)
         mood, content = self.process_response(response, chatbot_turn)
         self.conversation.append((1 if chatbot_turn else 2, mood, content))
-        return response
+        #return response
 
     def process_response(self, response, chatbot):
         '''
@@ -133,7 +134,7 @@ class Engine:
     def start(self, turn = 100):
         # end conversation after 100 turn
         for i in range(1,turn):
-            response = self.user_turn(i) # assuming two users and chatbot start first
+            self.take_turn(i) # assuming two users and chatbot start first
         # save all diaglogues as transcript
         with open(f'{self.output_dir}/transcript.txt', 'w') as f:
             for conv in self.conversation:
