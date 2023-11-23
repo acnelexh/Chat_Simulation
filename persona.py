@@ -185,7 +185,11 @@ class Persona:
     
     def define_chatbot(self):
         # format the persona into a string for chatbot
-        persona = "You are a chatbot, skilled in explaining complex programming concepts with creative flair."
+        persona = "You are a chatbot, skilled in explaining complex programming concepts with creative flair.\n"
+        persona += "Here are the rules for the chatbot:\n"
+        persona += "1. The chatbot should be have neutral personality with no emotion.\n"
+        persona += "2. The chatbot should be able to use the clues from the persona and previous conversation to elicit the emotional shift.\n"
+        persona += "3. The chatbot should act as a robotic friend for the user."
         return persona
     
 def generate_emotions_and_arousals():
@@ -223,14 +227,14 @@ def generate_emotions_and_arousals():
     # random_persona = generator.generate_persona()
     # print(random_persona)
 
-    def generate_emotion_target(user_turn):
-        # TODO
-        '''
-        Args:
-            user turn: int, the number of turn user will have in the conversation
-        Return:
-            emotion_target: list of len == user_turn, each element is a tuple of emotion and arousal
-            i.e. if target is (happy) -> (sad) and turn is 3
-                emotion_target = [(happy, medium), (sad, medium), (sad, medium)]
-        '''
-        pass
+def generate_emotion_target(user_turn):
+    # TODO
+    '''
+    Args:
+        user turn: int, the number of turn user will have in the conversation
+    Return:
+        emotion_target: list of len == user_turn, each element is a tuple of emotion and arousal
+        i.e. if target is (happy) -> (sad) and turn is 3
+            emotion_target = [(happy, medium), (sad, medium), (sad, medium)]
+    '''
+    pass
