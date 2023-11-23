@@ -16,7 +16,7 @@ class Engine:
         self.chatbot_persona = str(self.agents[0])
         self.user_persona = str(self.agents[1])
         self.emotion_combination = generate_emotions_and_arousals() # list of ((emotion1, emotion2), (arousal1, arousal2))
-        self.conversation = [] # list of list of (agent_type, mood, content)
+        self.conversation = [] # list of list of (agent_type, content)
         self.conversation_str = "" # keep track of conversation in string format
         # init openai client
         with open("MY_KEY", "r") as f:
@@ -42,17 +42,17 @@ class Engine:
         '''
         if len(self.conversation_str) == 0:
             self.conversation_str = "Heres some example conversation thats are previously generated:\n"
-        formatted_conv = ""
-        formatted_conv += f"Emotion Shift: {emotion_shift}\n"
+        emotion1, emotion2 = emotion_shift[0]
+        arousal1, arousal2 = emotion_shift[1]
+        emotion_shift = f"({emotion1}, {arousal1}) -> ({emotion2}, {arousal2})"
+        formatted_conv = f"EMOTION SHIFT: {emotion_shift}\n"
         for dialogue in curr_conversation:
             if dialogue[0] == 1:
-                # chatbot
-                formatted_conv += f"Chatbot: {dialogue[2]}\n"
+                formatted_conv += f"CHATBOT: {dialogue[1]}\n"
             else:
-                # user
-                formatted_conv += f"User: {dialogue[2]}\n"
+                formatted_conv += f"USER: {dialogue[1]}\n"
         self.conversation_str += formatted_conv
-                    
+    
 
     def parameter_generation(self, emotion_shift):
         '''
@@ -70,7 +70,7 @@ class Engine:
 
     def prompt_generation(self, chatbot_start):
         # randomly select a which agent to start first
-        generation_format = "CHATBOT: [...]\nUSER: [...]\n" if chatbot_start else "USER: [...]\nCHATBOT: [...]\n"
+        generation_format = "CHATBOT: [...]\nUSER: [...]" if chatbot_start else "USER: [...]\nCHATBOT: [...]"
         # prompt for message generation
         msg = f"Simulate a conversation between the CHATBOT and USER, aligning with their individual persona.\n"
         msg += "The USER dialogue should follow the emotion shift as specified in the parameter.\n"
@@ -87,51 +87,57 @@ class Engine:
         parameter = self.parameter_generation(emotion_shift)
         # prompt for message generation
         msg = self.prompt_generation(chatbot_start)
+        system = "CHATBOT PERSONA:\n" + self.chatbot_persona + "\n"
+        system += "USER PERSONA:\n" + self.user_persona + "\n"
         content = f"{self.conversation_str}\n\n{parameter}\n\n{msg}"
         # save to tmp to see format, sanity check
         with open(f'{self.output_dir}/{emotion_shift}.txt', 'w') as f:
             f.write("============================================\n")
             f.write("SYSTEM:\n")
-            f.write("CHATBOT PERSONA:\n" + self.chatbot_persona + "\n")
-            f.write("USER PERSONA:\n" + self.user_persona + "\n")
+            f.write(system)
             f.write("============================================\n")
             f.write("CONTENT:\n")
             f.write(content)
-        print(emotion_shift)
         # send to gpt
-        #response = self.sent_to_gpt(persona, content)
-        #mood, content = self.process_response(response, chatbot_turn)
-        #self.conversation.append((1 if chatbot_turn else 2, mood, content))
-        #return response
+        response = self.sent_to_gpt(system, content)
+        dialogue = self.process_response(response)
+        self.conversation.append(dialogue)
+        return dialogue
 
-    def process_response(self, response, chatbot):
+    def process_response(self, response):
         '''
         process response from chatgpt, assume response is in the right format
         '''
-        if chatbot:
-            content = response.split(':')[1]
-            mood = "NULL"
-        else:
-            header, content = response.split(':')
-            mood = header.split(' ')[1]
-        return mood.strip("[").strip(']'), content.strip()
+        new_dialogue = []
+        dialogue_parsed = response.strip().split('\n')
+        for dialogue in dialogue_parsed:
+            if len(dialogue) == 0:
+                continue
+            agent, content = dialogue.split(':')
+            if agent == 'CHATBOT':
+                new_dialogue.append((1, content))
+            else:
+                new_dialogue.append((2, content))
+        return new_dialogue
+                
 
     def start(self):
         # end conversation after 100 turn
         # simulate over all possible emotion combination
         for emotion_shift in self.emotion_combination:
-            self.simulate(emotion_shift)
-            self.append_conversation_str(emotion_shift, self.conversation)
-            
-
+            dialogue = self.simulate(emotion_shift)
+            self.append_conversation_str(emotion_shift, dialogue)
+            # save to output dir
+            with open(f'{self.output_dir}/{emotion_shift}.json', 'w') as f:
+                f.write(json.dumps(dialogue))
+            print(f"Finished simulation for emotion shift: {emotion_shift}")
     
-    def sent_to_gpt(self, persona: int, msg: str):
-        return "You [MOOD]: I'm feeling pretty happy, and I hope the weather is nice for a beach day soon. How about you?" # Hardcode for testing
+    def sent_to_gpt(self, system: int, content: str):
         completion = self.client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
-                {"role": "system", "content": persona},
-                {"role": "user", "content": msg}])
+                {"role": "system", "content": system},
+                {"role": "user", "content": content}])
         # save to output dir and parse response
         response = completion.choices[0].message.content
         return response
