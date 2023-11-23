@@ -6,9 +6,8 @@ from openai import OpenAI
 from persona import PersonaGenerator, generate_emotions_and_arousals
 
 class Engine:
-    def __init__(self, save_dir: str, turn_per_simulation = 10):
+    def __init__(self, save_dir: str):
         # init two personas
-        self.turn_per_simulation = turn_per_simulation # number of conversation turns per simulation
         self.agents = self._init_agents() # initialize chatbot and user agents
         self.chatbot_persona = str(self.agents[0])
         self.user_persona = str(self.agents[1])
@@ -59,9 +58,10 @@ class Engine:
         emotion1, emotion2 = emotion_shift[0]
         arousal1, arousal2 = emotion_shift[1]
         emotion_shift = f"({emotion1}, {arousal1}) -> ({emotion2}, {arousal2})"
+        number_of_turns = random.randint(5, 10)
         params = {
             'MOOD SHIFT': emotion_shift,
-            'TURN PER SIMULATION': self.turn_per_simulation
+            'TURNS PER SIMULATION': number_of_turns
         }
         params = ''.join([f'{k}: {v}\n' for k, v in params.items()])
         return "PARAMETER:\n" + params.strip()
@@ -70,10 +70,12 @@ class Engine:
         # randomly select a which agent to start first
         generation_format = "CHATBOT: [...]\nUSER: [...]" if chatbot_start else "USER: [...]\nCHATBOT: [...]"
         # prompt for message generation
-        msg = f"Simulate a conversation between the CHATBOT and USER, aligning with their individual persona.\n"
-        msg += "The USER dialogue should follow the emotion shift as specified in the parameter.\n"
-        msg += f"Generate {self.turn_per_simulation} turns of conversation, with the following format:\n"
-        msg += f"{generation_format}"
+        msg = "Rules for the simulation:\n"
+        msg = f"1. Simulate a conversation between the CHATBOT and USER, aligning with their individual persona.\n"
+        msg += "2. The USER dialogue should follow the emotion shift as specified in the parameter.\n"
+        msg += f"3. Generate {self.turn_per_simulation} turns of conversation, with the following format:\n"
+        msg += f"{generation_format}\n"
+        msg += f"4. The USER should make their emotion shift implicit.\n"
         return msg
 
     def simulate(self, emotion_shift):
@@ -116,8 +118,7 @@ class Engine:
                 new_dialogue.append((1, content))
             else:
                 new_dialogue.append((2, content))
-        return new_dialogue
-                
+        return new_dialogue        
 
     def start(self):
         # end conversation after 100 turn

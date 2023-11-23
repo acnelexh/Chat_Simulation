@@ -2,8 +2,6 @@
 Persona class for chatbot
 Create persona for the chatbot from template
 '''
-from pathlib import Path
-
 import enum
 import random
 import itertools
