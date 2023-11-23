@@ -221,20 +221,3 @@ def generate_emotions_and_arousals():
     #     print(f"Emotions: {emotion_pair}, Arousals: {arousal_pair}")
 
     return all_combinations
-    
-
-    # generator = PersonaGenerator()
-    # random_persona = generator.generate_persona()
-    # print(random_persona)
-
-def generate_emotion_target(user_turn):
-    # TODO
-    '''
-    Args:
-        user turn: int, the number of turn user will have in the conversation
-    Return:
-        emotion_target: list of len == user_turn, each element is a tuple of emotion and arousal
-        i.e. if target is (happy) -> (sad) and turn is 3
-            emotion_target = [(happy, medium), (sad, medium), (sad, medium)]
-    '''
-    pass

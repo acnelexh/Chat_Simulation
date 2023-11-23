@@ -1,12 +1,9 @@
 # simulation engine
-import enum
-import time
 import json
 import random
 from pathlib import Path
 from openai import OpenAI
 from persona import PersonaGenerator, generate_emotions_and_arousals
-# simulate conversation between two users for now
 
 class Engine:
     def __init__(self, save_dir: str, turn_per_simulation = 10):
@@ -45,13 +42,14 @@ class Engine:
         emotion1, emotion2 = emotion_shift[0]
         arousal1, arousal2 = emotion_shift[1]
         emotion_shift = f"({emotion1}, {arousal1}) -> ({emotion2}, {arousal2})"
-        formatted_conv = f"EMOTION SHIFT: {emotion_shift}\n"
+        formatted_conv = f"Dialogue {len(self.conversation) + 1}:\n"
+        formatted_conv += f"EMOTION SHIFT: {emotion_shift}\n"
         for dialogue in curr_conversation:
             if dialogue[0] == 1:
                 formatted_conv += f"CHATBOT: {dialogue[1]}\n"
             else:
                 formatted_conv += f"USER: {dialogue[1]}\n"
-        self.conversation_str += formatted_conv
+        self.conversation_str += formatted_conv + "\n"
     
 
     def parameter_generation(self, emotion_shift):
@@ -89,7 +87,7 @@ class Engine:
         msg = self.prompt_generation(chatbot_start)
         system = "CHATBOT PERSONA:\n" + self.chatbot_persona + "\n"
         system += "USER PERSONA:\n" + self.user_persona + "\n"
-        content = f"{self.conversation_str}\n\n{parameter}\n\n{msg}"
+        content = f"{parameter}\n\n{msg}"
         # save to tmp to see format, sanity check
         with open(f'{self.output_dir}/{emotion_shift}.txt', 'w') as f:
             f.write("============================================\n")
