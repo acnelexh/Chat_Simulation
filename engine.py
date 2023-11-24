@@ -6,21 +6,65 @@ from openai import OpenAI
 from persona import PersonaGenerator, generate_emotions_and_arousals
 
 class Engine:
-    def __init__(self, save_dir: str):
-        # init two personas
-        self.agents = self._init_agents() # initialize chatbot and user agents
-        self.chatbot_persona = str(self.agents[0])
-        self.user_persona = str(self.agents[1])
-        self.emotion_combination = generate_emotions_and_arousals() # list of ((emotion1, emotion2), (arousal1, arousal2))
-        self.conversation = [] # list of list of (agent_type, content)
-        self.conversation_str = "" # keep track of conversation in string format
+    def __init__(self, save_dir: str, resume: Path = None):
         # init openai client
         with open("MY_KEY", "r") as f:
             self.client = OpenAI(api_key=f.read().strip())
+        # init emotion combination
+        self.emotion_combination = generate_emotions_and_arousals() # list of ((emotion1, emotion2), (arousal1, arousal2))
+        # check for resume
+        if resume is None:
+            # init two personas
+            self.agents = self._init_agents() # initialize chatbot and user agents
+            self.chatbot_persona = str(self.agents[0])
+            self.user_persona = str(self.agents[1])
+        else:
+            # gather left over emotion combination
+            # gather persona from resume dir
+            self.resume_simulation(resume)
+        # init conversation
+        self.conversation = [] # list of list of (agent_type, content)
+        # TODO keep or not?
+        self.conversation_str = "" # keep track of conversation in string format
         # file io stuff
-        self.output_dir = Path(save_dir)
-        if self.output_dir.exists() == False:
-            self.output_dir.mkdir()
+        if resume is None:
+            self.output_dir = Path(save_dir)
+            if self.output_dir.exists() == False:
+                self.output_dir.mkdir()
+            # save persona to output dir
+            with open(f'{self.output_dir}/chatbot_persona.txt', 'w') as f:
+                f.write(self.chatbot_persona)
+            with open(f'{self.output_dir}/user_persona.txt', 'w') as f:
+                f.write(self.user_persona)
+        else:
+            self.output_dir = resume
+        # error io incase of crash from previous simulation
+        self.error_log = self.output_dir/"log.txt"
+        if self.error_log.exists() == False:
+            self.error_log.touch()
+
+        
+    
+    def format_save_name(self, emotion_shift):
+        emotion1, emotion2 = emotion_shift[0]
+        arousal1, arousal2 = emotion_shift[1]
+        return f"{emotion1}_{emotion2}_{arousal1}_{arousal2}.txt"
+
+    def resume_simulation(self, resume_dir: Path):
+        # glob all json file
+        json_files = resume_dir.glob("*.json")
+        # "emotion1_emotion2_arousal1_arousal2"
+        file_stem = [str(f.stem)+".txt"  for f in json_files] 
+        # turn them into emotion combination
+        left_over = set([self.format_save_name(x) for x in self.emotion_combination]) - set(file_stem)
+        if len(left_over) == 0:
+            raise ValueError("No simulation to resume")
+        # remove emotion combination that has been simulated
+        self.emotion_combination = [x for x in self.emotion_combination if self.format_save_name(x) in left_over]
+        # read in chatbot and user persona
+        self.chatbot_persona = resume_dir.joinpath("chatbot_persona.txt").read_text()
+        self.user_persona = resume_dir.joinpath("user_persona.txt").read_text()
+
 
     def _init_agents(self) -> str:
         '''
@@ -38,18 +82,29 @@ class Engine:
         '''
         if len(self.conversation_str) == 0:
             self.conversation_str = "Heres some example conversation thats are previously generated:\n"
-        emotion1, emotion2 = emotion_shift[0]
-        arousal1, arousal2 = emotion_shift[1]
-        emotion_shift = f"({emotion1}, {arousal1}) -> ({emotion2}, {arousal2})"
-        formatted_conv = f"Dialogue {len(self.conversation) + 1}:\n"
-        formatted_conv += f"EMOTION SHIFT: {emotion_shift}\n"
-        for dialogue in curr_conversation:
-            if dialogue[0] == 1:
-                formatted_conv += f"CHATBOT: {dialogue[1]}\n"
-            else:
-                formatted_conv += f"USER: {dialogue[1]}\n"
+        formatted_conv = self.format_dialogue(emotion_shift, curr_conversation)
         self.conversation_str += formatted_conv + "\n"
     
+    def format_dialogue(self, emotion_shift, dialogue):
+        '''
+        Format the dialogue into a string for display
+        Args:
+            emotion_shift: ((emotion1, emotion2), (arousal1, arousal2))
+            dialogue: list of (agent_type, content)
+        Return:
+            formatted string of the dialogue
+        '''
+        emotion1, emotion2 = emotion_shift[0]
+        arousal1, arousal2 = emotion_shift[1]
+        format_str = f"({emotion1}, {arousal1}) -> ({emotion2}, {arousal2})"
+        format_str += f"EMOTION SHIFT: {emotion_shift}\n"
+        for d in dialogue:
+            if d[0] == 1:
+                format_str += f"CHATBOT: {d[1]}\n"
+            else:
+                format_str += f"USER: {d[1]}\n"
+        return format_str
+
 
     def parameter_generation(self, emotion_shift):
         '''
@@ -63,17 +118,16 @@ class Engine:
             'MOOD SHIFT': emotion_shift,
             'TURNS PER SIMULATION': number_of_turns
         }
-        params = ''.join([f'{k}: {v}\n' for k, v in params.items()])
-        return "PARAMETER:\n" + params.strip()
+        return params
 
-    def prompt_generation(self, chatbot_start):
+    def prompt_generation(self, chatbot_start, params):
         # randomly select a which agent to start first
         generation_format = "CHATBOT: [...]\nUSER: [...]" if chatbot_start else "USER: [...]\nCHATBOT: [...]"
         # prompt for message generation
         msg = "Rules for the simulation:\n"
         msg = f"1. Simulate a conversation between the CHATBOT and USER, aligning with their individual persona.\n"
         msg += "2. The USER dialogue should follow the emotion shift as specified in the parameter.\n"
-        msg += f"3. Generate {self.turn_per_simulation} turns of conversation, with the following format:\n"
+        msg += f"3. Generate {params['TURNS PER SIMULATION']} turns of conversation, with the following format:\n"
         msg += f"{generation_format}\n"
         msg += f"4. The USER should make their emotion shift implicit.\n"
         return msg
@@ -84,14 +138,15 @@ class Engine:
         '''
         # randomly select a which agent to start first
         chatbot_start = True if random.random() > 0.5 else False
-        parameter = self.parameter_generation(emotion_shift)
+        params = self.parameter_generation(emotion_shift)
+        params_str = "PARAMETER:\n" + ''.join([f'{k}: {v}\n' for k, v in params.items()]).strip()
         # prompt for message generation
-        msg = self.prompt_generation(chatbot_start)
+        msg = self.prompt_generation(chatbot_start, params)
         system = "CHATBOT PERSONA:\n" + self.chatbot_persona + "\n"
         system += "USER PERSONA:\n" + self.user_persona + "\n"
-        content = f"{parameter}\n\n{msg}"
+        content = f"{params_str}\n\n{msg}"
         # save to tmp to see format, sanity check
-        with open(f'{self.output_dir}/{emotion_shift}.txt', 'w') as f:
+        with open(f'{self.output_dir}/{self.format_save_name(emotion_shift)}', 'w') as f:
             f.write("============================================\n")
             f.write("SYSTEM:\n")
             f.write(system)
@@ -100,11 +155,12 @@ class Engine:
             f.write(content)
         # send to gpt
         response = self.sent_to_gpt(system, content)
-        dialogue = self.process_response(response)
-        self.conversation.append(dialogue)
+        dialogue = self.process_response(response, emotion_shift)
+        if len(dialogue) != 0:
+            self.conversation.append(dialogue)
         return dialogue
 
-    def process_response(self, response):
+    def process_response(self, response, emotion_shift):
         '''
         process response from chatgpt, assume response is in the right format
         '''
@@ -113,7 +169,14 @@ class Engine:
         for dialogue in dialogue_parsed:
             if len(dialogue) == 0:
                 continue
-            agent, content = dialogue.split(':')
+            try:
+                agent, content = dialogue.split(':')
+            except ValueError:
+                # exist the current simulation and log it
+                with open(self.error_log, 'a') as f:
+                    f.write('Value Error while simulating: ' + self.format_save_name(emotion_shift) + '\n')
+                    f.write('Response: ' + response + '\n')
+                    return []
             if agent == 'CHATBOT':
                 new_dialogue.append((1, content))
             else:
@@ -125,9 +188,12 @@ class Engine:
         # simulate over all possible emotion combination
         for emotion_shift in self.emotion_combination:
             dialogue = self.simulate(emotion_shift)
+            if len(dialogue) == 0:
+                # dont save if error, just log it and resume to the next simulation
+                continue
             self.append_conversation_str(emotion_shift, dialogue)
             # save to output dir
-            with open(f'{self.output_dir}/{emotion_shift}.json', 'w') as f:
+            with open(f'{self.output_dir}/{self.format_save_name(emotion_shift).strip(".txt")}.json', 'w') as f:
                 f.write(json.dumps(dialogue))
             print(f"Finished simulation for emotion shift: {emotion_shift}")
     
