@@ -14,8 +14,8 @@ class PersonaGenerator:
     def __init__(self):
         self.gender_categories = ['Male', 'Female', 'Non-binary/Gender fluid', 'Other']
         self.cultural_background_categories = ['North American', 'Latin American', 'European', 'African', 'Asian', 'Middle Eastern', 'Australian']
-        self.occupation_categories = ['Student', 'Healthcare', 'Technology', 'Education', 'Arts and Entertainment', 'Business', 'Manual Labor', 'Unemployed', 'Retired']
-        self.education_categories = ['No Formal Education', 'Primary School', 'Secondary School', 'Vocational Training', 'Associate Degree', 'Bachelor\'s Degree', 'Master\'s Degree', 'Doctorate']
+        #self.occupation_categories = ['Student', 'Healthcare', 'Technology', 'Education', 'Arts and Entertainment', 'Business', 'Manual Labor', 'Unemployed', 'Retired']
+        #self.education_categories = ['No Formal Education', 'Primary School', 'Secondary School', 'Vocational Training', 'Associate Degree', 'Bachelor\'s Degree', 'Master\'s Degree', 'Doctorate']
         self.family_dynamics_categories = ['Single Parent', 'Nuclear Family', 'Extended Family', 'Childless Couple', 'Single', 'Widowed', 'Divorced', 'Living with Friends']
         self.relationship_status_categories = ['Single', 'In a Relationship', 'Engaged', 'Married', 'Divorced', 'Widowed', 'Separated', 'It\'s Complicated']
         self.attachment_styles = ['Secure', 'Anxious', 'Avoidant', 'Fearful']
@@ -44,15 +44,15 @@ class PersonaGenerator:
         weights = [50, 20, 25, 5]  # Percentages for Secure, Anxious, Avoidant, Fearful
         return random.choices(self.attachment_styles, weights=weights, k=1)[0]
 
-    def generate_occupation(self):
-        # Rough estimate of global occupational distribution, World Employment and Social Outlook report by the International Labour Organization (ILO) 
-        weights = [10, 8, 8, 8, 5, 15, 30, 10, 6]  # Percentages for Student, Healthcare, Technology, Education, Arts and Entertainment, Business and Finance, Manual Labor, Unemployed, Retired] #Based on BLS
-        return random.choices(self.occupation_categories, weights=weights, k=1)[0]
+    # def generate_occupation(self):
+    #     # Rough estimate of global occupational distribution, World Employment and Social Outlook report by the International Labour Organization (ILO) 
+    #     weights = [10, 8, 8, 8, 5, 15, 30, 10, 6]  # Percentages for Student, Healthcare, Technology, Education, Arts and Entertainment, Business and Finance, Manual Labor, Unemployed, Retired] #Based on BLS
+    #     return random.choices(self.occupation_categories, weights=weights, k=1)[0]
 
-    def generate_education(self):
-        # Rough estimate of global education level distribution, 
-        weights = [10, 20, 25, 5, 5, 20, 10, 5]  # Percentages for No Formal Education, Primary School, Secondary School, Vocational Training, Associate Degree, Bachelor's Degree, Master's Degree, Doctorate
-        return random.choices(self.education_categories, weights=weights, k=1)[0]
+    # def generate_education(self):
+    #     # Rough estimate of global education level distribution, 
+    #     weights = [10, 20, 25, 5, 5, 20, 10, 5]  # Percentages for No Formal Education, Primary School, Secondary School, Vocational Training, Associate Degree, Bachelor's Degree, Master's Degree, Doctorate
+    #     return random.choices(self.education_categories, weights=weights, k=1)[0]
 
     def generate_family_dynamics(self):
         # Rough estimate of global family dynamics
@@ -81,8 +81,8 @@ class PersonaGenerator:
             age=random.randint(2, 80), # when can babies start using computers to estimated age of not being able to use computers
             gender=self.generate_gender(), #based on global population
             cultural_background=self.generate_cultural_background(), #based on global population
-            occupation=self.generate_occupation(),  # Based on rough estimate of global occupational distribution
-            education=self.generate_education(),  # Based on rough estimate of global education level distribution
+            #occupation=self.generate_occupation(),  # Based on rough estimate of global occupational distribution
+            #education=self.generate_education(),  # Based on rough estimate of global education level distribution
             family_dynamics=self.generate_family_dynamics(),  # Based on rough estimate of global family dynamics
             relationship_status=self.generate_relationship_status(),  # Based on rough estimate of global relationship status
             mbti=self.generate_mbti(), #based on global population
@@ -162,8 +162,10 @@ class Persona:
         persona += f"1. Age: {self.age}\n"
         persona += f"2. Gender: {self.gender}\n"
         persona += f"3. Cultural Background: {self.cultural_background}\n"
-        persona += f"4. Occupation: {self.occupation}\n"
-        persona += f"5. Education: {self.education}\n"
+        #persona += f"4. Occupation: {self.occupation}\n"
+        #persona += f"5. Education: {self.education}\n"
+        persona += f"4. Physical Health: {self.physical_health} out of 5\n"
+        persona += f"5. Mental Health: {self.mental_health} out of 5\n"
         persona += f"6. Family Dynamics: {self.family_dynamics}\n"
         persona += f"7. Relationship Status: {self.relationship_status}\n"
         persona += f"8. MBTI: {self.mbti}\n"
@@ -177,8 +179,6 @@ class Persona:
         persona += f"16. Likes: {self.likes}\n"
         persona += f"17. Dislikes: {self.dislikes}\n"
         persona += f"18. Goals and Aspirations: {self.goals_aspirations}\n"
-        persona += f"19. Physical Health: {self.physical_health} out of 5\n"
-        persona += f"20. Mental Health: {self.mental_health} out of 5\n"
         return persona.strip()
     
     def define_chatbot(self):

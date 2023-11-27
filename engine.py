@@ -80,7 +80,6 @@ class Engine:
         self.chatbot_persona = resume_dir.joinpath("chatbot_persona.txt").read_text()
         self.user_persona = resume_dir.joinpath("user_persona.txt").read_text()
 
-
     def _init_agents(self) -> str:
         '''
         initialize user persona
@@ -134,7 +133,7 @@ class Engine:
         emotion1, emotion2 = emotion_shift[0]
         arousal1, arousal2 = emotion_shift[1]
         emotion_shift = f"({emotion1}, {arousal1}) -> ({emotion2}, {arousal2})"
-        number_of_turns = random.randint(5, 10)
+        number_of_turns = random.randint(7, 12)
         params = {
             'MOOD SHIFT': emotion_shift,
             'TURNS PER SIMULATION': number_of_turns
@@ -159,6 +158,7 @@ class Engine:
         msg += f"3. Generate {params['TURNS PER SIMULATION']} turns of conversation, with the following format:\n"
         msg += f"{generation_format}\n"
         msg += f"4. The USER should make their emotion shift implicit.\n"
+        msg += f"5. The USER language ability should be consistent with their age.\n"
         return msg
 
     def simulate(self, emotion_shift):
@@ -244,7 +244,7 @@ class Engine:
             system: str, system persona
             content: str, content of the message
         return:
-            response: str, response from gpt
+            
         '''
         completion = self.client.chat.completions.create(
             model="gpt-3.5-turbo",
