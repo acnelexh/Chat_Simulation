@@ -177,7 +177,7 @@ class Engine:
             msg: str, prompt for the current simulation
         '''
         # randomly select a which agent to start first
-        generation_format = "CHATBOT: [...]\nUSER: [...]" if chatbot_start else "USER: [...]\nCHATBOT: [...]"
+        generation_format = "CHATBOT: [...]\nUSER [EMOTION]: [...]" if chatbot_start else "USER [EMOTION]: [...]\nCHATBOT: [...]"
         # prompt for message generation
         msg = "Rules for the simulation:\n"
         msg = f"1. Simulate a conversation between the CHATBOT and USER, aligning with their individual persona.\n"
@@ -186,8 +186,9 @@ class Engine:
         msg += f"3. Generate {params['TURNS PER SIMULATION']} turns of conversation, with the following format:\n"
         msg += f"{generation_format}\n"
         msg += f"4. Try to use descriptive language that naturally conveys the USER's emotional state through their word choice, tone, and the content of their speech rather than explicitly stating the emotion state.\n"
-        msg += f"5. Include subtle cues that indicate a shift in emotion, such as changes in the USER's responsiveness, the length of their messages, or their use of punctuation and capitalization."
-        return msg
+        msg += f"5. Include subtle cues that indicate a shift in emotion, such as changes in the USER's responsiveness, the length of their messages, or their use of punctuation and capitalization.\n"
+        msg += f"6. Adopt the personality described in the character section below and respond to the last message in conversation history. Consider the complete conversation history, the additional context, the character's persona, emotional state and goals below when simulating.\n"
+        return msg.strip()
 
     def simulate(self, emotion_shift):
         '''
@@ -205,7 +206,8 @@ class Engine:
         msg = self.prompt_generation(chatbot_start, params)
         system = "CHATBOT PERSONA:\n" + self.chatbot_persona + "\n"
         system += "USER PERSONA:\n" + self.user_persona + "\n"
-        content = f"{params_str}\n\n{msg}"
+        dd_example = Path("dd_examples.txt").read_text()
+        content = f"{dd_example}\n\n{params_str}\n\n{msg}"
         # save to tmp to see format, sanity check
         with open(f'{self.output_dir}/{self.format_save_name(emotion_shift)}', 'w') as f:
             f.write("============================================\n")
@@ -215,6 +217,7 @@ class Engine:
             f.write("CONTENT:\n")
             f.write(content)
         # send to gpt
+        #return None
         response = self.sent_to_gpt(system, content)
         dialogue = self.process_response(response, emotion_shift)
         if len(dialogue) != 0:

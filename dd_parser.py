@@ -15,7 +15,7 @@ label = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4 ]
 # ...
 
 def parse_dialogue(dialogue, label):
-    result = ""
+    result = "Here is a generated examples:\n"
     for i in range(len(dialogue)):
         if i % 2 == 0:
             result += "A "
