@@ -134,9 +134,36 @@ class Engine:
         arousal1, arousal2 = emotion_shift[1]
         emotion_shift = f"({emotion1}, {arousal1}) -> ({emotion2}, {arousal2})"
         number_of_turns = random.randint(7, 12)
+        
+        # Define the topics and their corresponding probabilities based on Daily Dialogue Paper
+        topics_with_probabilities = {
+            "Ordinary Life": 28.26,
+            "School Life": 3.69,
+            "Culture & Education": 0.42,
+            "Attitude & Emotion": 4.95,
+            "Relationship": 33.33,
+            "Tourism": 8.32,
+            "Health": 1.96,
+            "Work": 14.49,
+            "Politics": 1.00,
+            "Finance": 3.59
+        }
+
+        # Normalize the probabilities (they should sum to 1)
+        total = sum(topics_with_probabilities.values())
+        topics_with_normalized_probabilities = {k: v / total for k, v in topics_with_probabilities.items()}
+
+        # Choose a topic based on the distribution
+        topics = list(topics_with_normalized_probabilities.keys())
+        probabilities = list(topics_with_normalized_probabilities.values())
+        topic = random.choices(topics, weights=probabilities, k=1)[0]
         params = {
-            'MOOD SHIFT': emotion_shift,
-            'TURNS PER SIMULATION': number_of_turns
+            'USER STARTING EMOTION': emotion1,
+            'USER STARTING AROUSAL': arousal1,
+            'USER ENDING EMOTION': emotion2,
+            'USER ENDING AROUSAL': arousal2,
+            'TURNS PER SIMULATION': number_of_turns,
+            'TOPIC': topic
         }
         return params
 
@@ -154,11 +181,12 @@ class Engine:
         # prompt for message generation
         msg = "Rules for the simulation:\n"
         msg = f"1. Simulate a conversation between the CHATBOT and USER, aligning with their individual persona.\n"
-        msg += "2. The USER dialogue should follow the emotion shift as specified in the parameter.\n"
+        msg += f"2. The USER start with a initial emotion state of {params['USER STARTING EMOTION']} with a {params['USER STARTING AROUSAL']} intensity and end the conversation with the final emotion state of {params['USER ENDING EMOTION']} with a {params['USER ENDING AROUSAL']} intensity.\n"
+        msg += f"3. The USER’s emotions should shift gradually, not abruptly, to keep the conversation natural. Suggest the chatbot to ask probing questions or make statements that could realistically lead to the final emotion state.\n"
         msg += f"3. Generate {params['TURNS PER SIMULATION']} turns of conversation, with the following format:\n"
         msg += f"{generation_format}\n"
-        msg += f"4. The USER should make their emotion shift implicit.\n"
-        msg += f"5. The USER language ability should be consistent with their age.\n"
+        msg += f"4. Try to use descriptive language that naturally conveys the USER's emotional state through their word choice, tone, and the content of their speech rather than explicitly stating the emotion state.\n"
+        msg += f"5. Include subtle cues that indicate a shift in emotion, such as changes in the USER's responsiveness, the length of their messages, or their use of punctuation and capitalization."
         return msg
 
     def simulate(self, emotion_shift):
