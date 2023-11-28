@@ -143,7 +143,7 @@ class Engine:
             msg: str, prompt for the current simulation
         '''
         # randomly select a which agent to start first
-        generation_format = "CHATBOT: [...]\nUSER [EMOTION]: [...]" if chatbot_start else "USER [EMOTION]: [...]\nCHATBOT: [...]"
+        generation_format = "CHATBOT: [...]\nUSER-[EMOTION]: [...]" if chatbot_start else "USER-[EMOTION]: [...]\nCHATBOT: [...]"
         # prompt for message generation
         msg = "Rules for the simulation:\n"
         msg = f"1. Simulate a conversation between the CHATBOT and USER, aligning with their individual persona with the topic {params['TOPIC']}. Begin the conversation skipping formal greetings. This will make the conversation feel more immediate and focused.\n"
@@ -183,7 +183,7 @@ class Engine:
         system = "CHATBOT PERSONA:\n" + self.chatbot_persona + "\n"
         system += "USER PERSONA:\n" + self.user_persona + "\n"
         dd_example = Path("dd_examples.txt").read_text()
-        content = f"{dd_example}\n\n{params_str}\n\n{msg}"
+        content = f"{dd_example}\n\n{params_str}\n\n{msg}\n\nResponse:\n"
         # save to tmp to see format, sanity check
         with open(f'{self.output_dir}/{self.format_save_name(emotion_shift)}', 'w') as f:
             f.write("============================================\n")
@@ -222,10 +222,18 @@ class Engine:
                     f.write('Value Error while simulating: ' + self.format_save_name(emotion_shift) + '\n')
                     f.write('Response: ' + response + '\n')
                     return []
-            if agent == 'CHATBOT':
+            if agent.lower() == 'chatbot':
                 new_dialogue.append((1, content))
             else:
-                new_dialogue.append((2, content))
+                try: # USER-[EMOTION]
+                    agent, emotion = agent.split('-')
+                    new_dialogue.append((2, content, emotion.strip('[').strip(']')))
+                except ValueError:
+                    # exist the current simulation and log it
+                    with open(self.error_log, 'a') as f:
+                        f.write('Value Error while simulating: ' + self.format_save_name(emotion_shift) + '\n')
+                        f.write('Response: ' + response + '\n')
+                        return []
         return new_dialogue        
 
     def start(self):

@@ -22,18 +22,18 @@ def parse_dialogue(dialogue, label):
     result = ""
     for i in range(len(dialogue)):
         if i % 2 == 0:
-            result += "A "
+            result += "A-"
         else:
-            result += "B "
+            result += "B-"
         result += "[" + lookup[label[i]] + "]: " + dialogue[i].strip() + "\n"
     return result.strip()
 
-NUM_EXAMPLES = 15
+NUM_EXAMPLES = 5
 with open('dd_examples.txt', 'w') as f:
     f.write("Here are some simulated examples from the Daily Dialogue dataset.\n")
 # select a NUM_EXAMPLES that contain at least 3 of the 7 emotions
 dd_examples = []
-while len(dd_examples) < 15:
+while len(dd_examples) < NUM_EXAMPLES:
     idx = random.randint(0, len(daily_diaglogue_dataset['train']) - 1)
     dialogue = daily_diaglogue_dataset['train'][idx]['dialog']
     label = daily_diaglogue_dataset['train'][idx]['emotion']
