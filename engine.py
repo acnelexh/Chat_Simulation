@@ -28,8 +28,6 @@ class Engine:
             self.resume_simulation(resume)
         # init conversation
         self.conversation = [] # list of list of (agent_type, content)
-        # TODO keep or not?
-        self.conversation_str = "" # keep track of conversation in string format
         # file io stuff
         if resume is None:
             self.output_dir = Path(save_dir)
@@ -56,7 +54,7 @@ class Engine:
             save_name: str, save name for the simulation in the format of
             "emotion1_emotion2_arousal1_arousal2.txt"
         '''
-        emotion1, emotion2 = emotion_shift[0]
+        emotion1, emotion2 = emotion_shift
         #arousal1, arousal2 = emotion_shift[1]
         return f"{emotion1}_{emotion2}.txt"
 
@@ -90,38 +88,6 @@ class Engine:
         agents = [persona_generator.generate_chatbot(), persona_generator.generate_user()]
         return agents
 
-    def append_conversation_str(self, emotion_shift, curr_conversation):
-        '''
-        gather and format all previous conversation
-        args:
-            emotion_shift: ((emotion1, emotion2), (arousal1, arousal2))
-            curr_conversation: list of (agent_type, content)
-        '''
-        if len(self.conversation_str) == 0:
-            self.conversation_str = "Heres some example conversation thats are previously generated:\n"
-        formatted_conv = self.format_dialogue(emotion_shift, curr_conversation)
-        self.conversation_str += formatted_conv + "\n"
-    
-    def format_dialogue(self, emotion_shift, dialogue):
-        '''
-        Format the dialogue into a string for display
-        Args:
-            emotion_shift: ((emotion1, emotion2), (arousal1, arousal2))
-            dialogue: list of (agent_type, content)
-        Return:
-            formatted string of the dialogue
-        '''
-        emotion1, emotion2 = emotion_shift[0]
-        #arousal1, arousal2 = emotion_shift[1]
-        format_str = f"({emotion1}) -> ({emotion2})"
-        format_str += f"EMOTION SHIFT: {emotion_shift}\n"
-        for d in dialogue:
-            if d[0] == 1:
-                format_str += f"CHATBOT: {d[1]}\n"
-            else:
-                format_str += f"USER: {d[1]}\n"
-        return format_str
-
     def parameter_generation(self, emotion_shift):
         '''
         generate parameter for the current simulation iteration
@@ -130,7 +96,7 @@ class Engine:
         return:
             params: dict of parameters
         '''
-        emotion1, emotion2 = emotion_shift[0]
+        emotion1, emotion2 = emotion_shift
         #arousal1, arousal2 = emotion_shift[1]
         emotion_shift = f"({emotion1}) -> ({emotion2})"
         number_of_turns = random.randint(7, 12)
@@ -273,7 +239,6 @@ class Engine:
             if len(dialogue) == 0:
                 # dont save if error, just log it and resume to the next simulation
                 continue
-            self.append_conversation_str(emotion_shift, dialogue)
             # save to output dir
             with open(f'{self.output_dir}/{self.format_save_name(emotion_shift).strip(".txt")}.json', 'w') as f:
                 f.write(json.dumps(dialogue))
