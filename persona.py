@@ -229,18 +229,21 @@ def generate_emotions_and_arousals():
     drastic_changes = positive_to_negative + negative_to_positive
 
     # Assuming you have your drastic_changes list ready
-    arousal_levels = ['weak', 'strong']
+    #arousal_levels = ['weak', 'strong']
 
     # Generate combinations of each emotion with an arousal level
-    emotion_arousal_combinations = list(itertools.product(arousal_levels, repeat=2))
+    #emotion_arousal_combinations = list(itertools.product(arousal_levels, repeat=2))
 
     # Now pair each emotion change with each arousal level combination
-    all_combinations = list(itertools.product(drastic_changes, emotion_arousal_combinations))
+    #all_combinations = list(itertools.product(drastic_changes, emotion_arousal_combinations))
 
     # for combo in all_combinations:
     #     emotion_pair, arousal_pair = combo
     #     print(f"Emotions: {emotion_pair}, Arousals: {arousal_pair}")
 
-    random.shuffle(all_combinations)
+    random.shuffle(drastic_changes)
 
-    return all_combinations
+    return drastic_changes
+
+# if __name__ == "__main__":
+#     print(len(generate_emotions_and_arousals()))
