@@ -1,0 +1,21 @@
+Value Error while simulating: Sad_Surprise.txt
+Response: Welcome back! What's been going on in your life lately?
+Value Error while simulating: Disgust_Happy.txt
+Response: USER-[Disgust]: I can't believe what I just found out about my partner.
+CHATBOT: Oh no, what happened? 
+USER-[Disgust]: I discovered that they have been cheating on me. It's just so disgusting and hurtful.
+CHATBOT: I'm really sorry to hear that. Finding out about infidelity can be really devastating. How are you feeling about it?
+USER-[Sadness]: I'm just so sad and betrayed. I never thought they would do something like this to me. I feel like everything is falling apart.
+CHATBOT: I can imagine how painful and disappointing this must be for you. It's okay to feel sad and hurt right now. Is there anything you have done to cope with these emotions?
+USER-[Sadness]: I've been spending a lot of time alone, trying to process everything. I've also been talking to a close friend and they have been really supportive.
+CHATBOT: That's great to hear that you have someone to lean on during this difficult time. Surrounding yourself with supportive people can really make a difference. Is there anything else you have been doing to take care of yourself?
+USER-[Sadness]: I've been journaling and doing some self-reflection to make sense of my feelings. It helps me gain some clarity and perspective on the situation.
+CHATBOT: It sounds like you have some healthy coping strategies in place. Self-reflection can be a powerful tool for understanding and healing. Is there anything else you would like to do to take care of yourself?
+USER-[Neutral]: I've also started reading some books on relationships and personal growth. It helps me gain new insights and keeps my mind occupied.
+CHATBOT: That's a great way to channel your energy and focus on personal development. Reading can be a source of inspiration and motivation. Is there any particular book or author you find helpful?
+USER-[Happy]: I've been delving into works by Socrates and Shakespeare. They offer such profound wisdom on love, relationships, and the human condition. It's incredibly enlightening.
+CHATBOT: That sounds fascinating! Socrates and Shakespeare are indeed timeless sources of wisdom. It's wonderful that you're finding joy and excitement in their works. Is there any particular quote or passage that has resonated with you?
+USER-[Happy]: There's a quote by Shakespeare that really speaks to me: "Love all, trust a few, do wrong to none." It reminds me to prioritize self-love and discernment in relationships. It's empowering.
+CHATBOT: That is a beautiful quote and a valuable lesson to live by. Prioritizing self-love and being selective with trust can help create healthier and more fulfilling relationships. I'm glad you found inspiration in these wise words. 
+USER-[Happy]: Thank you, it means a lot to have someone to talk to and share these thoughts with. 
+CHATBOT: You're welcome. I'm here to support you and listen. Remember, you deserve love and happiness, and you have the strength to heal and grow from this experience.
