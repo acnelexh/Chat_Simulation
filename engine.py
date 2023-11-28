@@ -159,9 +159,9 @@ class Engine:
         topic = random.choices(topics, weights=probabilities, k=1)[0]
         params = {
             'USER STARTING EMOTION': emotion1,
-            'USER STARTING AROUSAL': arousal1,
+            #'USER STARTING AROUSAL': arousal1,
             'USER ENDING EMOTION': emotion2,
-            'USER ENDING AROUSAL': arousal2,
+            #'USER ENDING AROUSAL': arousal2,
             'TURNS PER SIMULATION': number_of_turns,
             'TOPIC': topic
         }
@@ -181,7 +181,7 @@ class Engine:
         # prompt for message generation
         msg = "Rules for the simulation:\n"
         msg = f"1. Simulate a conversation between the CHATBOT and USER, aligning with their individual persona with the topic {params['TOPIC']}. Begin the conversation skipping formal greetings. This will make the conversation feel more immediate and focused.\n"
-        msg += f"2. The USER start with a initial emotion state of {params['USER STARTING AROUSAL']} {params['USER STARTING EMOTION']}, through gradual shift in emotion guided by CHATBOT, end the conversation with the final emotion state of {params['USER ENDING AROUSAL']} {params['USER ENDING EMOTION']}.\n"
+        msg += f"2. The USER start with a initial emotion state of {params['USER STARTING EMOTION']}, through gradual shift in emotion guided by CHATBOT, end the conversation with the final emotion state of {params['USER ENDING EMOTION']}.\n"
         msg += f"3. The USER’s emotions should shift gradually, not abruptly, to keep the conversation natural. Suggest the chatbot to ask probing questions or make statements that could realistically lead to the final emotion state.\n"
         msg += f"4. Generate {params['TURNS PER SIMULATION']} turns of conversation, with the following format:\n"
         msg += f"{generation_format}\n"
@@ -189,7 +189,7 @@ class Engine:
         msg += f"6. Detailed and realistic conversation: USER should provide specific details about the trigger of their emotions to make it more believable, e.g. specific relationship drama or dynamic (e.g. cheating husband/wife, missed date, unbalanced relationship dynamic) that contribute to sadness or disgust, specific activity and role models (e.g. reading Socrates, Shakespear, etc) that brings them joy and excitement. \n"
         msg += "7. Adopt the personality described in the character section below and respond to the last message in conversation history. Consider the complete conversation history, the additional context, the character's persona, emotional state and goals below when simulating.\n"
         msg += "8. Avoid Forced Positivity: If the conversation naturally leads to a less positive conclusion, let it be. Not every conversation has to end on a high note, especially if it doesn't fit the flow of the dialogue\n"
-        msg += f"9. Varied Conversation Endings: The conversation doesn't need to end with USER thanking the CHATBOT for listening. Allow for a variety of conversation endings that are more aligned with the final emotion state of {params['USER ENDING AROUSAL']} {params['USER ENDING EMOTION']}.\n"
+        msg += f"9. Varied Conversation Endings: The conversation doesn't need to end with USER thanking the CHATBOT for listening. Allow for a variety of conversation endings that are more aligned with the final emotion state of {params['USER ENDING EMOTION']}.\n"
         msg += """10. Definition of emotions: 
         Happy/Joy - is often defined as a pleasant emotional state that is characterized by feelings of contentment, joy, gratification, satisfaction, and well-being.
         Sadness - Sadness is another type of emotion often defined as a transient emotional state characterized by feelings of disappointment, grief, hopelessness, disinterest, and dampened mood. Like other emotions, sadness is something that all people experience from time to time. In some cases, people can experience prolonged and severe periods of sadness that can turn into depression. Sadness can be expressed in a number of ways including: Crying, Dampened mood, Lethargy, Quietness, Withdrawal from others.
