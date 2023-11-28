@@ -6,6 +6,7 @@ from pathlib import Path
 '''
 Parse json into csv file
 command line: python make_df.py --dir <dir>
+e.g. python make_df.py --dir output/1
 '''
 def make_df(dir):
     '''
