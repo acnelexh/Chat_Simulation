@@ -1,93 +1,165 @@
 Here are some simulated examples from the Daily Dialogue dataset.
-A [No emotion]: Say , Jim , how about going for a few beers after dinner ?
-B [No emotion]: You know that is tempting but is really not good for our fitness .
-A [No emotion]: What do you mean ? It will help us to relax .
-B [No emotion]: Do you really think so ? I don't . It will just make us fat and act silly . Remember last time ?
-A [No emotion]: I guess you are right.But what shall we do ? I don't feel like sitting at home .
-B [No emotion]: I suggest a walk over to the gym where we can play singsong and meet some of our friends .
-A [Happiness]: That's a good idea . I hear Mary and Sally often go there to play pingpong.Perhaps we can make a foursome with them .
-B [Happiness]: Sounds great to me ! If they are willing , we could ask them to go dancing with us.That is excellent exercise and fun , too .
-A [Happiness]: Good.Let ' s go now .
-B [Happiness]: All right .
+A [No emotion]: Mary , you have found several companies that are hiring , right ?
+B [No emotion]: Yes , I have found three companies .
+A [No emotion]: Have you called to inquire about the positions ?
+B [No emotion]: Yes , but the results are not so satisfying .
+A [Surprise]: What's the matter ?
+B [No emotion]: I asked the first company about the vacancy , but they had already hired someone .
+A [No emotion]: What a pity !
+B [No emotion]: The second one told me that the job information was released half a year ago , and had been overdue .
+A [No emotion]: It's frustrating !
+B [No emotion]: The last company is still hiring , but not recent graduates .
+A [No emotion]: Wonder why they do that !
+B [Sadness]: I feel terrible now .
+A [No emotion]: Don't be discouraged . Just keep trying and you will find a job eventually .
+B [No emotion]: Thanks for your support and care .
 
-A [No emotion]: Can you do push-ups ?
-B [No emotion]: Of course I can . It's a piece of cake ! Believe it or not , I can do 30 push-ups a minute .
-A [Surprise]: Really ? I think that's impossible !
-B [No emotion]: You mean 30 push-ups ?
-A [No emotion]: Yeah !
-B [No emotion]: It's easy . If you do exercise everyday , you can make it , too .
+A [Surprise]: Oh , there is something wrong with my car .
+B [No emotion]: Your car is rather old . Why not change a new one ?
+A [No emotion]: I want to change a new car . I like Honda best , especially the red one . But it is too expensive .
+B [No emotion]: Oh , there is a car exhibition tomorrow afternoon . I have two tickets . Would you like to go there with me ?
+A [No emotion]: Yeah . Maybe I can find my favorite car in addition to Honda .
+B [Happiness]: And the bank will offer you loans for twenty years !
 
-A [No emotion]: Can you study with the radio on ?
-B [No emotion]: No , I listen to background music .
-A [No emotion]: What is the difference ?
-B [No emotion]: The radio has too many comerials .
-A [No emotion]: That's true , but then you have to buy a record player .
+A [Happiness]: Hi , I am so glad to see you .
+B [Surprise]: Are you kidding me ? Why do you say so ?
+A [No emotion]: You know , I'm about to graduate and I have to look for a job as soon as possible . But I haven ’ t the faintest idea of how to go about finding a job .
+B [No emotion]: OK . Let me see where to start .
+A [No emotion]: I guess first I should prepare a resume , right ?
+B [No emotion]: Sure . You should include your name , address and phone number in your resume .
+A [No emotion]: Then what else should I put into my resume ?
+B [No emotion]: Your job objectives , of course . In other words , what kind of job are you searching for ?
+A [No emotion]: I got it . Then I should mention my educating background and working experience , should I ?
+B [No emotion]: Yes . And don't forget to list them by date . Besides , you should begin with the most recent and then move backward .
+A [No emotion]: I see . Is that all there is to it ?
+B [No emotion]: No , it's also necessary to list a few related interests that are in some way connected to the jobs you want to take .
+A [No emotion]: Oh , good point . You mean here I should show off my special skills and talents to impress the boss .
+B [No emotion]: You said it . At last you ’ d better attach a list of references to your resume .
+A [No emotion]: That's easy .
+B [No emotion]: And one more thing , smile widely .
 
-A [No emotion]: Are you all right ?
-B [No emotion]: I will be all right soon . I was terrified when I watched them fall from the wire .
-A [No emotion]: Don't worry.He is an acrobat 。
-B [No emotion]: I see .
+A [No emotion]: Hey , Susie , what health club do you belong to ?
+B [No emotion]: Total Fitness , why ?
+A [No emotion]: Well , I ’ Ve been going to Athletic Express , but I don ’ t like it there .
+B [Surprise]: Really ? Why not ? I hear it ’ s pretty good .
+A [No emotion]: The people don ’ t really work out there . They just stand around and talk all the time .
+B [No emotion]: Oh , it ’ s one of those places .
+A [No emotion]: Yeah , is your club different ?
+B [No emotion]: Well , they have different rooms . I lift weights by the pool where there aren ’ t so many people .
+A [No emotion]: Do they have a lot of equipment ?
+B [No emotion]: Yeah , they have all the machines , a pool , and a steam room and sauna .
+A [Happiness]: Sounds nice . What about classes ?
+B [No emotion]: The usual . Aerobics , kickboxing , yoga . They just started a Tai Chi class too .
+A [Happiness]: Wow , that sounds great .
+B [No emotion]: Well , I have a guest pass . Why don ’ t you come with me tonight ?
+A [No emotion]: Really ? Thanks . I ’ ll stop by when I get off work .
+B [Happiness]: Perfect . See you later .
+A [No emotion]: O . K . , see you .
 
-A [No emotion]: Hey John , nice skates . Are they new ?
-B [No emotion]: Yeah , I just got them . I started playing ice hockey in a community league . So , I finally got myself new skates .
-A [No emotion]: What position do you play ?
-B [No emotion]: I ’ m a defender . It ’ s a lot of fun . You don ’ t have to be able to skate as fast on defense .
-A [No emotion]: Yeah , you ’ re a pretty big guy . I play goalie , myself .
-B [Surprise]: Oh , yeah ? Which team ?
-A [No emotion]: The Rockets .
-B [Surprise]: Really ? I think we play you guys next week . Well , I have to go to practice . See you later .
-A [No emotion]: All right , see you later .
+A [No emotion]: Excuse me , bags aren't permitted inside the supermarket .
+B [Sadness]: Oh , I'm sorry .
+A [No emotion]: Don ’ t worry . Just check in your bag before entering .
+B [Happiness]: Thanks . Could you tell me where I should deposit my bag ?
+A [No emotion]: The checkroom is just behind the front door .
+B [No emotion]: OK . I will deposit my bag right now .
 
-A [No emotion]: Hey Lydia , what are you reading ?
-B [Happiness]: I ’ m looking at my horoscope for this month ! My outlook is very positive . It says that I should take a vacation to someplace exotic , and that I will have a passionate summer fling !
-A [No emotion]: What are you talking about ? Let me see that ... What are horoscopes ?
-B [No emotion]: It ’ s a prediction of your month , based on your zodiac sign . You have a different sign for the month and date you were born in . I was born on April 15th , so I ’ m an Aries . When were you born ?
-A [No emotion]: January 5th .
-B [Happiness]: Let ’ s see . . . you ’ re a Capricorn . It says that you will be feeling stress at work , but you could see new , exciting developments in your love life . Looks like we ’ ll both have interesting summers !
-A [No emotion]: That ’ s bogus . I don't feel any stress at work , and my love life is practically nonexistent . This zodiac stuff is all a bunch of nonsense .
-B [No emotion]: No , it ’ s not , your astrology sign can tell you a lot about your personality . See ? It says that an Aries is energetic and loves to socialize .
-A [No emotion]: Well , you certainly match those criteria , but they ’ re so broad they could apply to anyone . What does it say about me ?
-B [Happiness]: A Capricorn is serious-minded and practical . She likes to do things in conventional ways . That sounds just like you !
+A [Happiness]: Is your lady beautiful ? Since I came here from the country , I've not seen her close . Tell me , is she beautiful ?
+B [Happiness]: Thomas , if I could write with the beauty in her eyes , I was born to look in them and know myself .
+A [No emotion]: And , her lips ?
+B [Happiness]: Her lips ? The early morning rose would wither on the branch if it could feel envy .
+A [No emotion]: And her voice like a lark's song ?
+B [Happiness]: Deeper , softer , none of your twittering larks . I would banish nightingales from her garden before they interrupted her song .
+A [Surprise]: Oh , she sings too ?
+B [Happiness]: Constantly . Without doubt , and plays the lute . She has a natural ear .
 
-A [No emotion]: Frank ’ s getting married , do you believe this ?
-B [Surprise]: Is he really ?
-A [No emotion]: Yes , he is . He loves the girl very much .
-B [No emotion]: Who is he marring ?
-A [No emotion]: A girl he met on holiday in Spain , I think .
-B [No emotion]: Have they set a date for the wedding ?
-A [No emotion]: Not yet .
+A [No emotion]: So , Karen , what do you do in your free time ?
+B [No emotion]: Well , I like to play the piano .
+A [Surprise]: Really ? How long have you been playing piano ?
+B [No emotion]: About 18 years , I started learning when I was a kid .
+A [Happiness]: That ’ s really interesting , you have to play for me some time .
+B [No emotion]: Sure , so , what about you ? Do you have any hobbies ?
+A [No emotion]: Well , I collect beer mats . I ’ m not sure that counts , though .
 
-A [No emotion]: I hear you bought a new house in the northern suburbs .
-B [No emotion]: That ’ s right , we bought it the same day we came on the market .
-A [No emotion]: What kind of house is it ?
-B [Happiness]: It ’ s a wonderful Spanish style .
-A [Happiness]: Oh , I love the roof tiles on Spanish style houses .
-B [Happiness]: And it ’ s a bargaining . A house like this in river side costs double the price .
-A [Happiness]: Great , is it a two bedroom house ?
-B [No emotion]: No , it has three bedrooms and three beds , and has a living room with a twelve-foot ceiling . There ’ s a two-car garage .
-A [Happiness]: That ’ s a nice area too . It ’ ll be a good investment for you .
-B [No emotion]: Yeas , when will you buy a house ?
-A [No emotion]: Not untill the end of this year , you know , just before my wedding .
-B [Happiness]: Right , congratulations .
-A [Happiness]: Thank you .
+A [No emotion]: I would like to exchange this dress .
+B [No emotion]: You can exchange this dress with anything of the same value .
+A [No emotion]: Is there anything on sale today ?
+B [Sadness]: I'm sorry . There are no sales today .
+A [No emotion]: Are dresses going to be on sale ?
+B [No emotion]: Everything's going to be on sale next weekend .
+A [Happiness]: That's great . I'll wait . See you next weekend .
+B [Happiness]: Okay . I'll see you then .
 
-A [No emotion]: Hi , Becky , what's up ?
-B [No emotion]: Not much , except that my mother-in-law is driving me up the wall .
-A [No emotion]: What's the problem ?
-B [No emotion]: She loves to nit-pick and criticizes everything that I do . I can never do anything right when she's around .
-A [No emotion]: For example ?
-B [No emotion]: Well , last week I invited her over to dinner . My husband and I had no problem with the food , but if you listened to her , then it would seem like I fed her old meat and rotten vegetables . There's just nothing can please her .
-A [No emotion]: No , I can't see that happening . I know you're a good cook and nothing like that would ever happen .
-B [No emotion]: It's not just that . She also criticizes how we raise the kids .
-A [No emotion]: My mother-in-law used to do the same thing to us . If it wasn't disciplining them enough , then we were disciplining them too much . She also complained about the food we fed them , the schools we sent them too , and everything else under the sun .
-B [No emotion]: You said she used to ? How did you stop her ?
-A [No emotion]: We basically sat her down and told her how we felt about her constant criticizing , and how we welcomed her advice but hoped she'd let us do our things . She understood , and now everything is a lot more peaceful .
-B [Happiness]: That sounds like a good idea . I'll have to try that .
+A [No emotion]: Why didn't you text me last night ?
+B [Surprise]: What ? I sent you three or four messages !
+A [No emotion]: I didn't get any of them . I was waiting for you to text me the address of where the party was and I never got your message .
+B [Anger]: Why didn't you just call ? I hate sending SMS messages .
+A [No emotion]: Well , because I didn't have any credit on my phone . I used it all up this month .
+B [Surprise]: I thought you had an unlimited SMS plan ?
+A [No emotion]: I do , but if I don't have any credit in my phone , it won't let me call or send messages .
+B [No emotion]: No wonder you didn't get my texts !
 
-A [No emotion]: How are Zina's new programmers working out ?
-B [No emotion]: I hate to admit it , but they're good . And fast . The Filipino kid is a genius .
-A [No emotion]: So you'll make the Stars.com deadline , and have us up and running next week ?
-B [No emotion]: It'll be close , but we'll make it .
-A [No emotion]: Good . After Stars.com starts paying us , we won't need Vikam's cash anymore .
-B [No emotion]: And if we don't need them , we won't need Zina , either .
+A [No emotion]: Would you like to go to the movies tonight ?
+B [Fear]: Well , I just saw a horror movie last night . It almost frightened me to death .
+A [No emotion]: Well , we could see something different like a detective film .
+B [No emotion]: I don't care for a detective film . It also makes me nervous .
+A [No emotion]: How about a comedy ?
+B [No emotion]: No , I don't think comedies today are natural or cheerful .
+A [No emotion]: How about a love story then ?
+B [No emotion]: No , romance is boring .
+A [No emotion]: What's you opinion ?
+B [No emotion]: Let's go to see a war movie , shall we ?
+A [Surprise]: Really ?
+B [No emotion]: Certainly . Is there anything wrong ?
+A [No emotion]: No , but I can't imagine that a girl like you would wonder to see a war movie .
+
+A [Happiness]: I love ice cream .
+B [Surprise]: Really ? Me , too . What's your favorite flavor ?
+A [No emotion]: I like both strawberry and coffee ice cream .
+B [No emotion]: Chocolate is mine .
+
+A [No emotion]: Could you tell me how to use the washer and dryer ?
+B [No emotion]: What do you need help with ?
+A [No emotion]: Do you know how to turn them on ?
+B [No emotion]: Do you have any change ?
+A [Surprise]: I need change for the machines ?
+B [No emotion]: You need to put 50 cents into the washer machine and a dollar into the dryer .
+A [No emotion]: So what do I need to do ?
+B [No emotion]: The machines will turn on once you put the quarters into the slot .
+A [No emotion]: That's really all I have to do ?
+B [No emotion]: That's everything .
+A [Happiness]: Thanks for all your help .
+B [No emotion]: I'm here if you need any more help .
+
+A [No emotion]: How's your business ?
+B [Disgust]: Everything seems to be getting worse . I don't know what to do with it .
+A [No emotion]: Things are tough all over . You should never give up !
+B [No emotion]: But how can I prevent a deficit ?
+A [Happiness]: I think you should make a thorough market investigation now .
+B [Happiness]: OK , OK . I ’ ll do my best .
+A [Happiness]: I always consider you are such a guy who never gives up .
+B [Happiness]: I know life is not all roses , and I believe I will pull this through .
+A [Happiness]: Yeah , you can make it .
+
+A [No emotion]: Mary , how was your date with john ?
+B [No emotion]: It's OK . It seems we have a lot in common .
+A [Surprise]: Oh , really ? That is great news . What does he look like ?
+B [Happiness]: He is tall and slim , fair-haired .
+A [No emotion]: Sounds like he is pretty cute . What do you think of him ?
+B [Happiness]: He is a nice guy and very considerate . I am impressed with how smart he is and he has a great sense of humor .
+A [No emotion]: Oh , it's love at first sight . When will you see each other again ?
+B [No emotion]: He didn't say , but he said he would call me .
+A [No emotion]: Maybe he is busy with his work . Just wait and try not to think about it too much !
+B [No emotion]: Oh , David . Stop it ! I am a bit nervous ! What should I do if he doesn't call me ?
+A [No emotion]: Come on , Mary , you're a total catch . I bet he will call you . Don't worry .
+B [Happiness]: Thank you , David . You're always so encouraging .
+A [Happiness]: That's what friends are for .
+
+A [No emotion]: Adam , I'm sorry !
+B [Anger]: But where have you been , Alice ? You're over an hour late .
+A [No emotion]: Yes , but I couldn't help it . I was late getting off work for a start , and then I missed the bus . The bus I did catch got caught in a traffic jam . It was one thing after another .
+B [Anger]: But why were you getting off work so late ? The office close at six , doesn't it ?
+A [No emotion]: Yes , but there's a rush on at the moment , and my boss asked me to do some urgent letters .
+B [Anger]: But didn't you tell him you had an appointment ?
+A [No emotion]: Well , no . I thought I'd finish in about five minutes , and I didn't want to be difficult about just a few minutes . If it hadn't been for missing the bus and the traffic , I wouldn't have been so late . I'm sorry .
+B [Happiness]: Well , you're here . And that's the main thing .
 
