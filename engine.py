@@ -147,7 +147,7 @@ class Engine:
         # prompt for message generation
         msg = "Rules for the simulation:\n"
         msg = f"1. Simulate a conversation between the CHATBOT and USER, aligning with their individual persona with the topic {params['TOPIC']}. Begin the conversation skipping formal greetings. This will make the conversation feel more immediate and focused.\n"
-        msg += f"2. The USER start with a initial emotion state of {params['USER STARTING EMOTION']}, through gradual shift in emotion guided by CHATBOT, end the conversation with the final emotion state of {params['USER ENDING EMOTION']}.\n"
+        msg += f"2. The USER should only show {params['USER STARTING EMOTION']}, {params['USER ENDING EMOTION']}, and neutral emotion throughout the conversation. USER should start with a initial emotion state of {params['USER STARTING EMOTION']}, through gradual shift in emotion guided by CHATBOT towards the final emotion state of {params['USER ENDING EMOTION']}.\n"
         msg += f"3. The USER’s emotions should shift gradually, not abruptly, to keep the conversation natural. Suggest the chatbot to ask probing questions or make statements that could realistically lead to the final emotion state.\n"
         msg += f"4. Generate {params['TURNS PER SIMULATION']} turns of conversation, with the following format:\n"
         msg += f"{generation_format}\n"
@@ -156,7 +156,7 @@ class Engine:
         msg += "7. Adopt the personality described in the character section below and respond to the last message in conversation history. Consider the complete conversation history, the additional context, the character's persona, emotional state and goals below when simulating.\n"
         msg += "8. Avoid Forced Positivity: If the conversation naturally leads to a less positive conclusion, let it be. Not every conversation has to end on a high note, especially if it doesn't fit the flow of the dialogue\n"
         msg += f"9. Varied Conversation Endings: The conversation doesn't need to end with USER thanking the CHATBOT for listening. Allow for a variety of conversation endings that are more aligned with the final emotion state of {params['USER ENDING EMOTION']}.\n"
-        msg += """10. Definition of emotions: 
+        msg += """10. Definition of EMOTIONs: 
         Happy/Joy - is often defined as a pleasant emotional state that is characterized by feelings of contentment, joy, gratification, satisfaction, and well-being.
         Sadness - Sadness is another type of emotion often defined as a transient emotional state characterized by feelings of disappointment, grief, hopelessness, disinterest, and dampened mood. Like other emotions, sadness is something that all people experience from time to time. In some cases, people can experience prolonged and severe periods of sadness that can turn into depression. Sadness can be expressed in a number of ways including: Crying, Dampened mood, Lethargy, Quietness, Withdrawal from others.
         Fear - Fear is a powerful emotion that can also play an important role in survival. When you face some sort of danger and experience fear, you go through what is known as the fight or flight response.
@@ -240,7 +240,7 @@ class Engine:
                 # dont save if error, just log it and resume to the next simulation
                 continue
             # save to output dir
-            with open(f'{self.output_dir}/{self.format_save_name(emotion_shift).strip(".txt")}.json', 'w') as f:
+            with open(f'{self.output_dir}/{self.format_save_name(emotion_shift)[:-4]}.json', 'w') as f:
                 f.write(json.dumps(dialogue))
     
     def sent_to_gpt(self, system: int, content: str):

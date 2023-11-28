@@ -17,7 +17,6 @@ def create_output_dir(output_dir: Path):
             pass
     # create new dir
     output_dir = output_dir / str(max_index + 1)
-    output_dir.mkdir(parents=True, exist_ok=True)
     return str(output_dir)
 
 def main():
