@@ -57,8 +57,8 @@ class Engine:
             "emotion1_emotion2_arousal1_arousal2.txt"
         '''
         emotion1, emotion2 = emotion_shift[0]
-        arousal1, arousal2 = emotion_shift[1]
-        return f"{emotion1}_{emotion2}_{arousal1}_{arousal2}.txt"
+        #arousal1, arousal2 = emotion_shift[1]
+        return f"{emotion1}_{emotion2}.txt"
 
     def resume_simulation(self, resume_dir: Path):
         '''
@@ -112,8 +112,8 @@ class Engine:
             formatted string of the dialogue
         '''
         emotion1, emotion2 = emotion_shift[0]
-        arousal1, arousal2 = emotion_shift[1]
-        format_str = f"({emotion1}, {arousal1}) -> ({emotion2}, {arousal2})"
+        #arousal1, arousal2 = emotion_shift[1]
+        format_str = f"({emotion1}) -> ({emotion2})"
         format_str += f"EMOTION SHIFT: {emotion_shift}\n"
         for d in dialogue:
             if d[0] == 1:
@@ -131,8 +131,8 @@ class Engine:
             params: dict of parameters
         '''
         emotion1, emotion2 = emotion_shift[0]
-        arousal1, arousal2 = emotion_shift[1]
-        emotion_shift = f"({emotion1}, {arousal1}) -> ({emotion2}, {arousal2})"
+        #arousal1, arousal2 = emotion_shift[1]
+        emotion_shift = f"({emotion1}) -> ({emotion2})"
         number_of_turns = random.randint(7, 12)
         
         # Define the topics and their corresponding probabilities based on Daily Dialogue Paper
