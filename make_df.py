@@ -39,8 +39,16 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dir", type=str, default=None, help="directory that holds all the json files")
     args = parser.parse_args()
+
+    # Extract the last part of the directory path
+    dir_name = Path(args.dir).stem
+
+    # Use the extracted directory name to form the output CSV file name
+    output_file_name = f"output_{dir_name}.csv"
+
     # init engine
     df = make_df(Path(args.dir))
-    df.to_csv(f"{args.dir}/output.csv", index=False)
+    df.to_csv(f"{args.dir}/{output_file_name}", index=False)
+
 
 main()
