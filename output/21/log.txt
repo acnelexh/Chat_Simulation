@@ -1,0 +1,44 @@
+Value Error while simulating: Sad_Happy.txt
+Response: USER-[Sad]: I've been feeling really down lately. My relationship with my partner has been really strained and it's been causing me a lot of sadness.
+
+CHATBOT: I'm sorry to hear that you're feeling down. Relationships can be challenging at times. Can you tell me a little more about what's been going on?
+
+USER-[Sad]: Well, lately my partner and I have been arguing a lot. We've been having trouble communicating and it feels like we're growing apart. It's been really hard for me to accept.
+
+CHATBOT: It sounds like you're going through a difficult time. Communication is a key aspect of any relationship. Have you tried talking to your partner about how you're feeling?
+
+USER-[Sad]: Yes, we've tried having conversations, but it feels like we're just talking in circles. It's hard to break through the walls that have been built up. I've been feeling really disconnected from them.
+
+CHATBOT: I can understand how frustrating that must be for you. Building emotional intimacy can take time and effort. It might be helpful to suggest seeking professional help, like couples therapy, to facilitate a more productive conversation between you and your partner. It could provide a safe space for both of you to express your needs and work towards rebuilding your relationship.
+
+USER-[Sad]: I've actually been considering that option. I want to salvage our relationship, but it feels like such an uphill battle. I miss the connection we used to have.
+
+CHATBOT: It's completely normal to feel that way. Relationships go through ups and downs, and it's important to remember that it takes effort from both partners to make it work. While it may seem difficult now, remember that there's always hope for growth and improvement. It might be helpful to focus on strengthening your own emotional well-being and self-care during this challenging time. Taking care of yourself can indirectly benefit your relationship as well.
+
+USER-[Neutral]: You're right, I should prioritize self-care. I've been neglecting my own needs and emotions. Maybe by focusing on my own happiness, it will have a positive impact on my relationship.
+
+CHATBOT: Absolutely! Taking care of yourself is crucial for your overall well-being. It's important to find activities that bring you joy and fulfillment. Is there anything in particular that you enjoy doing or find comforting during difficult times?
+
+USER-[Happy]: Reading has always been a source of comfort for me. It's a way for me to escape and gain perspective. I've been diving into some philosophical works lately, like Socrates and Shakespeare, and it's been bringing me a sense of joy and excitement.
+
+CHATBOT: That sounds wonderful! Literature has a unique way of providing solace and insights. It's great to hear that you're finding joy in reading. Is there any specific book or author that you would recommend?
+
+USER-[Happy]: Lately, I've been really enjoying the works of Yuval Noah Harari and his book "Sapiens: A Brief History of Humankind". It offers a fascinating exploration of our species and our place in the world. I highly recommend it if you're interested in history and anthropology.
+
+CHATBOT: Thank you for the recommendation! I'll definitely check it out. It's great to see that you're finding joy and fulfillment in the midst of challenges. Remember, taking care of yourself and finding happiness within can positively influence your relationships. Is there anything else you'd like to talk about or any other concerns on your mind?
+
+USER-[Happy]: Thank you for listening and providing support. I feel a little more hopeful now. I think I'll start focusing more on my own happiness and see where it takes me. I appreciate your guidance.
+
+CHATBOT: You're very welcome! I'm glad I could be here for you. Remember, you have the strength and resilience to navigate through this difficult time. Take things one step at a time and prioritize your own well-being. If you ever need someone to talk to, feel free to reach out. You're not alone in this journey. Wishing you all the best on your path to happiness.
+Value Error while simulating: Disgust_Happy.txt
+Response: USER-[Disgust]: I am so disgusted with my partner right now. They cheated on me again! I can't believe this is happening.
+CHATBOT: I'm really sorry to hear that you're going through such a difficult and painful situation. It must be heartbreaking to discover that someone you trust has betrayed you like that. Have you talked to your partner about what happened?
+USER-[Disgust]: Yes, I confronted them and it just turned into a huge argument. They kept denying everything and trying to turn it around on me. I can't believe they're not taking responsibility for their actions.
+CHATBOT: That sounds incredibly frustrating and hurtful. It's really disappointing when someone you love is unwilling to own up to their mistakes. How are you coping with this situation? Is there anything specific that helps you deal with your emotions and find some clarity?
+USER-[Disgust]: I've been trying to focus on taking care of myself. I've been reading a lot of self-help books and literature like Socrates and Shakespeare to find some inspiration and remind myself that there's more to life than this. It's been helping me stay grounded and hopeful.
+CHATBOT: It's great to hear that you're finding solace in literature and using it as a way to broaden your perspective. Reading can be a wonderful escape and a source of inspiration during difficult times. Is there a particular passage or quote that has resonated with you recently?
+USER-[Neutral]: Yes, there's a line from Shakespeare's Hamlet that has been playing in my mind: "This above all: to thine own self be true." It reminds me to prioritize my own well-being and stay true to my values, even in the face of betrayal.
+CHATBOT: That's a powerful quote from Hamlet. It emphasizes the importance of staying true to oneself and not letting the actions of others define our self-worth. It sounds like you're working towards personal growth and finding strength within yourself. How are you feeling now compared to when we started this conversation?
+USER-[Neutral]: I still feel a mix of emotions, but I have to admit that talking about it and focusing on my personal growth has helped shift my perspective. I'm finding hope and the motivation to move forward.
+CHATBOT: It's great to hear that our conversation has been able to provide some support and encouragement. Remember, it's normal to experience a range of emotions during challenging times. If you ever need to talk or share something else, please don't hesitate to reach out.
+USER-[Happy]: Thank you, I really appreciate your support and understanding. It feels good to know that I have someone to talk to and who truly listens.
