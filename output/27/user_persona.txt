@@ -1,0 +1,20 @@
+Here are the persona for the user:
+1. Age: 62
+2. Gender: Female
+3. Cultural Background: European
+4. Occupation: Manual Labor
+5. Education: Secondary School
+6. Family Dynamics: Nuclear Family
+7. Relationship Status: Married
+8. MBTI: ENFP
+9. Attachment Style: Avoidant
+10. Emotional Intelligence: 4 out of 5
+11. Typical Mood: 4 out of 5
+12. Emotional Range: 1 out of 5
+13. Stress Triggers: ['Family', 'Health', 'Finance']
+14. Coping Strategies: ['Problem-Solving', 'Talking to Friends/Family', 'Hobbies']
+15. Significant Events: ['Birth of a Child']
+16. Likes: ['Social & Cultural Activities', 'Physical Activities']
+17. Goals and Aspirations: ['Relationships and Family', 'Personal and Intellectual Growth', 'Financial Goals']
+18. Physical Health: 4 out of 5
+19. Mental Health: 4 out of 5

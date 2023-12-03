@@ -1,0 +1,249 @@
+dialog,emotion,emotion_by_sentence
+"User:  I can't believe he did that! He cheated on me! I feel so disgusted and betrayed.
+Chatbot:  I'm so sorry to hear that. It must be really difficult for you right now. Do you want to talk about what happened?
+User:  Ugh, where do I even begin? We've been together for years and I trusted him. And now this! I can't believe he would do this to me. I feel sick just thinking about it.
+Chatbot:  It sounds like a really painful and shocking experience. It's completely normal to feel disgusted and hurt in this situation. Have you talked to him about how you feel?
+User:  No, I haven't. Honestly, I don't even know if I want to talk to him anymore. I thought we had something special, but clearly, I was wrong. I don't think I can ever forgive him for this.
+Chatbot:  It's understandable that you're feeling this way. Infidelity can be incredibly damaging to a relationship. It might be helpful to take some time for yourself to process your emotions before making any decisions. Is there anything that brings you comfort or helps you cope during challenging times?
+User:  Actually, I've been finding solace in literature lately. Reading the works of great minds like Socrates and Shakespeare helps me escape and find meaning in these difficult situations. It's surprising how much wisdom can be found in their words.
+Chatbot:  That's wonderful to hear. Literature has always been a powerful source of solace and inspiration for many people. It's amazing how the words of these great writers can resonate with us and offer a different perspective. Is there a particular work or author that has had a profound impact on you?
+User:  One of my favorites is ""Hamlet"" by Shakespeare. The way he explores themes of betrayal, revenge, and the complexity of human nature really resonates with me. It's surprising how a play written hundreds of years ago can still feel so relevant today.
+Chatbot:  ""Hamlet"" is indeed a masterpiece, filled with timeless themes and characters that continue to captivate readers across generations. It's fascinating how literature can transcend time and connect us to the experiences of others, even from different eras. Is there anything else that brings you joy and excitement besides literature?
+User:  Well, I've also been exploring my passion for culinary arts. Cooking and experimenting with different flavors brings me a lot of joy. It's surprising how a simple act of preparing a meal can be so satisfying and creative.
+Chatbot:  That's amazing! Cooking is not only a practical skill but also a form of self-expression. It's wonderful that you have found joy and creativity in culinary arts. Do you have any signature dishes or favorite recipes that you enjoy preparing?
+User:  I love experimenting with different Asian cuisines, particularly Thai and Japanese. Their flavors and cooking techniques always surprise and inspire me. I've been trying out different recipes for sushi rolls and curries, and it's been a lot of fun!
+Chatbot:  It's great to see how you're exploring your passions and finding joy in different areas of your life. The culinary arts offer endless possibilities and opportunities to surprise yourself and others with delicious creations. I hope these pursuits continue to bring you happiness and excitement.
+User:  Thank you so much for listening and for your words of encouragement. It's surprising how talking about my interests and passions has helped shift my emotions from disgust to surprise. I truly appreciate your support.
+Chatbot:  You're very welcome! It's my pleasure to be here for you. I'm glad that our conversation has been helpful in shifting your emotions. It's amazing how exploring our interests and passions can bring unexpected surprises and positive emotions. Remember, I'm here whenever you need someone to talk to.
+","('Disgust', 'Surprise')","['Disgust', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Surprise', 'Neutral', 'Surprise', 'Neutral', 'Surprise', 'Neutral', 'Surprise', 'Neutral', 'Surprise', 'Neutral']"
+"Chatbot:  Hey, how's it going? Any updates on your relationship?
+User:  Actually, things have been going really well lately. My partner and I have been enjoying each other's company and exploring new activities together.
+Chatbot:  That's great to hear! It's always wonderful when a relationship is flourishing. What are some of the activities you've been doing together?
+User:  Well, we recently started reading classic literature together. It's been so much fun discussing Socrates and Shakespeare with each other. It's a great way for us to connect intellectually and share our perspectives.
+Chatbot:  That sounds incredibly fulfilling. It must be exciting to have someone who shares similar interests and can engage in deep conversations with you. Have you discovered any new favorite books or authors through this experience?
+User:  Absolutely! We've been diving into some lesser-known works by female authors, like Jane Austen and Virginia Woolf. It's been enlightening to explore their perspectives on life and love. It's definitely deepened our connection.
+Chatbot:  That sounds amazing! It's always inspiring to see couples grow together intellectually. Do you feel like this has brought you closer as a couple?
+User:  Definitely. Sharing our thoughts and insights during our reading sessions has opened up a whole new level of intimacy between us. We've grown to appreciate each other's minds as much as our physical connection. It's truly fulfilling.
+Chatbot:  That's truly beautiful. Having that kind of intellectual connection can make a relationship so much more enriching. I'm glad you're experiencing that with your partner. Is there anything else you'd like to share about your relationship?
+User:  Actually, there's something that's been bothering me. Lately, my partner has been exhibiting some disrespectful behavior towards me. They've been consistently canceling plans last minute and not acknowledging the impact it has on me. It's starting to make me question our relationship.
+Chatbot:  I'm sorry to hear that. It sounds like the recent behavior changes have been quite disappointing and hurtful. Have you talked to your partner about how their actions are affecting you?
+User:  Yes, I have. I expressed my concerns and how their behavior makes me feel undervalued and disrespected. But they didn't seem to take it seriously and brushed it off as insignificant.
+Chatbot:  It's unfortunate that your concerns were not acknowledged or addressed. Feeling disrespected and undervalued in a relationship can be incredibly painful. Have you tried to have another conversation about this?
+User:  I have, but it feels like they're not really making an effort to change their behavior. It's frustrating and disheartening to be in a relationship where my feelings are not taken seriously.
+Chatbot:  I can understand how you must be feeling. It's important to be with someone who values and respects your emotions. It might be worth considering if this behavior is something you can tolerate in the long run. Self-care and prioritizing your own emotional well-being are crucial in situations like this.
+User:  You're right. I deserve someone who respects and appreciates me fully. It's just disheartening to realize that the person I thought I knew and loved could treat me this way. But I need to prioritize my own happiness and well-being.
+Chatbot:  Absolutely, you deserve to be with someone who treats you with love and respect. It may be a difficult decision to make, but always remember that your happiness and self-worth should never be compromised. Take the time you need to think through your options and prioritize yourself.
+User:  Thank you for understanding. It means a lot to have someone to talk to about this. I'll definitely take your advice to heart and make the choices that are best for me.
+Chatbot:  You're welcome. I'm here for you anytime you need to talk. Remember, it's important to surround yourself with those who uplift and support you. Stay strong and take care of yourself.
+","('Happy', 'Disgust')","['Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral']"
+"User:  I've been feeling really down lately. My relationship with my partner has been going through a rough patch.
+Chatbot:  I'm sorry to hear that you've been feeling down. Relationships can be challenging at times. What specifically has been causing the rough patch in your relationship?
+User:  It's a combination of things. We've been arguing a lot lately and we've been having trouble communicating. It's like we're on different pages and it's really affecting our connection.
+Chatbot:  Communication can definitely be a key factor in any relationship. Have you tried expressing your concerns and feelings to your partner? Sometimes addressing the issues directly can help create a better understanding between both parties.
+User:  Yes, I have tried talking to them about how I feel. But it seems like they are not really listening or taking my concerns seriously. It's been really frustrating and disheartening.
+Chatbot:  That can be really tough when you feel like your concerns are not being heard. It's important to have open and honest communication for a relationship to thrive. Perhaps you can try expressing your emotions in a different way, or even consider seeking the help of a couples therapist. Sometimes an outside perspective can offer insights and help bridge the gap in understanding.
+User:  Yeah, I've actually been thinking about couples therapy. It's just hard because I really care about my partner and I want us to work things out. But lately, it feels like we're growing apart and it's making me really sad.
+Chatbot:  I can understand why you're feeling sad. It's not easy when you're going through a rough patch in a relationship. Just remember that relationships take effort from both sides. It's important to also prioritize your own well-being and happiness. What are some things that bring you joy and help you cope with difficult emotions?
+User:  Well, I've always loved literature and writing. It's a way for me to escape and express myself. I also enjoy trying out new recipes in the kitchen. Cooking and baking bring me a sense of satisfaction and help me relax.
+Chatbot:  That's wonderful to hear that you've found some creative outlets to help cope with your emotions. Engaging in activities that bring you joy and help you relax can have a positive impact on your overall well-being. Do you have any favorite authors or specific culinary creations that bring you excitement?
+User:  I've been reading a lot of classics lately, like Socrates and Shakespeare. Their works really resonate with me and I find them both intellectually stimulating and emotionally inspiring. As for culinary creations, I've been experimenting with different types of pasta dishes and homemade bread. It's been a fun and rewarding journey in the kitchen.
+Chatbot:  That sounds amazing! Exploring the works of great authors can open up new perspectives and spark your creativity. And experimenting in the kitchen can be a delicious adventure. It's great to see that you have these passions to turn to during difficult times. Remember, you deserve to be with someone who values and supports you. Keep nurturing your own growth and happiness, and things will fall into place. Is there anything else you'd like to talk about or anything specific you'd like advice or support on?
+User:  Thank you so much for listening and for the advice. It feels good to have someone to talk to. I'm feeling more hopeful now and I'll keep working on my relationship while focusing on my own happiness.
+","('Sad', 'Happy')","['Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Neutral', 'Neutral', 'Neutral', 'Neutral', 'Happy']"
+"User:  I'm really worried about my relationship. My partner has been acting strange lately and I don't know what to do.
+Chatbot:  That sounds like a difficult situation. Can you provide more details about your partner's behavior? It might help me better understand what's going on.
+","('Fear', 'Surprise')","['Fear', 'Neutral']"
+"User:  I just got a promotion at work! I've been working so hard for this and it finally paid off. I can't believe it!
+Chatbot:  Congratulations on your promotion! That's a huge accomplishment and I'm so happy for you. How did you find out about it?
+User:  Thank you! My boss called me into his office this morning and told me the news. He said he was really impressed with my work and thought I deserved it. I'm just over the moon right now!
+Chatbot:  That's amazing! It's always great to be recognized for your hard work and dedication. How do you think this promotion will impact your career goals?
+User:  It definitely feels like a step in the right direction. I've been working towards this promotion for a while now, and it's reassuring to know that my efforts have been acknowledged. I'm excited to take on more responsibilities and continue growing in my role.
+Chatbot:  It sounds like this promotion aligns with your goals and aspirations. What are you most looking forward to in your new position?
+User:  One of the things I'm most excited about is the opportunity to lead a team. I've always enjoyed collaborating with others and I feel like this will allow me to make an even bigger impact in my organization. I also can't wait to learn and develop new skills in this role.
+Chatbot:  That's fantastic! It's wonderful to see how enthusiastic you are about this new opportunity. How do you think this promotion will affect your work-life balance?
+User:  That's something I'm a little concerned about. With more responsibilities, I might have to put in longer hours and it could be a challenge to maintain a healthy work-life balance. But I'm willing to do what it takes to succeed in my new role.
+Chatbot:  I understand your concern. It's important to prioritize self-care and set boundaries to maintain a healthy work-life balance. Remember to take breaks and make time for activities that bring you joy and relaxation. Is there anything else on your mind about your promotion?
+User:  Actually, there is something else. With this promotion, I'll be working even more closely with my colleague, Emily. We used to be really good friends, but lately, things have been different between us. I feel like she's been treating me differently and it's been causing a lot of tension and sadness.
+Chatbot:  I'm sorry to hear that. It can be difficult when relationships change, especially when it affects your working environment. Have you tried talking to Emily about how you're feeling?
+User:  I haven't yet, but I've been thinking about it. I'm just afraid that it will make things even more awkward between us. It's been really tough for me to deal with this and it's been affecting my mood at work.
+Chatbot:  It's completely understandable to feel apprehensive about having a conversation like that. However, open communication is often the best way to address these issues. It might help to approach the conversation with empathy and understanding, expressing how you've noticed a change and want to understand what's going on. Remember, it's important to prioritize your own well-being in these situations. Is there anything else I can do to support you?
+User:  I appreciate your advice. It's nice to have someone to talk to about this. I'm just feeling really down about the whole situation and unsure about how to move forward.
+Chatbot:  I'm here for you. It's natural to feel down when relationships become strained. Remember to take care of yourself and reach out to friends or family for support. Sometimes, talking things through with a neutral party can provide valuable perspectives. If there's anything specific you'd like to discuss or if you need more advice, don't hesitate to let me know.
+","('Happy', 'Sad')","['Happiness', 'Neutral', 'Happiness', 'Neutral', 'Happiness', 'Neutral', 'Happiness', 'Neutral', 'Neutral', 'Neutral', 'Sadness', 'Neutral', 'Sadness', 'Neutral', 'Sadness', 'Neutral']"
+"Chatbot:  Hey, what's been bothering you lately?
+User:  Ugh, my work and finances are stressing me out so much! I've been trying to manage everything on my own and it's overwhelming.
+Chatbot:  I can imagine how stressful that must be. It's never easy to handle everything on your own. Have you considered talking to someone about it? Sometimes getting a different perspective can help lighten the load.
+User:  Yeah, I've talked to my friends and family about it, but it's still hard. I just wish things were easier and I didn't have to worry about money all the time.
+Chatbot:  I completely understand. It's frustrating when financial issues add extra stress to your plate. But remember, you're doing your best and taking proactive steps to manage the situation. Sometimes, finding a creative outlet or hobby can provide a much-needed break and help shift your focus away from the stress. Have you tried any hobbies lately?
+User:  Actually, I've been neglecting my hobbies because of work and financial worries. But you're right, maybe it's time I dedicated some time to my creative pursuits. It might help me feel more balanced and happier.
+Chatbot:  That's a great idea! Making time for your hobbies can not only provide a sense of enjoyment but also help reduce stress. It's important to prioritize self-care, especially during challenging times. So, what creative pursuits are you interested in?
+","('Anger', 'Happy')","['Neutral', 'ANGER', 'Neutral', 'ANGER', 'Neutral', 'ANGER', 'Neutral']"
+"Chatbot:  Hey there! How has your day been going so far?
+User:  Oh, it's been quite eventful actually! Something unexpected happened today.
+Chatbot:  Really? What happened? You've got me curious now.
+User:  Well, my partner and I had plans to go out for a romantic dinner tonight. But they just called and said they have to cancel. I wasn't expecting that at all.
+Chatbot:  Oh no, I can understand how that would come as a surprise. It's disappointing when plans don't go as expected, especially when it involves someone you care about. How are you feeling about it?
+User:  Honestly, I'm feeling pretty down about it. It's been a while since we had some quality time together, and I was really looking forward to it. It feels like we're always caught up in our busy lives and don't get to spend much time together anymore.
+Chatbot:  I'm sorry to hear that. It's tough when life gets in the way and prevents us from enjoying special moments with loved ones. Have you talked to your partner about how you're feeling?
+User:  I haven't had the chance to yet. I just received the call a little while ago and I needed a moment to process it myself. But I think it's important to talk to them and share how I'm feeling.
+Chatbot:  Absolutely, communication is key in any relationship. It's important to express your emotions honestly and openly. It might help them understand how much this meant to you and find a way to make it up to you.
+User:  You're right, opening up about how it made me feel is important. Sometimes it's hard for me to express my emotions, but I don't want this disappointment to turn into resentment. I'll definitely have a conversation with them.
+Chatbot:  I'm glad you're willing to have that conversation. It's a step towards finding a resolution and potentially strengthening your relationship. Remember, being vulnerable and expressing your needs is a sign of strength. I'm here for you if you want to talk more about it.
+User:  Thank you, I appreciate that. It's nice to have someone to talk to. I'll see how the conversation goes and maybe we can catch up afterwards to talk some more.
+Chatbot:  Of course, I'll be here whenever you need to talk. Just remember to take care of yourself and prioritize your emotions. Feel free to reach out whenever you want to chat.
+","('Surprise', 'Sad')","['Neutral', 'Surprise', 'Neutral', 'Surprise', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral']"
+"User:  I just found out that my coworker got a promotion! I can't believe it!
+User:  Oh really? That's great news! I didn't see that coming. How do you feel about it?
+User:  Honestly, I'm quite surprised. We've been working on the same projects for a while now and I thought I had a good chance at the promotion too.
+User:  I can understand why you feel that way. It's natural to feel a mix of emotions when something unexpected like this happens. Have you talked to your coworker about it?
+User:  Not yet, I haven't had a chance. But seeing them move up while I'm still in the same position just makes me question my own abilities.
+User:  It's understandable that this situation would evoke some self-doubt. But remember, promotions are often based on different factors, and it doesn't necessarily reflect on your skills and capabilities. Have you considered discussing your career goals with your supervisor?
+User:  I have, but it still feels frustrating to see others progress while I'm stuck. I've been working really hard and it's disheartening to not see that recognized.
+User:  I can imagine how frustrating that must feel. It's important to remember that career paths are different for everyone and sometimes it takes time to reach your goals. Is there anything specific you're looking for in your career, or any steps you can take to work towards your own progression?
+User:  I've been thinking about that. Maybe it's time to ask for more challenging projects, to show my capabilities and make a strong case for my own growth. But it's still hard not to feel disappointed right now.
+User:  It's completely valid to feel disappointed. Remember to give yourself some time to process these emotions. Taking proactive steps towards your own growth is a great idea. Is there anything specific you need support with or any advice you're seeking?
+User:  I appreciate that. Right now, I just need to remind myself of my own worth and keep pushing forward. It's just frustrating to be overlooked like this.
+User:  It can be frustrating indeed, but it's important to keep a positive outlook and believe in your own abilities. Remember, setbacks can be opportunities for personal growth and self-improvement. If you ever need someone to talk to or bounce ideas off of, I'm here for you.
+User:  It's nice to know that, but honestly, right now I just need some space and time to process this. I'm tired of feeling overlooked and undervalued.
+User:  I understand. Taking some time for yourself to process these emotions is important. Remember, you're not alone in this, and support is always available whenever you're ready.
+","('Surprise', 'Anger')","['Surprise', 'No emotion', 'No emotion', 'No emotion', 'No emotion', 'No emotion', 'No emotion', 'No emotion', 'No emotion', 'No emotion', 'No emotion', 'No emotion', 'Anger', 'No emotion']"
+"User:  Hey, I have some exciting news!
+Chatbot:  Oh, what's the news?
+User:  My boyfriend and I have been together for a year now!
+Chatbot:  That's wonderful! How did you two celebrate this special milestone?
+User:  We went on a romantic weekend getaway to the beach. It was so beautiful and relaxing.
+Chatbot:  That sounds amazing! It must have been a great way to strengthen your bond. How do you feel about reaching this one year mark?
+User:  I feel really happy and grateful. It's been such a fulfilling and loving relationship, and I can't wait to see what the future holds for us.
+Chatbot:  It's incredible to witness and be a part of a loving relationship. What are some goals or aspirations you have for your relationship moving forward?
+User:  We both dream of traveling the world together and creating a home filled with love and happiness. We also want to support each other's personal growth and career aspirations.
+Chatbot:  Those are beautiful aspirations to have. It's inspiring to see how you both support and encourage each other. How do you think your relationship will evolve in the future?
+User:  I believe our relationship will continue to grow stronger as we face challenges together and continue to learn and communicate with each other. We're both committed to making our relationship a priority.
+Chatbot:  That's a wonderful mindset to have. Open communication and shared commitment are key to maintaining a healthy and fulfilling relationship. Is there anything specific you're looking forward to in the future with your partner?
+User:  Well, we're planning to move in together next month, so that's really exciting! We're also planning a trip to Europe next year, which I can't wait for. There's so much to look forward to!
+Chatbot:  Moving in together and going on a trip to Europe sound like incredible experiences! It's evident that your relationship is full of excitement and positive anticipation. How are you feeling about these upcoming milestones?
+User:  I'm feeling absolutely thrilled! These are big steps in our relationship, and I feel so fortunate to have someone so special to share them with. I can't help but feel this sense of joy and adventure.
+Chatbot:  That's fantastic to hear! It's natural to feel a mix of joy, excitement, and even a little nervousness when embarking on new adventures. Embrace the journey and enjoy every moment.
+","('Happy', 'Fear')","['Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral']"
+"User:  Oh my God, I can't believe how much I spent on my credit card this month!
+Chatbot:  That sounds surprising. What led to such a significant expense?
+User:  Well, first, I had to pay for my textbooks for the semester. They were way more expensive than I anticipated.
+Chatbot:  Textbooks can be quite costly. Did you consider looking for any secondhand options or online discounts?
+User:  I tried, but most of them were still quite expensive, even in the used market. And on top of that, I had to renew my gym membership, which was also way pricier than I remembered.
+Chatbot:  It seems like unexpected expenses keep popping up. Did you have any other big charges this month?
+User:  Actually, yes. My car had some major issues, and I had to fork over a lot of money for repairs. It's frustrating because I just had it serviced a few months ago.
+Chatbot:  I can understand why that would be frustrating. Car repairs can be unexpected and costly. Did you have any other financial challenges this month?
+User:  Sadly, yes. My landlord informed me of a rent increase starting next month. I was already struggling with my current expenses, and this just adds to the stress.
+Chatbot:  That does sound incredibly frustrating. Dealing with unexpected expenses and a rent increase can take a toll on anyone's finances. How are you feeling about all of this?
+User:  To be honest, I'm feeling incredibly disgusted with the state of things. It feels like I'm drowning in financial obligations, and it's taking a toll on my overall well-being.
+Chatbot:  I'm sorry to hear that you're feeling this way. Financial stress can indeed have a significant impact on one's mental and emotional state. Is there anything specific you'd like to share or discuss about these challenges?
+User:  At this point, I just need to find a way to better manage my finances and get back on track. It's just been one thing after another, and it's becoming overwhelming.
+Chatbot:  It's completely understandable to feel overwhelmed in such a situation. Taking small steps to address your financial concerns and seeking advice from financial experts might be helpful. Is there anything specific you'd like support or guidance with?
+User:  Right now, I think I just need some time to process everything and come up with a plan to get back on track. Thank you for listening to me vent.
+","('Surprise', 'Disgust')","['Surprise', 'Neutral', 'Surprise', 'Neutral', 'Surprise', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Disgust']"
+"User:  Wow, I can't believe the semester is almost over already!
+Chatbot:  Time flies, doesn't it? It seems like just yesterday we were starting classes. How has the semester been for you?
+User:  It's been a rollercoaster ride, to be honest. I never expected my workload to be this intense. The assignments and exams just keep piling up!
+Chatbot:  That does sound overwhelming. Are you managing to keep up with everything?
+User:  I've been trying my best, but it's been really challenging. I've had to spend countless late nights studying and working on projects. It's been taking a toll on my mental and physical health.
+Chatbot:  It's completely understandable. Balancing academics can be tough, especially when the workload is demanding. How have you been coping with the stress?
+User:  I've been using my hobbies as a form of escape. Whenever I feel overwhelmed, I turn to writing and cooking. It helps me relax and take my mind off things for a while.
+Chatbot:  That's great that you have those outlets to unwind. Is there anything else that has been contributing to your stress levels?
+User:  Well, on top of the workload, I've also been facing some relationship issues. My partner and I have been having frequent arguments lately, and it's been really affecting my emotional well-being. I just feel so uncertain about the future of our relationship.
+Chatbot:  I'm sorry to hear that. Relationship difficulties can definitely add extra strain to an already challenging situation. Have you tried talking to your partner about your concerns?
+User:  Yes, we've had some conversations, but it's been difficult to find common ground. It's just been leaving me feeling even more anxious and unsure about what to do. It's like I'm constantly walking on eggshells.
+Chatbot:  It sounds like a tough situation to be in. Relationships can be complex, and it's important to prioritize your own well-being. Have you considered seeking advice or support from friends or family?
+User:  I have, and they've been really helpful in offering their perspective. But ultimately, the decision is mine to make, and it's overwhelming. I just wish I had more clarity and confidence in my choices.
+Chatbot:  It's completely normal to feel uncertain about major decisions, especially when emotions are involved. Just remember to take your time and trust your instincts. You're capable of making the right choice for yourself. If there's anything else I can do to support you, please let me know.
+User:  Thank you, I appreciate your support. It's just scary to think about the potential outcomes and the impact they could have on my future. I feel like I'm at a crossroads, and I'm terrified of making the wrong choice.
+Chatbot:  I understand how frightening that can be. Uncertainty about the future can be overwhelming. However, it's important to remember that sometimes taking risks and exploring new paths can lead to personal growth and fulfillment. Trust yourself, and remember that you have the strength to overcome any challenges that come your way.
+User:  I know you're right, but it's still hard to shake off the fear. I'm just worried about making a decision that I'll regret in the long run.
+Chatbot:  It's natural to have fears and doubts, especially when it comes to making major life decisions. But remember, nobody has all the answers, and it's okay to make mistakes along the way. What matters most is that you learn from those experiences and grow as an individual. Don't let fear hold you back from pursuing what truly makes you happy.
+User:  Thank you, I needed to hear that. I'll try my best to face my fears and make a decision that feels right for me. Your support means a lot to me.
+Chatbot:  I'm glad I could be here for you. Remember, you're not alone in this journey. Reach out to your loved ones for support and trust in yourself. I believe in you.
+","('Surprise', 'Fear')","['Surprise', 'Neutral', 'Surprise', 'Neutral', 'No emotion', 'Neutral', 'No emotion', 'Neutral', 'No emotion', 'Neutral', 'No emotion', 'Neutral', 'No emotion', 'Neutral', 'Fear', 'Neutral', 'Fear', 'Neutral', 'Fear', 'Neutral']"
+"User:  I've been feeling really down lately. It's just been a tough week.
+Chatbot:  I'm sorry to hear that. Would you like to talk about what's been going on?
+User:  It's just a combination of things. Work has been really stressful and I'm having some issues with my boyfriend.
+Chatbot:  It sounds like you've been dealing with a lot. Is there anything specific that's been bothering you at work?
+User:  Well, I've been working extra hours and taking on more responsibilities, but I feel like I'm not getting recognized for my efforts. It's really frustrating.
+Chatbot:  That does sound frustrating. It can be demoralizing when you put in a lot of hard work and it feels like it goes unnoticed. Have you talked to your boss about how you're feeling?
+User:  I haven't yet, but maybe it's time I do. It just feels like no matter how much I do, it's never enough. 
+Chatbot:  It's important to communicate your concerns and feelings with your boss. They may not be aware of the impact their actions, or lack of recognition, are having on you. It's worth a try to have an open and honest conversation.
+User:  You're right, I need to advocate for myself more. Thanks for listening.
+Chatbot:  Of course, I'm here to listen. Is there anything else on your mind that you'd like to talk about?
+User:  Actually, there is one more thing. I've been feeling really stuck creatively. I used to love writing and painting, but lately, I just can't find the motivation.
+Chatbot:  I can understand how that can be difficult. Sometimes, creative blocks happen to everyone. Have you tried exploring new inspirations or different art forms to see if it sparks your creativity again?
+User:  I've been looking into some new artists and writers recently, but nothing has really clicked yet. I guess I'm just feeling a bit lost.
+Chatbot:  It's completely normal to go through creative slumps. Maybe you could try engaging in other activities that you enjoy, like cooking or exploring new hobbies. Sometimes, taking a break and focusing on something different can help reignite your creative spark.
+User:  That's a good idea. Maybe I'll try experimenting with some new recipes this weekend.
+Chatbot:  That sounds like a fun plan! Cooking can be a great way to express your creativity and try something new. I hope it brings you some joy and inspiration.
+User:  Actually, now that I think about it, I recently stumbled upon a cookbook from one of my favorite culinary authors. It has some unique recipes that I haven't tried before. I'm actually starting to feel excited about it!
+Chatbot:  That's wonderful to hear! It seems like your mood is shifting towards excitement and curiosity. Exploring new recipes from your favorite culinary author sounds like the perfect way to get back into your creative groove. I'm glad I could be here to help you navigate through your emotions. Enjoy your cooking adventure!
+User:  Thank you so much for your support and guidance. I really appreciate it!
+Chatbot:  You're welcome! I'm here for you whenever you need someone to talk to. Take care and have a fantastic cooking experience!
+","('Sad', 'Surprise')","['Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Surprise', 'Neutral', 'Surprise', 'Neutral']"
+"User:  I can't believe what my boyfriend did yesterday.
+Chatbot:  What happened? 
+User:  He completely forgot our anniversary! I had been dropping hints for weeks and he didn't even remember. It's so frustrating.
+Chatbot:  I can understand why you're feeling disgusted by his forgetfulness. Remembering important dates can be a way for partners to show they care and value the relationship. Have you talked to him about how you feel?
+User:  Yes, I confronted him about it and he didn't even apologize. He acted like it was no big deal. I just can't believe he doesn't see how important our anniversary is to me.
+Chatbot:  It can be hurtful when our partners don't acknowledge or apologize for their actions. It's important to have open and honest communication in relationships. Is there something specific about anniversaries that makes them important to you?
+User:  Celebrating anniversaries is a way for me to feel appreciated and loved. It's a reminder of the time we've spent together and the commitment we've made to each other. When he forgets, it makes me question our connection and whether he truly values me.
+Chatbot:  I understand how not being acknowledged on your anniversary can lead to feelings of sadness and doubt. It's important to be with someone who understands and respects your emotional needs. Do you have any hobbies or activities that bring you joy and help take your mind off this situation?
+User:  Yes, I love immersing myself in literature and writing. Reading philosophers like Socrates and poets like Shakespeare always uplift my spirits. It's a way for me to escape and find joy in the beauty of language and storytelling.
+Chatbot:  That sounds wonderful! Literature and writing can be a great source of inspiration and emotional escape. It's amazing how words can transport us to different worlds and evoke a wide range of emotions. Do you have any favorite books or authors that you'd like to recommend?
+User:  Oh, there are so many! I absolutely love ""Pride and Prejudice"" by Jane Austen and ""To Kill a Mockingbird"" by Harper Lee. Both of these books have had a profound impact on me and have brought me immense joy and insight. They're definitely worth reading!
+Chatbot:  Those are classic choices! Jane Austen and Harper Lee are incredible authors with the ability to captivate readers and touch their hearts. I'm glad you've found solace and happiness in their works. Is there anything else you'd like to talk about or share?
+User:  Thank you for listening and engaging in this conversation. It feels good to discuss my passions and find support. I'm grateful for the opportunity to share my joys and concerns.
+Chatbot:  You're very welcome! I'm here to listen and support you. Remember, it's important to prioritize your happiness and be with someone who values and appreciates you. If you ever need to talk or share more, feel free to reach out.
+","('Disgust', 'Happy')","['Disgust', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Sadness', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral']"
+"User:  I can't believe my professor gave me a failing grade on my final project!
+Chatbot:  Oh no, that's really frustrating. Did you have any idea that it wasn't up to par?
+User:  No, I thought I did a great job! I put in so much effort and now I have to redo it.
+Chatbot:  That must be really disappointing. What do you think went wrong with your project?
+User:  I have no idea! I followed all the instructions and thought I met all the criteria. It feels so unfair.
+Chatbot:  It sounds like there might have been a miscommunication somewhere. Maybe you could talk to your professor and ask for clarification on what they were looking for.
+User:  I guess I could give that a try. It just feels like such a waste of time and energy to start over.
+Chatbot:  It definitely can be frustrating to have to redo something, but getting clarification from your professor might help you avoid making the same mistakes again. And who knows, maybe they'll reconsider the grade once they see your improved work.
+User:  Yeah, you're right. It's just hard not to feel discouraged right now.
+Chatbot:  It's completely understandable to feel that way. But remember, setbacks are a part of the learning process. Your hard work will pay off in the end, and you'll come out stronger from this experience.
+User:  Thank you for your support. I'll try to stay positive and reach out to my professor for guidance.
+Chatbot:  You're welcome! I'm here for you if you need any more advice or just someone to talk to. Good luck with your project, I believe in you!
+User:  Thank you, I appreciate your encouragement. It means a lot to me.
+Chatbot:  You're welcome! I'm glad I could be here for you. Remember, you're capable of overcoming any challenge that comes your way. Surprise yourself with your resilience and determination.
+","('Anger', 'Surprise')","['Anger', 'Neutral', 'Anger', 'Neutral', 'Anger', 'Neutral', 'Anger', 'Neutral', 'Neutral', 'Neutral', 'Neutral', 'Neutral', 'Surprise', 'Neutral']"
+"Chatbot:  Hey! How's everything going with your relationship?
+User:  Oh, it's going great! My partner and I have been having such a good time together lately. We've been going on these romantic dates and trying out new activities. It's been so much fun!
+Chatbot:  That sounds amazing! I'm glad to hear that things are going well. What kind of activities have you been trying out?
+User:  Well, we recently went hiking to this beautiful spot with a breathtaking view. We also went to a cooking class and learned how to make our favorite cuisine. It's been such a joy to explore new things together.
+Chatbot:  That sounds like such a wonderful way to connect with each other. Exploring new activities can really bring couples closer. What other interests do you both share?
+User:  We both love literature and writing. We often recommend books to each other and have deep discussions about the stories. It's been so enriching and inspiring to have someone who shares my passion for literature.
+Chatbot:  That's great to hear! Having shared interests can definitely strengthen the bond between partners. It's wonderful that you both have such a deep connection through your love for writing. 
+User:  Absolutely! It's like having a built-in book club partner. We even take turns reading aloud to each other. It's our little escape from reality.
+Chatbot:  That sounds so romantic! It's moments like these that create cherished memories. I'm glad you're able to find solace in literature and share that experience with your partner. 
+User:  It really is special. But... lately, there have been some issues. We've been arguing more frequently, especially about financial matters. It's really been stressing me out.
+Chatbot:  I understand how financial issues can put a strain on a relationship. It's frustrating when disagreements arise, especially when it comes to money. Have you tried communicating with your partner about your concerns?
+User:  Yes, I have. But it feels like it's always one-sided. I've been trying to come up with solutions together, but my partner just doesn't seem as invested in resolving our financial problems. It's really starting to frustrate me.
+Chatbot:  I can understand why you would feel frustrated. It's important for both partners to be equally invested in finding solutions and working through challenges. Have you expressed your feelings to your partner?
+User:  Yes, I've tried expressing how important it is for us to tackle our financial issues together. But it's like my concerns are brushed aside or met with indifference. It feels like I'm carrying the weight of our financial responsibilities alone.
+Chatbot:  I can see why you would feel overwhelmed and angry in this situation. It's important to have open and honest conversations with your partner about your expectations and concerns. It sounds like there needs to be a better understanding and support when it comes to your financial responsibilities.
+User:  You're right. I just wish my partner would take our financial situation more seriously. It's causing a lot of stress and it's putting a strain on our relationship. I need them to step up and be more responsible.
+Chatbot:  It's completely understandable that you feel this way. Financial responsibility is an important aspect of any relationship, and it's crucial for both partners to contribute and work together towards a solution. Have you considered seeking outside help or couples counseling to address this issue?
+User:  That's a good suggestion. I'll definitely consider it. I just hope that we can find some common ground and resolve our financial issues. It's been weighing on me for a while now.
+Chatbot:  Taking that step is a sign of commitment to the relationship and finding a resolution. Remember, no relationship is perfect, and challenges are bound to arise. It's how you work through them that defines the strength of your bond. I genuinely hope you and your partner find a way to resolve your financial concerns and come out stronger on the other side.
+User:  Thank you for listening and for your advice. I appreciate it.
+Chatbot:  You're welcome. I'm here for you anytime you need someone to talk to. Remember that you deserve a partner who values your concerns and supports you. Good luck in finding a resolution!
+","('Happy', 'Anger')","['Neutral', 'HAPPY', 'Neutral', 'HAPPY', 'Neutral', 'HAPPY', 'Neutral', 'HAPPY', 'Neutral', 'HAPPY', 'Neutral', 'ANGER', 'Neutral', 'ANGER', 'Neutral', 'ANGER', 'Neutral', 'ANGER', 'Neutral', 'ANGER', 'Neutral']"
+"Chatbot:  Hey, how's your day going?
+User:  Oh, hey. I'm feeling a bit anxious actually.
+Chatbot:  I'm sorry to hear that. Is there something specific on your mind?
+User:  Yeah, I've been stressing about my finances lately. It feels like I'm drowning in student loan debt and I'm not sure how I'm going to manage it all.
+Chatbot:  I can understand why that would be stressful. It's not easy juggling financial responsibilities, especially as a student. Have you tried reaching out to any financial advisors or looking into any resources that could help you create a plan?
+User:  I haven't yet, but maybe I should. It's just hard to know where to start sometimes, you know?
+Chatbot:  Absolutely, it can be overwhelming. But remember, you're not alone in this. There are people out there who specialize in helping students with financial planning. Taking that first step to seek guidance can make a big difference. I believe in you, and I know you have the ability to navigate this.
+User:  Thank you for the encouragement. It means a lot to hear that.
+Chatbot:  Of course, anytime. Remember, there's always a solution to every problem, even if it may not be apparent at first. Keep your chin up, and don't hesitate to reach out if you need someone to talk to or for any other support.
+User:  I really appreciate that. It's nice to have someone to talk to about these things.
+Chatbot:  I'm here for you, always. It's important to have a support system, especially during challenging times. And hey, I believe in you and your ability to overcome any obstacle that comes your way. You've got this!
+User:  Thank you so much for your kind words. I'm starting to feel a bit better already.
+","('Fear', 'Happy')","['Neutral', 'FEAR', 'Neutral', 'FEAR', 'Neutral', 'FEAR', 'Neutral', 'FEAR', 'Neutral', 'FEAR', 'Neutral', 'HAPPY']"

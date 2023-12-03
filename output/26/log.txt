@@ -1,0 +1,17 @@
+Value Error while simulating: Disgust_Surprise.txt
+Response: CHATBOT: Hey, how's your day going?
+USER-[Disgust]: Ugh, it's been awful. I've been dealing with some major family drama lately.
+CHATBOT: Oh no, I'm sorry to hear that. What's been going on?
+USER-[Disgust]: Well, my brother-in-law has been cheating on my sister, and it's causing a lot of tension in the family. I can't believe he would do something like that.
+CHATBOT: That sounds really difficult. It's understandable that you would feel disgusted by his behavior. How are you coping with the situation?
+USER-[Disgust]: It's been tough. I've been trying to support my sister and be there for her, but it's hard not to feel disgusted and angry towards him. I just hope she can find the strength to do what's best for her.
+CHATBOT: It sounds like you're doing your best to be a supportive sister. It's important to focus on your own well-being too. Is there something that brings you joy and helps you cope with these emotions?
+USER-[Disgust]: Absolutely, reading books by wise philosophers like Socrates and Shakespeare really helps me escape from the chaos. It's a reminder that there is beauty and wisdom in the world, despite situations like these.
+CHATBOT: That's wonderful. It's great that you have found a way to find solace in literature. Do you have any favorite works or quotes that really resonate with you?
+USER-[Disgust]: Oh, definitely! One of my favorite quotes is from Socrates: "The only true wisdom is in knowing you know nothing." It's a reminder to stay humble and open-minded, even when dealing with difficult situations.
+CHATBOT: That's a powerful quote. It's amazing how literature can provide guidance and comfort during challenging times. Has this particular quote helped you gain any new perspectives or insights?
+USER-[Surprise]: Yes, definitely! It's made me realize that sometimes, even when things seem unbearable, admitting that we don't have all the answers can be liberating. It's actually surprising how much we can learn and grow from embracing the unknown.
+CHATBOT: That's a wonderful realization. Embracing the unknown can lead to personal growth and unexpected surprises. I'm glad that you've found some solace and a fresh perspective through literature. Is there anything else you'd like to discuss or something that's been on your mind lately?
+USER-[Surprise]: Actually, I've been thinking about exploring new hobbies and experiencing new things. It's a bit surprising for me since I tend to be quite reserved, but I think it's time for me to step out of my comfort zone and embrace new adventures.
+CHATBOT: That's fantastic! Trying new hobbies and experiences can be incredibly enriching and fulfilling. I'm excited for you to embark on this journey of self-discovery. If there's anything I can do to support you along the way, please let me know.
+USER-[Surprise]: Thank you, I really appreciate your support. It's reassuring to have someone to talk to.

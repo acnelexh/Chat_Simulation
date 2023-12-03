@@ -1,0 +1,44 @@
+Value Error while simulating: Surprise_Disgust.txt
+Response: USER-[Surprise]: Oh, you wouldn't believe what happened at work today!
+CHATBOT-[No emotion]: What happened? I'm all ears.
+USER-[Surprise]: Well, my colleague John, who I thought was a hardworking and reliable person, turned out to be completely incompetent. He made a huge mistake on a project that cost us a lot of time and money. I can't believe I trusted him all this while!
+CHATBOT-[No emotion]: That must have been quite a shock for you. It's disappointing when someone we rely on lets us down like that.
+USER-[Surprise]: Exactly! I never saw it coming. It's just so frustrating to have to clean up his mess and deal with the consequences. It's like I can't depend on anyone anymore.
+CHATBOT-[No emotion]: It can be really disheartening when we realize that someone we thought we could rely on is not up to the task. Are you feeling angry about the situation as well?
+USER-[Disgust]: Yes, definitely! I'm not just surprised, I'm also disgusted by John's lack of professionalism. It's such a waste of time and energy to fix his mistakes. I can't believe I have to pick up the slack for him.
+CHATBOT-[No emotion]: It's understandable that you feel disgusted by this situation. It can be frustrating and draining to have to deal with such incompetence. Have you talked to your supervisor or HR about what happened?
+USER-[Disgust]: Yes, I have. I expressed my concerns and they assured me that they would address the issue. But honestly, I don't have much hope that anything will change. It feels like the whole system is flawed and there's nothing I can do about it.
+CHATBOT-[No emotion]: I understand how you feel. It can be disheartening when it seems like the system is not working in your favor. Is there anything else you think can be done to prevent such incidents in the future?
+USER-[Disgust]: Honestly, I don't know. Maybe there should be better screening and training processes in place. It's frustrating to see someone get away with such incompetence without any consequences. I just hope that things will improve in the future.
+CHATBOT-[No emotion]: It's important to voice your concerns and suggestions for improvement. Sometimes change takes time, but your feedback can contribute to making positive changes in the long run. Don't lose hope and continue to focus on your own work and professionalism.
+USER-[Disgust]: I guess you're right. I'll try my best to stay positive and focus on my own work. Thanks for listening, even though it's such a frustrating situation.
+_______________________________________________________________________________________________________________________
+Note: This is just an example simulation based on the provided instructions above. The responses can be customized or modified based on the desired characteristics, tone, or style.
+Value Error while simulating: Happy_Disgust.txt
+Response: CHATBOT: Hi! How has your day been so far?
+
+USER-[HAPPY]: It's been great! I just came back from a week-long vacation in the Bahamas. The beaches were gorgeous, the weather was perfect, and I had so much fun exploring the local culture.
+
+CHATBOT: That sounds amazing! I'm glad you had such a wonderful time. Tell me, what was your favorite part of the trip?
+
+USER-[HAPPY]: Oh, where do I start? I think my favorite part was snorkeling in the crystal clear waters. I saw so many colorful fish and beautiful coral reefs. It was like swimming in a real-life aquarium.
+
+CHATBOT:Wow, that sounds breathtaking! It must have been a truly incredible experience. Did you have any memorable encounters with the local people or try any traditional foods?
+
+USER-[HAPPY]:Yes, I did! The locals were so friendly and welcoming. I had some delicious seafood dishes, like fresh lobster and conch salad. The flavors were amazing!
+
+CHATBOT: That's wonderful to hear! Exploring different cuisines can be such a delightful experience. Did you try any activities or visit any landmarks that left a lasting impression?
+
+USER-[HAPPY]:Definitely! I visited the famous Blue Lagoon and it was like a hidden paradise. The water was so clear and blue, and the surrounding scenery was absolutely breathtaking. I also went on a boat tour to see the swimming pigs in Exuma, which was a unique and unforgettable experience.
+
+CHATBOT:Wow, those sound like some incredible experiences! It's great to hear that you had such a memorable trip. Is there anything else from your vacation that you would like to share?
+
+USER-[NEUTRAL]:Actually, there was one incident that left a sour note. While exploring a local market, I noticed some vendors selling products made from endangered animal species. It really disappointed me and completely goes against conservation efforts. It made me question the ethics of tourism in certain places.
+
+CHATBOT:I can understand why that would be a disappointing and concerning experience. It's disheartening when we witness actions that harm the environment and animal species. If you'd like, I can provide information on organizations or initiatives that work towards preserving these precious ecosystems.
+
+USER-[NEUTRAL]:That would be helpful. I believe it's important to spread awareness and actively support conservation efforts. Any information you can provide would be greatly appreciated.
+
+CHATBOT:Of course! I will gather some resources for you on conservation organizations and initiatives in the Bahamas. It's essential to support responsible tourism and work towards preserving the beauty of our natural world. Give me a moment to find the information for you.
+
+[END OF CONVERSATION]

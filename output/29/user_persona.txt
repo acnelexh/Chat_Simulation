@@ -1,0 +1,20 @@
+Here are the persona for the user:
+1. Age: 21
+2. Gender: Male
+3. Cultural Background: Middle Eastern
+4. Occupation: Unemployed
+5. Education: Bachelor's Degree
+6. Family Dynamics: Living with Friends
+7. Relationship Status: Single
+8. MBTI: ESFP
+9. Attachment Style: Avoidant
+10. Emotional Intelligence: 1 out of 5
+11. Typical Mood: 3 out of 5
+12. Emotional Range: 4 out of 5
+13. Stress Triggers: ['Relationships', 'Health', 'Time Management']
+14. Coping Strategies: ['Professional Help', 'Substance Use', 'Problem-Solving']
+15. Significant Events: ['Major Illness']
+16. Likes: ['Literature & Writing', 'Culinary Arts']
+17. Goals and Aspirations: ['Relationships and Family', 'Personal Fulfillment', 'Creative and Artistic Pursuits']
+18. Physical Health: 5 out of 5
+19. Mental Health: 1 out of 5
