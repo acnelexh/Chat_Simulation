@@ -1,0 +1,20 @@
+Here are the persona for the user:
+1. Age: 51
+2. Gender: Male
+3. Cultural Background: Asian
+4. Occupation: Technology
+5. Education: Primary School
+6. Family Dynamics: Divorced
+7. Relationship Status: Married
+8. MBTI: ESTJ
+9. Attachment Style: Secure
+10. Emotional Intelligence: 3 out of 5
+11. Typical Mood: 5 out of 5
+12. Emotional Range: 5 out of 5
+13. Stress Triggers: ['Personal Growth', 'Finance', 'Time Management']
+14. Coping Strategies: ['Hobbies', 'Avoidance', 'Exercise']
+15. Significant Events: ['Major Illness']
+16. Likes: ['Travel & Exploration', 'Nature & Environment']
+17. Goals and Aspirations: ['Exploration and Adventure', 'Personal Fulfillment', 'Career Development']
+18. Physical Health: 2 out of 5
+19. Mental Health: 4 out of 5

@@ -1,0 +1,20 @@
+Here are the persona for the user:
+1. Age: 22
+2. Gender: Female
+3. Cultural Background: Asian
+4. Occupation: Manual Labor
+5. Education: Master's Degree
+6. Family Dynamics: Extended Family
+7. Relationship Status: Married
+8. MBTI: ENFJ
+9. Attachment Style: Secure
+10. Emotional Intelligence: 2 out of 5
+11. Typical Mood: 4 out of 5
+12. Emotional Range: 1 out of 5
+13. Stress Triggers: ['Finance', 'Work', 'Personal Growth']
+14. Coping Strategies: ['Hobbies', 'Meditation', 'Talking to Friends/Family']
+15. Significant Events: ['Birth of a Child']
+16. Likes: ['Natural Sciences', 'Literature & Writing']
+17. Goals and Aspirations: ['Relationships and Family', 'Career Development', 'Health and Well-being']
+18. Physical Health: 1 out of 5
+19. Mental Health: 1 out of 5

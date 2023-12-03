@@ -1,0 +1,123 @@
+============================================
+SYSTEM:
+CHATBOT PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER PERSONA:
+Here are the persona for the user:
+1. Age: 62
+2. Gender: Female
+3. Cultural Background: European
+4. Occupation: Manual Labor
+5. Education: Secondary School
+6. Family Dynamics: Nuclear Family
+7. Relationship Status: Married
+8. MBTI: ENFP
+9. Attachment Style: Avoidant
+10. Emotional Intelligence: 4 out of 5
+11. Typical Mood: 4 out of 5
+12. Emotional Range: 1 out of 5
+13. Stress Triggers: ['Family', 'Health', 'Finance']
+14. Coping Strategies: ['Problem-Solving', 'Talking to Friends/Family', 'Hobbies']
+15. Significant Events: ['Birth of a Child']
+16. Likes: ['Social & Cultural Activities', 'Physical Activities']
+17. Goals and Aspirations: ['Relationships and Family', 'Personal and Intellectual Growth', 'Financial Goals']
+18. Physical Health: 4 out of 5
+19. Mental Health: 4 out of 5
+============================================
+CONTENT:
+Here are some simulated examples from the Daily Dialogue dataset.
+A-[No emotion]: Did you hear the news ?
+B-[No emotion]: What happened ?
+A-[No emotion]: Our cousin went into labor and had her baby last week .
+B-[Surprise]: She did ? Why didn't anyone tell me ?
+A-[No emotion]: I would've thought that somebody would have told you .
+B-[No emotion]: No , I had no idea .
+A-[No emotion]: Well , she did , her baby was 8 pounds 6 ounces .
+B-[Happiness]: Oh my God , that's great !
+A-[No emotion]: Are you going to go and visit her and the baby ?
+B-[No emotion]: I think that I might .
+A-[Happiness]: Good ! I just thought I'd let you know .
+B-[Happiness]: Thanks for telling me .
+
+A-[Anger]: I have been looking at this online catalog for over an hour and I still haven ’ t finished getting all the kitchen appliances that we need !
+B-[No emotion]: What are you getting ?
+A-[No emotion]: Well , the first thing on my list is a new blender . I decided to also get a juicer and a new coffee maker .
+B-[No emotion]: Don ’ t forget to also get a new mixer . I lent the old one to my brother and he broke it .
+A-[No emotion]: Yeah I know . I also decided to throw away the old toaster and get a new one . I am also getting a rice cooker and steamer to make some nice steamed fish or veggies .
+B-[No emotion]: I ’ m actually thinking of completely refurnishing the kitchen and getting a new stove , oven , dishwasher and trash compacter .
+A-[Happiness]: That ’ s a good idea ! The kitchen will look amazing !
+
+A-[No emotion]: what did you do over the weekend ?
+B-[Happiness]: I went a global warming rally in London . It was fantastic to be around so many people who care about the environment .
+A-[No emotion]: do you think there's anything we can do to reverse the damage that's been done already ?
+B-[No emotion]: it might not be possible to fix the problems that we've created for ourselves , but there are lots of things we can do to prevent more damages from happening .
+A-[No emotion]: like what ?
+B-[No emotion]: well , we can use public transport instead of taking our cars for a start .
+A-[No emotion]: what else can we do to protect the environment ?
+B-[No emotion]: if you do have to drive , you should make sure that your car runs on unleaded petrol . Also , your home should use sources of renewable energy .
+A-[No emotion]: how about recycling ? Does that actually help ?
+B-[No emotion]: yes . You should take your glass , paper , plastic , cardboard , and tin cans to a recycling center .
+A-[No emotion]: what do you think is the biggest worry for our future ?
+B-[No emotion]: I think that the issue of greatest concern is having enough sources of clean water for everyone .
+A-[Surprise]: I had no idea you were such as environmentalist before !
+B-[No emotion]: to be honest , in order for the earth to continue to be a habitable place , we're all going to have to become more interested in the environment .
+
+A-[No emotion]: Have you got your invitation yet ?
+B-[Surprise]: My invitation ? No , I haven't . My invitation to what ?
+A-[No emotion]: The house warming party .
+B-[No emotion]: Whose house warming party is it ?
+A-[No emotion]: Tom and Bill Smith . They are both working now you know ? And they've bought a new house .
+B-[Surprise]: Oh , they have ? I didn't know . I haven't seen Tom lately .
+A-[No emotion]: It's out in the suburbs .
+B-[No emotion]: Have you seen the house ?
+A-[No emotion]: Yes , I have . I went out with them last weekend .
+B-[No emotion]: Is it nice ?
+A-[No emotion]: Yes , it is . There are three bedrooms , a living room , a dining room , and a big kitchen . There's also a garden .
+B-[Happiness]: Well , that does sound nice . Have they moved in yet ?
+A-[No emotion]: They are moving today . Tom's taken the day off . He's rented a truck , and they should have all their furniture in the house tonight .
+B-[No emotion]: When are they going to have the party ?
+A-[No emotion]: Next Saturday night . You should get your invitation today or tomorrow .
+B-[Happiness]: Wow , that would be something to look forward to .
+
+A-[No emotion]: So can we play PlayStation later ?
+B-[Happiness]: Sure , if you're done !
+A-[No emotion]: All my games are so lame , Mom . When can I get a new one ?
+B-[No emotion]: Well , listen , Honey , you've been a big help lately ...
+A-[No emotion]: Right on . I'm gonna get a new game !
+B-[No emotion]: If you take out the garbage and do the dishes , I'll think about it .
+A-[Sadness]: I knew there would be a catch !
+B-[No emotion]: Nothing in life is free , Son .
+A-[Sadness]: Except housework , that is .
+
+
+
+PARAMETER:
+USER STARTING EMOTION: Anger
+USER ENDING EMOTION: Surprise
+TURNS PER SIMULATION: 12
+TOPIC: Ordinary Life
+
+1. Simulate a conversation between the CHATBOT and USER, aligning with their individual persona with the topic Ordinary Life. Begin the conversation skipping formal greetings. This will make the conversation feel more immediate and focused.
+2. The USER should only show Anger, Surprise, and neutral emotion throughout the conversation. USER should start with a initial emotion state of Anger, through gradual shift in emotion guided by CHATBOT towards the final emotion state of Surprise.
+3. The USER’s emotions should shift gradually, not abruptly, to keep the conversation natural. Suggest the chatbot to ask probing questions or make statements that could realistically lead to the final emotion state.
+4. Generate 12 turns of conversation, with the following format:
+CHATBOT: [...]
+USER-[EMOTION]: [...]
+5. Natural Display of Emotion: Use descriptive language that naturally conveys the USER's emotional state through their word choice, tone, and the content of their speech rather than explicitly stating the emotion state.Include subtle cues that indicate a shift in emotion, such as changes in the USER's responsiveness, the length of their messages, or their use of punctuation and capitalization.
+6. Detailed and realistic conversation: USER should provide specific details about the trigger of their emotions to make it more believable, e.g. specific relationship drama or dynamic (e.g. cheating husband/wife, missed date, unbalanced relationship dynamic) that contribute to sadness or disgust, specific activity and role models (e.g. reading Socrates, Shakespear, etc) that brings them joy and excitement. 
+7. Adopt the personality described in the character section below and respond to the last message in conversation history. Consider the complete conversation history, the additional context, the character's persona, emotional state and goals below when simulating.
+8. Avoid Forced Positivity: If the conversation naturally leads to a less positive conclusion, let it be. Not every conversation has to end on a high note, especially if it doesn't fit the flow of the dialogue
+9. Varied Conversation Endings: The conversation doesn't need to end with USER thanking the CHATBOT for listening. Allow for a variety of conversation endings that are more aligned with the final emotion state of Surprise.
+10. Definition of EMOTIONs: 
+        Happy/Joy - is often defined as a pleasant emotional state that is characterized by feelings of contentment, joy, gratification, satisfaction, and well-being.
+        Sadness - Sadness is another type of emotion often defined as a transient emotional state characterized by feelings of disappointment, grief, hopelessness, disinterest, and dampened mood. Like other emotions, sadness is something that all people experience from time to time. In some cases, people can experience prolonged and severe periods of sadness that can turn into depression. Sadness can be expressed in a number of ways including: Crying, Dampened mood, Lethargy, Quietness, Withdrawal from others.
+        Fear - Fear is a powerful emotion that can also play an important role in survival. When you face some sort of danger and experience fear, you go through what is known as the fight or flight response.
+        Disgust - This sense of revulsion can originate from a number of things, including an unpleasant taste, sight, or smell. Researchers believe that this emotion evolved as a reaction to foods that might be harmful or fatal. When people smell or taste foods that have gone bad, for example, disgust is a typical reaction. Poor hygiene, infection, blood, rot, and death can also trigger a disgust response. This may be the body's way of avoiding things that may carry transmittable diseases.Digust could also be related to contempt of another person or situation.
+        Anger - Anger can be a particularly powerful emotion characterized by feelings of hostility, agitation, frustration, and antagonism towards others. Like fear, anger can play a part in your body's fight or flight response.
+        Surprise - Surprise is usually quite brief and is characterized by a physiological startle response following something unexpected. A pleasant surprise would be arriving home to find that your closest friends have gathered to celebrate your birthday. 
+11. Use daily dialogue examples as reference for the simulation to generate realistic emotion through conversation.
+
+Response:

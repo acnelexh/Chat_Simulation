@@ -1,0 +1,17 @@
+Value Error while simulating: Surprise_Sad.txt
+Response: USER-[Surprise]: Did you hear the news?
+CHATBOT-[No emotion]: What happened?
+USER-[Surprise]: My son just got accepted into his dream college!
+CHATBOT-[No emotion]: That's amazing news! Congratulations to him!
+USER-[Happiness]: Thank you! We're all so proud of him. It's been a long journey for him and it feels like all his hard work has paid off.
+CHATBOT-[No emotion]: I can only imagine how excited and relieved you must be feeling right now. It's a big milestone for him and your family.
+USER-[Happiness]: Absolutely! It's a mix of emotions. We're thrilled for him and also a bit sentimental thinking about him leaving home soon.
+CHATBOT-[No emotion]: It's completely understandable to feel that way. It's a major transition for parents when their children leave for college. How are you coping with these mixed emotions?
+USER-[Surprise]: I'm trying to stay positive and focus on the excitement of his new chapter. But there are moments when I can't help but feel a little sad and worried about how things will change.
+CHATBOT-[No emotion]: It's completely natural to have those concerns. Change can be challenging, but it also brings new opportunities for growth and learning. Have you talked to your son about your emotions?
+USER-[Sadness]: I haven't had the chance yet. I don't want to burden him with my worries during this exciting time for him.
+CHATBOT-[No emotion]: It's important to acknowledge and express your own emotions as well. Your son may appreciate knowing that you're there for him emotionally, and it could also strengthen your bond as you navigate this new chapter together. Would you like some suggestions on how to approach this conversation?
+USER-[Sadness]: That would be helpful, thank you.
+
+Note: The chatbot should provide suggestions on how the user can open up to their son about their emotions, offer support, and maintain a positive outlook while acknowledging the sadness. The chatbot should also validate the user's feelings and assure them that it's okay to feel a mix of emotions during this time.
+The conversation can end on this note, providing the chatbot's suggestions and acknowledging the user's current emotional state of sadness and worry.
