@@ -210,7 +210,7 @@ class Engine:
             dialogue: list of (agent_type, content)
         '''
         new_dialogue = []
-        dialogue_parsed = response.strip().split('\n')
+        dialogue_parsed = response.strip("Response:").strip().split('\n')    
         for dialogue in dialogue_parsed:
             if len(dialogue) == 0:
                 continue
