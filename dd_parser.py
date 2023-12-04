@@ -1,4 +1,4 @@
-lookup = ['No emotion', 
+lookup = ['No_emotion', 
           'Anger',
           'Disgust',
           'Fear',
@@ -22,27 +22,37 @@ def parse_dialogue(dialogue, label):
     result = ""
     for i in range(len(dialogue)):
         if i % 2 == 0:
-            result += "A-"
+            result += "[A]"
         else:
-            result += "B-"
+            result += "[B]"
         result += "[" + lookup[label[i]] + "]: " + dialogue[i].strip() + "\n"
     return result.strip()
 
-NUM_EXAMPLES = 5
-with open('dd_examples.txt', 'w') as f:
-    f.write("Here are some simulated examples from the Daily Dialogue dataset.\n")
-# select a NUM_EXAMPLES that contain at least 3 of the 7 emotions
-dd_examples = []
-while len(dd_examples) < NUM_EXAMPLES:
-    idx = random.randint(0, len(daily_diaglogue_dataset['train']) - 1)
-    dialogue = daily_diaglogue_dataset['train'][idx]['dialog']
-    label = daily_diaglogue_dataset['train'][idx]['emotion']
-    if len(set(label)) >= 3:
-        dd_examples.append(idx)
 
-for idx in dd_examples:
-    dialogue = daily_diaglogue_dataset['train'][idx]['dialog']
-    label = daily_diaglogue_dataset['train'][idx]['emotion']
-    with open('dd_examples.txt', 'a') as f:
-        f.write(parse_dialogue(dialogue, label))
-        f.write("\n\n")
+with open('dd_examples_all.txt', 'w') as f:
+    #f.write("Here are all the dialogues from the Daily Dialogue dataset.\n\n")
+    # Iterate through all dialogues in the training dataset
+    for idx in range(len(daily_diaglogue_dataset['train'])):
+        dialogue = daily_diaglogue_dataset['train'][idx]['dialog']
+        label = daily_diaglogue_dataset['train'][idx]['emotion']
+        f.write(parse_dialogue(dialogue, label) + "\n\n")
+
+# NUM_EXAMPLES = 5
+# # with open('dd_examples_all.txt', 'w') as f:
+# #     f.write("Here are some simulated examples from the Daily Dialogue dataset.\n")
+# # select a NUM_EXAMPLES that contain at least 3 of the 7 emotions
+# dd_examples = []
+# while len(dd_examples) < NUM_EXAMPLES:
+#     idx = random.randint(0, len(daily_diaglogue_dataset['train']) - 1)
+#     dialogue = daily_diaglogue_dataset['train'][idx]['dialog']
+#     label = daily_diaglogue_dataset['train'][idx]['emotion']
+#     if len(set(label)) >= 2:
+#         dd_examples.append(idx)
+
+# for idx in dd_examples:
+#     dialogue = daily_diaglogue_dataset['train'][idx]['dialog']
+#     label = daily_diaglogue_dataset['train'][idx]['emotion']
+#     with open('dd_examples_all.txt', 'a') as f:
+#         f.write(parse_dialogue(dialogue, label))
+#         f.write("\n\n")
+
