@@ -2,6 +2,7 @@ from openai import OpenAI
 import numpy as np
 import json
 from collections import defaultdict
+import fire
 
 with open('MY_KEY') as f:
     api_key = f.read().strip()
@@ -12,6 +13,7 @@ def upload_file(filename):
     file=open("dd_examples_1000.json", "rb"),
     purpose="fine-tune"
     )
+    print(msg)
     return msg
 
 def create_job(training_file_name, model):
@@ -19,6 +21,7 @@ def create_job(training_file_name, model):
         training_file=training_file_name, 
         model=model
     )
+    print(msg)
     return msg
 
 def check_status():
@@ -44,10 +47,8 @@ def get_model():
     return model
 
 if __name__ == "__main__":
-    #msg = upload_file("dd_examples_1000.json")
-    #print(msg)
-    #msg = create_job(msg.id, "gpt-3.5-turbo")
-    #print(msg)
-    #check_status()
-    model_name = get_model()
+    # just use python train_gpt.py $function_name
+    fire.Fire() 
+    
+
     
