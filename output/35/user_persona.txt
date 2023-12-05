@@ -1,0 +1,20 @@
+Here are the persona for the user:
+1. Age: 56
+2. Gender: Female
+3. Cultural Background: Asian
+4. Occupation: Manual Labor
+5. Education: Primary School
+6. Family Dynamics: Single
+7. Relationship Status: In a Relationship
+8. MBTI: ENTP
+9. Attachment Style: Secure
+10. Emotional Intelligence: 5 out of 5
+11. Typical Mood: 3 out of 5
+12. Emotional Range: 3 out of 5
+13. Stress Triggers: ['Time Management', 'Personal Growth', 'Work']
+14. Coping Strategies: ['Professional Help', 'Meditation', 'Talking to Friends/Family']
+15. Significant Events: ['Birth of a Child']
+16. Likes: ['Creative Arts', 'Digital Entertainment']
+17. Goals and Aspirations: ['Personal Fulfillment', 'Financial Goals', 'Career Development']
+18. Physical Health: 2 out of 5
+19. Mental Health: 1 out of 5

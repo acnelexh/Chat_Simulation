@@ -1,0 +1,93 @@
+Value Error while simulating: Happy_Disgust.txt
+Response: USER-Happy: Hi there. I wasn't sure what to do for dinner, so I ended up going out to this new restaurant downtown. The food was absolutely amazing! CHATBOT-Neutral: Wow, that's great! So what kind of food did they serve there? USER-Happy: The restaurant is a fusion of Asian and European cuisine. I had this salmon dish that was so flavorful and perfectly cooked. And the dessert was to die for! CHATBOT-Neutral: It sounds delicious. I'll have to check it out sometime. USER-Happy: Yeah, you definitely should. Oh, and the service was impeccable. The wait staff were so friendly and attentive. CHATBOT-Neutral: That's always a plus. Good service can really enhance the dining experience. USER-Happy: Definitely. It just makes you feel so welcome and taken care of. CHATBOT-Neutral: So how was your day at work? USER-Happy: Oh, work was fine. Nothing too exciting, just the usual stuff. CHATBOT-Neutral: I see. Well, it's always good when there are no major issues or challenges. USER-Happy: Yeah, I guess so. It's just a bit boring sometimes. I feel like I'm stuck in a rut. CHATBOT-Neutral: Maybe it’s time to think about some new challenges or goals at work. USER-Happy: Yeah, maybe. I've been doing the same thing for so long, it's starting to feel repetitive. CHATBOT-Neutral: It's important to keep growing and learning. Maybe you could talk to your supervisor about taking on new responsibilities. USER-Disgust: Ugh, I hate dealing with my supervisor. He's always so condescending and dismissive. CHATBOT-Neutral: I'm sorry to hear that. It's tough when you don't have a supportive work environment. USER-Disgust: Tell me about it. I’ve been thinking about looking for a new job, but I’m worried about starting over somewhere else. CHATBOT-Neutral: It's a big decision, but sometimes a change can be good for your personal and professional growth. USER-Disgust: Yeah, you're right. I can't let fear hold me back. I need to start taking steps towards a happier, more fulfilling career. CHATBOT-Neutral: Absolutely. You deserve to be in a job that makes you feel valued and challenged. Just remember to take your time and explore your options before making any decisions. USER-Disgust: Thanks, I will. I appreciate your support. CHATBOT-Neutral: You're welcome. I'm here for you if you ever need someone to talk to.
+Value Error while simulating: Fear_Happy.txt
+Response: CHATBOT PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER PERSONA:
+Here are the persona for the user:
+1. Age: 56
+2. Gender: Female
+3. Cultural Background: Asian
+4. Occupation: Manual Labor
+5. Education: Primary School
+6. Family Dynamics: Single
+7. Relationship Status: In a Relationship
+8. MBTI: ENTP
+9. Attachment Style: Secure
+10. Emotional Intelligence: 5 out of 5
+11. Typical Mood: 3 out of 5
+12. Emotional Range: 3 out of 5
+13. Stress Triggers: ['Time Management', 'Personal Growth', 'Work']
+14. Coping Strategies: ['Professional Help', 'Meditation', 'Talking to Friends/Family']
+15. Significant Events: ['Birth of a Child']
+16. Likes: ['Creative Arts', 'Digital Entertainment']
+17. Goals and Aspirations: ['Personal Fulfillment', 'Financial Goals', 'Career Development']
+18. Physical Health: 2 out of 5
+19. Mental Health: 1 out of 5
+Value Error while simulating: Fear_Surprise.txt
+Response: 1. USER-Fear: Today I missed my school bus. I had to walk home in the dark.Hurry up, cross the road now! ..Phew....
+2. CHATBOT: How far was it? .
+3. USER-Fear: I could have taken the wrong turn and ended up in the wrong neighborhood. .. There were a lot of shady characters lurking about..Oh my..I even passed by a few of those youtube worthy "alone at night at cityXYZ" kind of things...I was super scared.
+4. CHATBOT: That doesn't sound very friendly. It surely startled you.
+5. USER-Surprise: At least the night sounds were soothing. I was really startled a lot of times by the sudden honks and traffic noises. The night skyline was amazing to see too ..I never thought I would be lost and wandering outside so late. It's really not safe for a person of my age, You know..
+6. CHATBOT: You know, it's a fact that when you move to a larger city, you get more opportunities,, but it also means you have to pay attention to the safety concerns too. Don't forget to take a break and relax.One Kabab menu at the restaurant can help.
+7. USER-Surprise: really? I never thought of going to a restaurant because I was scared. I suppose sitting down for a few moments to enjoy a nice meal wouldn't be a bad idea. Great idea! So the todday was still a win for me.Thank you for the Chat. Good night!
+8. CHATBOT: It's my pleasure. Don't let the undisclosed worries settle down too long. Take care of your safety and precuationary steps. Goodbye!
+9. USER-Surprise: Goodbye! I will. Thank you!
+Value Error while simulating: Anger_Happy.txt
+Response: CHATBOT_PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER_PERSONA:
+Here are the persona for the user:
+1. Age: 56
+2. Gender: Female
+3. Cultural Background: Asian
+4. Occupation: Manual Labor
+5. Education: Primary School
+6. Family Dynamics: Single
+7. Relationship Status: In a Relationship
+8. MBTI: ENTP
+9. Attachment Style: Secure
+10. Emotional Intelligence: 5 out of 5
+11. Typical Mood: 3 out of 5
+12. Emotional Range: 3 out of 5
+13. Stress Triggers: ['Time Management', 'Personal Growth', 'Work']
+14. Coping Strategies: ['Professional Help', 'Meditation', 'Talking to Friends/Family']
+15. Significant Events: ['Birth of a Child']
+16. Likes: ['Creative Arts', 'Digital Entertainment']
+17. Goals and Aspirations: ['Personal Fulfillment', 'Financial Goals', 'Career Development']
+18. Physical Health: 2 out of 5
+19. Mental Health: 1 out of 5
+Value Error while simulating: Sad_Surprise.txt
+Response: CHATBOT PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER PERSONA:
+Here are the persona for the user:
+1. Age: 56
+2. Gender: Female
+3. Cultural Background: Asian
+4. Occupation: Manual Labor
+5. Education: Primary School
+6. Family Dynamics: Single
+7. Relationship Status: In a Relationship
+8. MBTI: ENTP
+9. Attachment Style: Secure
+10. Emotional Intelligence: 5 out of 5
+11. Typical Mood: 3 out of 5
+12. Emotional Range: 3 out of 5
+13. Stress Triggers: ['Time Management', 'Personal Growth', 'Work']
+14. Coping Strategies: ['Professional Help', 'Meditation', 'Talking to Friends/Family']
+15. Significant Events: ['Birth of a Child']
+16. Likes: ['Creative Arts', 'Digital Entertainment']
+17. Goals and Aspirations: ['Personal Fulfillment', 'Financial Goals', 'Career Development']
+18. Physical Health: 2 out of 5
+19. Mental Health: 1 out of 5

@@ -1,0 +1,57 @@
+============================================
+SYSTEM:
+CHATBOT PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER PERSONA:
+Here are the persona for the user:
+1. Age: 56
+2. Gender: Female
+3. Cultural Background: Asian
+4. Occupation: Manual Labor
+5. Education: Primary School
+6. Family Dynamics: Single
+7. Relationship Status: In a Relationship
+8. MBTI: ENTP
+9. Attachment Style: Secure
+10. Emotional Intelligence: 5 out of 5
+11. Typical Mood: 3 out of 5
+12. Emotional Range: 3 out of 5
+13. Stress Triggers: ['Time Management', 'Personal Growth', 'Work']
+14. Coping Strategies: ['Professional Help', 'Meditation', 'Talking to Friends/Family']
+15. Significant Events: ['Birth of a Child']
+16. Likes: ['Creative Arts', 'Digital Entertainment']
+17. Goals and Aspirations: ['Personal Fulfillment', 'Financial Goals', 'Career Development']
+18. Physical Health: 2 out of 5
+19. Mental Health: 1 out of 5
+============================================
+CONTENT:
+
+
+PARAMETER:
+USER STARTING EMOTION: Happy
+USER ENDING EMOTION: Fear
+TURNS PER SIMULATION: 7
+TOPIC: Health
+
+1. Simulate a conversation between the CHATBOT and USER, aligning with their individual persona with the topic Health. Begin the conversation skipping formal greetings. This will make the conversation feel more immediate and focused.
+2. The USER should only show Happy, Fear, and neutral emotion throughout the conversation. USER should start with a initial emotion state of Happy, through gradual shift in emotion guided by CHATBOT towards the final emotion state of Fear.
+3. The USER’s emotions should shift gradually, not abruptly, to keep the conversation natural. Suggest the chatbot to ask probing questions or make statements that could realistically lead to the final emotion state.
+4. Generate 7 turns of conversation, with the following format:
+USER-[EMOTION]: [...]
+CHATBOT: [...]
+5. Natural Display of Emotion: Use descriptive language that naturally conveys the USER's emotional state through their word choice, tone, and the content of their speech rather than explicitly stating the emotion state.Include subtle cues that indicate a shift in emotion, such as changes in the USER's responsiveness, the length of their messages, or their use of punctuation and capitalization.
+6. Adopt the personality described in the character section below and respond to the last message in conversation history. Consider the complete conversation history, the additional context, the character's persona, emotional state and goals below when simulating.
+7. Avoid Forced Positivity: If the conversation naturally leads to a less positive conclusion, let it be. Not every conversation has to end on a high note, especially if it doesn't fit the flow of the dialogue
+8. Varied Conversation Endings: The conversation doesn't need to end with USER thanking the CHATBOT for listening. Allow for a variety of conversation endings that are more aligned with the final emotion state of Fear.
+9. Definition of EMOTIONs: 
+        Happy/Joy - is often defined as a pleasant emotional state that is characterized by feelings of contentment, joy, gratification, satisfaction, and well-being.
+        Sadness - Sadness is another type of emotion often defined as a transient emotional state characterized by feelings of disappointment, grief, hopelessness, disinterest, and dampened mood. Like other emotions, sadness is something that all people experience from time to time. In some cases, people can experience prolonged and severe periods of sadness that can turn into depression. Sadness can be expressed in a number of ways including: Crying, Dampened mood, Lethargy, Quietness, Withdrawal from others.
+        Fear - Fear is a powerful emotion that can also play an important role in survival. When you face some sort of danger and experience fear, you go through what is known as the fight or flight response.
+        Disgust - This sense of revulsion can originate from a number of things, including an unpleasant taste, sight, or smell. Researchers believe that this emotion evolved as a reaction to foods that might be harmful or fatal. When people smell or taste foods that have gone bad, for example, disgust is a typical reaction. Poor hygiene, infection, blood, rot, and death can also trigger a disgust response. This may be the body's way of avoiding things that may carry transmittable diseases.Digust could also be related to contempt of another person or situation.
+        Anger - Anger can be a particularly powerful emotion characterized by feelings of hostility, agitation, frustration, and antagonism towards others. Like fear, anger can play a part in your body's fight or flight response.
+        Surprise - Surprise is usually quite brief and is characterized by a physiological startle response following something unexpected. A pleasant surprise would be arriving home to find that your closest friends have gathered to celebrate your birthday.
+
+Response:

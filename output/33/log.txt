@@ -1,0 +1,81 @@
+Value Error while simulating: Disgust_Happy.txt
+Response: CHATBOT_PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER_PERSONA:
+Here are the persona for the user:
+1. Age: 75
+2. Gender: Female
+3. Cultural Background: North American
+4. Occupation: Business
+5. Education: Secondary School
+6. Family Dynamics: Extended Family
+7. Relationship Status: Single
+8. MBTI: ENFP
+9. Attachment Style: Secure
+10. Emotional Intelligence: 5 out of 5
+11. Typical Mood: 1 out of 5
+12. Emotional Range: 4 out of 5
+13. Stress Triggers: ['Family', 'Relationships', 'Finance']
+14. Coping Strategies: ['Problem-Solving', 'Exercise', 'Substance Use']
+15. Significant Events: ['Loss of a Loved One']
+16. Likes: ['Digital Entertainment', 'Mind & Body Wellness']
+17. Goals and Aspirations: ['Personal Fulfillment', 'Career Development', 'Relationships and Family']
+18. Physical Health: 1 out of 5
+19. Mental Health: 1 out of 5
+Value Error while simulating: Fear_Happy.txt
+Response: CHATBOT PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER PERSONA:
+Here are the persona for the user:
+1. Age: 75
+2. Gender: Female
+3. Cultural Background: North American
+4. Occupation: Business
+5. Education: Secondary School
+6. Family Dynamics: Extended Family
+7. Relationship Status: Single
+8. MBTI: ENFP
+9. Attachment Style: Secure
+10. Emotional Intelligence: 5 out of 5
+11. Typical Mood: 1 out of 5
+12. Emotional Range: 4 out of 5
+13. Stress Triggers: ['Family', 'Relationships', 'Finance']
+14. Coping Strategies: ['Problem-Solving', 'Exercise', 'Substance Use']
+15. Significant Events: ['Loss of a Loved One']
+16. Likes: ['Digital Entertainment', 'Mind & Body Wellness']
+17. Goals and Aspirations: ['Personal Fulfillment', 'Career Development', 'Relationships and Family']
+18. Physical Health: 1 out of 5
+19. Mental Health: 1 out of 5
+Value Error while simulating: Happy_Sad.txt
+Response: CHATBOT PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER PERSONA:
+Here are the persona for the user:
+1. Age: 75
+2. Gender: Female
+3. Cultural Background: North American
+4. Occupation: Business
+5. Education: Secondary School
+6. Family Dynamics: Extended Family
+7. Relationship Status: Single
+8. MBTI: ENFP
+9. Attachment Style: Secure
+10. Emotional Intelligence: 5 out of 5
+11. Typical Mood: 1 out of 5
+12. Emotional Range: 4 out of 5
+13. Stress Triggers: ['Family', 'Relationships', 'Finance']
+14. Coping Strategies: ['Problem-Solving', 'Exercise', 'Substance Use']
+15. Significant Events: ['Loss of a Loved One']
+16. Likes: ['Digital Entertainment', 'Mind & Body Wellness']
+17. Goals and Aspirations: ['Personal Fulfillment', 'Career Development', 'Relationships and Family']
+18. Physical Health: 1 out of 5
+19. Mental Health: 1 out of 5

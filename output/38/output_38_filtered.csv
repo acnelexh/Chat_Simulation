@@ -1,0 +1,102 @@
+dialog,emotion,emotion_by_sentence
+"User:  I'm feeling really down today.
+Chatbot:  What's been going on?
+User:  I had a fight with my best friend.
+Chatbot:  Oh no. What happened?
+User:  She said something really hurtful and it's been bothering me all day.
+Chatbot:  I'm sorry to hear that. Friends can sometimes say things they don't mean in the heat of the moment. Have you tried talking to her about it?
+User:  Not yet. I think I need some time to cool down first.
+Chatbot:  That's understandable. It's important to give yourself some space when you're feeling upset. Just remember that communication is key in any relationship.
+User:  I know you're right, but it's just hard to overlook the things she said.
+Chatbot:  It's not easy, but sometimes forgiveness is the first step towards healing. Maybe you can reach out to her when you're ready and express how you feel.
+User:  I'll try, but I'm still feeling pretty hurt.
+Chatbot:  It's okay to take your time. Healing takes time. In the meantime, is there something that usually makes you feel better when you're down?
+User:  Listening to music always lifts my mood. I think I'll do that now. Thanks for listening.
+User:  You're welcome. I'm glad I could help. Take care and remember that things will get better.
+","('Sad', 'Happy')","['Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Happy', 'Happy']"
+"User:  I'm really scared about my financial situation these days.
+Chatbot:  What's happening with your finances?
+User:  I've been struggling to make ends meet. My retirement savings aren't enough to cover my expenses, and I'm worried about running out of money.
+Chatbot:  Have you spoken to a financial advisor about your situation?
+User:  No, I haven't. I'm not sure where to start, and I'm afraid they'll tell me there's nothing I can do.
+Chatbot:  It's understandable to be nervous, but seeking professional advice can help ease your worries. They might be able to suggest some strategies or options that you haven't considered.
+User:  I guess you're right. I shouldn't let fear hold me back from taking action.
+Chatbot:  Exactly! It's always better to be proactive and take steps towards improving your situation. You might be surprised at the options available to you.
+User:  I never thought about it that way. Maybe I should schedule an appointment with a financial advisor soon.
+","('Fear', 'Surprise')","['Fear', 'Neutral', 'Fear', 'Neutral', 'Fear', 'Neutral', 'Fear', 'Neutral', 'Surprise']"
+"Chatbot:  Did you see the special promotions for the holiday package to Spain? It's really worth it! You can visit Barcelona, Madrid, and Seville all in one trip.
+User:  Really? That sounds interesting. How much does it cost?
+Chatbot:  It's $2000 for the package, inclusive of flights, accommodation, and guided tours. You'll be able to see all the major attractions, like the Sagrada Familia and Park Guell in Barcelona, the Royal Palace in Madrid, and the Alcazar of Seville.
+User:  Wow, that's a great deal! I've always wanted to see those places.
+Chatbot:  It's definitely a once-in-a-lifetime opportunity. You should take advantage of it while you can.
+User:  I wish I could, but I can't afford it right now. I'm on a fixed income and my savings are running low.
+Chatbot:  I understand your situation. It's important to prioritize your finances and make sure you're comfortable before making any big purchases.
+User:  (after a pause) I've been struggling with money ever since I retired. The cost of living keeps going up, but my pension hasn't increased much. It's really frustrating.
+Chatbot:  It can be tough when the cost of living outpaces your income. Have you considered exploring part-time job opportunities or other ways to supplement your income?
+User:  I've thought about it, but it's not easy finding a job at my age. Besides, I want to enjoy my retirement, not work all the time.
+Chatbot:  I completely understand. It's important to find a balance between financial security and enjoying your golden years. Have you considered seeking financial advice or exploring other investment options to help increase your income?
+User:  (sigh) I've tried talking to financial advisors, but it's overwhelming. They throw around all these complicated terms and I never really know what they're talking about. I just want someone to give me practical advice that I can actually understand.
+Chatbot:  I can understand how frustrating that can be. Maybe you could try finding a financial advisor who specializes in retirement planning and has experience working with people in similar situations. They might be able to provide more tailored advice and guidance.
+User:  (after a pause) Yeah, maybe. I'll give it another shot. Thanks for listening to me rant. It's been a tough day.
+Chatbot:  I'm always here to listen. Venting can be a good way to relieve stress and frustration. Remember to take care of yourself and don't hesitate to reach out for help when you need it.
+User:  (after a pause) Thanks. I'll try to keep that in mind.
+","('Surprise', 'Anger')","['Neutral', 'Surprise', 'Neutral', 'Surprise', 'Neutral', 'Anger', 'Neutral', 'Anger', 'Neutral', 'Anger', 'Neutral', 'Anger', 'Neutral', 'Anger', 'Neutral', 'Anger']"
+"User:  Hey there! How are you doing today?
+Chatbot:  Hello! I'm doing well, thank you. What about you?
+User:  I'm great, thanks for asking. I just finished my workout and now I'm relaxing at home.
+Chatbot:  Wow, that's impressive. It's always good to stay active and take care of your health.
+User:  Absolutely! Physical activities keep me happy and energetic. How about you? Do you exercise regularly?
+Chatbot:  Well, I try to. I go for walks in the evening and do some stretching exercises at home. It helps me unwind after a long day.
+User:  That's good to hear. Exercise is not only good for the body, but also for the mind. It helps me clear my head and relieves stress.
+Chatbot:  I couldn't agree more. It's a great way to take a break from our hectic lives and focus on ourselves.
+User:  Definitely. So, what do you enjoy doing in your free time?
+Chatbot:  I like to read and listen to music. It helps me relax and escape from reality for a while.
+User:  Sounds like a perfect way to unwind. I enjoy playing the piano in my free time. It's both fun and therapeutic.
+Chatbot:  That's amazing. Music is a wonderful form of self-expression. I'm sure you're really good at it.
+User:  Thank you! I've been playing for a long time now, so I've had plenty of practice. It brings me a lot of joy.
+Chatbot:  I can imagine. It's always nice to have a hobby that brings you happiness and fulfillment.
+User:  Oh no, I just realized that I forgot to pay my bills this month. I'm so scared of the late fees and penalties!
+Chatbot:  Try not to worry too much. It happens to all of us sometimes. Is it possible to pay them now?
+User:  I don't think so. It's already late in the evening and most banks are closed. I'll have to wait till tomorrow.
+Chatbot:  Don't stress yourself out over it. You can call the bank first thing in the morning and explain the situation to them.
+User:  I guess you're right. Thank you for calming me down. I tend to overthink and panic in such situations.
+Chatbot:  It's completely normal to feel anxious about money matters. Just remember to take a deep breath and tackle it step by step.
+User:  Yes, I'll try to keep calm. I appreciate your advice and support. It means a lot to me.
+Chatbot:  You're welcome. I'm here for you whenever you need someone to talk to. Let's focus on finding a solution in the morning.
+User:  That sounds like a plan. Thank you again, it's nice to have a friend like you.
+","('Happy', 'Fear')","['Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Fear', 'Neutral', 'Fear', 'Neutral', 'Fear', 'Neutral', 'Fear', 'Neutral', 'Fear']"
+"Chatbot:  How have you been? I feel like we haven't caught up in a while.
+User:  Yeah, it's been a long time. I've been pretty busy lately with work and other things. How about you?
+Chatbot:  I've been good, thanks for asking. Have you been keeping up with your hobbies? I remember you used to be really into painting and knitting.
+User:  Ugh, don't even get me started on that. I tried picking up my knitting needles the other day and I just couldn't get into it. It's so frustrating when you lose interest in something you used to love.
+Chatbot:  I understand how that can be discouraging. Sometimes, our interests and passions change over time, and that's okay. It might be worth exploring new hobbies and activities that spark your interest now.
+","('Surprise', 'Disgust')","['Neutral', 'SURPRISE', 'Neutral', 'DISGUST', 'Neutral']"
+"Chatbot:  Hi there! How can I help you today?
+User:  Oh, I didn't expect to see you here!
+Chatbot:  ...Why, is something the matter?
+User:  Well, I just got my test results back from the doctor...and it turns out I have high blood pressure.
+Chatbot:  Oh no! I'm so sorry to hear that. Is there anything you can do to lower it?
+User:  They said that making some lifestyle changes could help, but I'm just really scared right now.
+Chatbot:  I understand, it can be frightening to receive news like that. But try not to worry too much, stress can actually make it worse. It's important to stay calm and focus on the things you can control.
+","('Surprise', 'Fear')","['Neutral', 'Surprise', 'Neutral', 'Fear', 'Neutral', 'Fear', 'Neutral']"
+"User:  Hi there! How can I help you today?
+Chatbot:  Hi! I'm just wondering how often do you work?
+User:  Well, I'm retired now so I don't have a job per se. But I do spend a lot of time with my hobbies and volunteering.
+Chatbot:  That's great! What kind of hobbies do you have?
+User:  I love gardening and painting. I find them both very relaxing and fulfilling.
+Chatbot:  I can see why! Do you ever get bored with your hobbies?
+User:  Not really. There's always something new to learn or try. Plus, I enjoy the sense of accomplishment when I finish a project.
+Chatbot:  It sounds like you've found a good balance in your life. Are there any aspects of work life that you miss?
+User:  Not really. I'm enjoying the freedom and flexibility that retirement brings. I don't miss the stress or the long hours at all.
+Chatbot:  I can understand that. Well, it sounds like retirement is treating you well. What are you looking forward to in the future?
+User:  I have a few trips planned with my friends and family. I'm also looking forward to continuing my hobbies and exploring new ones.
+Chatbot:  That sounds exciting! I hope you have a great time. Is there anything else I can help you with?
+User:  Actually, there is something that's been bothering me. I've been having trouble with my ex-husband. He keeps asking for money and it's really frustrating.
+Chatbot:  I can understand why that would be frustrating. Have you tried talking to him about it?
+User:  Yes, but he just gets defensive and starts making excuses. It's like talking to a brick wall.
+Chatbot:  I'm sorry you're going through that. Maybe it would be helpful to involve a mediator or someone who can help facilitate a productive conversation.
+User:  I've thought about it, but I just don't want to deal with the drama anymore. It's exhausting.
+Chatbot:  I can understand that. It's important to prioritize your own well-being and not let yourself get too affected by the situation. Is there anything else I can do to support you?
+User:  No, thank you for listening. It feels good to vent and know that someone understands.
+Chatbot:  Of course, anytime. I'm here for you.
+","('Happy', 'Anger')","['Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Anger', 'Neutral', 'Anger', 'Neutral', 'Anger', 'Neutral', 'Anger', 'Neutral']"

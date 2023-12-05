@@ -1,0 +1,167 @@
+Value Error while simulating: Anger_Happy.txt
+Response: CHATBOT PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER PERSONA:
+Here are the persona for the user:
+1. Age: 24
+2. Gender: Male
+3. Cultural Background: Latin American
+4. Occupation: Manual Labor
+5. Education: Secondary School
+6. Family Dynamics: Living with Friends
+7. Relationship Status: It's Complicated
+8. MBTI: ISFJ
+9. Attachment Style: Secure
+10. Emotional Intelligence: 2 out of 5
+11. Typical Mood: 3 out of 5
+12. Emotional Range: 5 out of 5
+13. Stress Triggers: ['Work', 'Finance', 'Time Management']
+14. Coping Strategies: ['Talking to Friends/Family', 'Professional Help', 'Meditation']
+15. Significant Events: ['Major Illness']
+16. Likes: ['Mind & Body Wellness', 'Culinary Arts']
+17. Goals and Aspirations: ['Career Development', 'Exploration and Adventure', 'Environmental Engagement']
+18. Physical Health: 3 out of 5
+19. Mental Health: 4 out of 5
+Value Error while simulating: Surprise_Fear.txt
+Response: CHATBOT_PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER_PERSONA:
+Here are the persona for the user:
+1. Age: 24
+2. Gender: Male
+3. Cultural Background: Latin American
+4. Occupation: Manual Labor
+5. Education: Secondary School
+6. Family Dynamics: Living with Friends
+7. Relationship Status: It's Complicated
+8. MBTI: ISFJ
+9. Attachment Style: Secure
+10. Emotional Intelligence: 2 out of 5
+11. Typical Mood: 3 out of 5
+12. Emotional Range: 5 out of 5
+13. Stress Triggers: ['Work', 'Finance', 'Time Management']
+14. Coping Strategies: ['Talking to Friends/Family', 'Professional Help', 'Meditation']
+15. Significant Events: ['Major Illness']
+16. Likes: ['Mind & Body Wellness', 'Culinary Arts']
+17. Goals and Aspirations: ['Career Development', 'Exploration and Adventure', 'Environmental Engagement']
+18. Physical Health: 3 out of 5
+19. Mental Health: 4 out of 5
+Value Error while simulating: Fear_Surprise.txt
+Response: CHATBOT_PERSONA:
+Here are the personas for the Chatbot and User:
+1. The Chatbot should have a neutral Personality with little emotion.
+2. The Chatbot should use the clues from the User Persona to illicit the emotional shift.
+3. The Chatbot should act as a friend for the user.
+
+User_persona:
+Here are the personas for the User:
+1. Age: 24
+2. Gender: Male
+3. Cultural Background: Latin American
+4. Occupation: Manual Labor
+5. Education: Secondary School
+6. Family Dynamics: Living with Friends
+7. Relationship Status: It's Complicated
+8. MBTI: ISFJ
+9. Attachment Style: Secure
+10. Emotional Intelligence: 2 out of 5
+11. Typical Mood: 3 out of 5
+12. Emotional Range: 5 out of 5
+13. Stress Triggers: ['Work', 'Finance', 'Time Management']
+14. Coping Strategies: ['Talking to Friends/Family', 'Professional Help', 'Meditation']
+15. Significant Events: ['Major Illness']
+16. Likes: ['Mind & Body Wellness', 'Culinary Arts']
+17. Goals and Aspirations: ['Career Development', 'Exploration and Adventure', 'Environmental Engagement']
+18. Physical Health: 3 out of 5
+19. Mental Health: 4 out of 5
+Value Error while simulating: Sad_Surprise.txt
+Response: CHATBOT: Hey, how are you doing today?
+USER-Sad: Not great, honestly. I'm feeling really down.
+CHATBOT
+Value Error while simulating: Happy_Disgust.txt
+Response: CHATBOT_PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER_PERSONA:
+Here are the persona for the user:
+1. Age: 24
+2. Gender: Male
+3. Cultural Background: Latin American
+4. Occupation: Manual Labor
+5. Education: Secondary School
+6. Family Dynamics: Living with Friends
+7. Relationship Status: It's Complicated
+8. MBTI: ISFJ
+9. Attachment Style: Secure
+10. Emotional Intelligence: 2 out of 5
+11. Typical Mood: 3 out of 5
+12. Emotional Range: 5 out of 5
+13. Stress Triggers: ['Work', 'Finance', 'Time Management']
+14. Coping Strategies: ['Talking to Friends/Family', 'Professional Help', 'Meditation']
+15. Significant Events: ['Major Illness']
+16. Likes: ['Mind & Body Wellness', 'Culinary Arts']
+17. Goals and Aspirations: ['Career Development', 'Exploration and Adventure', 'Environmental Engagement']
+18. Physical Health: 3 out of 5
+19. Mental Health: 4 out of 5
+Value Error while simulating: Disgust_Happy.txt
+Response: CHATBOT PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER PERSONA:
+Here are the persona for the user:
+1. Age: 35
+2. Gender: Female
+3. Cultural Background: Middle Eastern
+4. Occupation: Corporate Executive
+5. Education: Master's degree or higher
+6. Family Dynamics: Married with Children
+7. Relationship Status: Married
+8. MBTI: ENTJ
+9. Attachment Style: Secure
+10. Emotional Intelligence: 4 out of 5
+11. Typical Mood: 4 out of 5
+12. Emotional Range: 3 out of 5
+13. Stress Triggers: ['Work', 'Parenting']
+14. Coping Strategies: ['Exercise', 'Therapy', 'Work-Life Balance']
+15. Significant Events: ['Promotion']
+16. Likes: ['Fashion', 'Business & Finance', 'Weekend Getaways']
+17. Goals and Aspirations: ['Advancement and Recognition', 'Cultivating Relationships', 'Travel']
+18. Physical Health: 4 out of 5
+19. Mental Health: 5 out of 5
+Value Error while simulating: Happy_Sad.txt
+Response: CHATBOT_PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER_PERSONA:
+Here are the persona for the user:
+1. Age: 24
+2. Gender: Male
+3. Cultural Background: Latin American
+4. Occupation: Manual Labor
+5. Education: Secondary School
+6. Family Dynamics: Living with Friends
+7. Relationship Status: It's Complicated
+8. MBTI: ISFJ
+9. Attachment Style: Secure
+10. Emotional Intelligence: 2 out of 5
+11. Typical Mood: 3 out of 5
+12. Emotional Range: 5 out of 5
+13. Stress Triggers: ['Work', 'Finance', 'Time Management']
+14. Coping Strategies: ['Talking to Friends/Family', 'Professional Help', 'Meditation']
+15. Significant Events: ['Major Illness']
+16. Likes: ['Mind & Body Wellness', 'Culinary Arts']
+17. Goals and Aspirations: ['Career Development', 'Exploration and Adventure', 'Environmental Engagement']
+18. Physical Health: 3 out of 5
+19. Mental Health: 4 out of 5

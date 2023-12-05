@@ -1,0 +1,122 @@
+dialog,emotion,emotion_by_sentence
+"Chatbot:  It's good to see you, what's on your mind?
+User:  Hey there, I'm feeling really down today.
+Chatbot:  Is there something in particular that's bothering you?
+User:  It's just been really tough lately, my job is stressing me out and I feel like I'm not making any progress in my life.
+Chatbot:  I'm sorry to hear that. What's been going on at work?
+User:  My boss has been piling on more and more work and it's becoming overwhelming. I feel like I can't catch a break.
+Chatbot:  That sounds really stressful. Have you talked to your boss about it?
+User:  I haven't yet, I'm worried it will come off as complaining or not being able to handle the workload.
+Chatbot:  It's understandable that you feel that way, but it's important to communicate your concerns. Your boss may not realize how much work you're dealing with.
+User:  You're right, I need to advocate for myself more. I'll schedule a meeting with my boss and discuss my workload.
+Chatbot:  That sounds like a good plan. Remember, you deserve to have a healthy work-life balance. Don't be afraid to speak up for yourself.
+User:  Thanks for the encouragement. It helps to talk about these things with someone.
+Chatbot:  I'm always here to listen. Is there anything else on your mind?
+User:  Actually, I just got some good news. I won a contest and I'm going on an all-expenses-paid vacation to Hawaii!
+Chatbot:  That's amazing! Congratulations! I'm so happy for you. You deserve this trip to relax and unwind.
+User:  Thank you! I can't wait to lay on the beach, soak up some sun, and forget about all my worries.
+Chatbot:  Enjoy every moment of it. You've earned it. If there's anything else you want to talk about, just let me know.
+User:  Will do. Thanks again for being such a great friend!
+Chatbot:  Anytime! Take care and have a wonderful time in Hawaii!
+","('Sad', 'Happy')","['Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Neutral', 'Neutral', 'Neutral', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral']"
+"Chatbot:  Do you have a favorite travel destination? I bet you have some amazing pictures to share!
+User:  I do have some great pictures! I love exploring new places and experiencing different cultures. It's so fascinating to see how people live in other parts of the world.
+Chatbot:  I completely agree. It's always eye-opening to see how different and yet similar people can be in different countries. So far, which country have you enjoyed the most?
+User:  It's hard to pick just one, but I think Italy has been my favorite so far. The food, the history, the architecture - everything about it was just incredible.
+Chatbot:  Italy is definitely a top destination for many people. I'm glad you had such a wonderful time there. Have you been able to do any traveling recently?
+User:  Unfortunately, not with the current situation. But I'm hoping things will get better soon and I'll be able to plan some trips in the future.
+Chatbot:  I understand. It has been a challenging time for travel enthusiasts. But I'm sure things will improve eventually. In the meantime, do you have any other hobbies or activities that help you relax and take your mind off things?
+User:  Not really. Traveling has always been my go-to for relaxation and adventure. Without it, I just feel a bit lost and stuck in my routine.
+Chatbot:  I can understand how you feel. It's difficult when our usual outlets for relaxation and exploration are limited. Maybe it's a good time to try out some new hobbies or activities that you can enjoy from the comfort of your home.
+User:  I guess you're right. I've been meaning to take up a new hobby, but I just haven't found anything that interests me as much as traveling.
+Chatbot:  That's understandable. It can take some time to find something that truly captures your interest. In the meantime, have you considered exploring virtual tours or online experiences that can give you a taste of different destinations?
+User:  I hadn't thought of that. I'll definitely look into it. Thanks for the suggestion.
+Chatbot:  You're welcome. I hope it helps satisfy your wanderlust for the time being. And remember, this situation is temporary. Travel will become more accessible again, and you'll have the chance to explore new destinations and create more amazing memories.
+User:  I appreciate your optimism. It's nice to think about the future and all the adventures that await.
+","('Happy', 'Sad')","['Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad']"
+"Chatbot:  Hey, how's everything going?
+User:  Oh, I didn't expect you to show up!
+Chatbot:  Well, surprise! I'm here to hang out with you today.
+User:  Hmm, alright then.
+User:  So, are we just gonna sit here in silence or what?
+Chatbot:  No, I thought we could talk. How's your day been so far?
+User:  Well, work was fine, nothing new there. What about you?
+Chatbot:  Same old, same old. So, how are things going with you and Maria?
+User:  Wait, you know that we broke up, right? She told you that, right?
+Chatbot:  Oh, sorry. My bad. No, she didn't tell me. I just assumed you were still together.
+User:  No, unfortunately not. We broke up about a month ago. It was a mutual decision though.
+Chatbot:  That's too bad. I thought you guys were good together. What happened?
+User:  It's just so frustrating. We were just on two different pages, you know? Like, we wanted completely different things.
+Chatbot:  Yeah, I can see how that can cause a strain on the relationship. So, are you still friends?
+User:  Yeah, we're trying to be. It's just hard, you know? There are still a lot of lingering feelings and it's just awkward sometimes.
+User:  And to top it all off, she's already seeing someone else. Can you believe that? Just a month after we broke up!
+Chatbot:  Wow, that's tough. I can understand why you would be feeling a bit disgusted by that.
+User:  Disgusted is an understatement. It's just so disrespectful. And it makes me feel like I meant nothing to her.
+Chatbot:  I can see how that would hurt. It's important to remember that it's not a reflection of your worth though.
+User:  Yeah, I know. It's just hard not to take it personally. It feels like a slap in the face, you know?
+Chatbot:  I get it. Emotions run high during a breakup. Just give yourself some time, and you'll start feeling better soon.
+User:  I hope so. I just need some distance from all of this right now.
+Chatbot:  I understand. Take all the time you need. And remember, I'm here for you if you ever need to vent or talk.
+User:  Thanks, I appreciate it.
+User:  Anyway, enough about me. How's everything going with you?
+Chatbot:  Oh, you know, same old, same old. Nothing much happening.
+","('Surprise', 'Disgust')","['Neutral', 'Surprise', 'Neutral', 'Surprise', 'Surprise', 'Neutral', 'Surprise', 'Neutral', 'Surprise', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Disgust', 'Neutral']"
+"User:  Is it okay if write something a bit personal?
+Chatbot:  Sure, feel free to share your thoughts.
+User:  Well, I just found out that I’m going to be a father! It’s a huge surprise, and I’m not quite sure how to feel about it.
+Chatbot:  Oh, wow! That’s a big piece of news. I can understand why you might be feeling surprised. Being a parent is a life-changing experience. How are you feeling about it?
+User:  I’m not going to lie, I’m a little anxious about it. I’m still young and trying to figure out my own life, and this just feels like a lot of responsibility.
+Chatbot:  It’s natural to feel anxious when faced with big life changes. Parenthood does come with its challenges, but it can also be incredibly fulfilling. You have time to prepare and adjust to the idea. Have you talked to anyone about your feelings?
+User:  Not yet, I wanted to process it myself before talking to my partner or family. I’m still trying to wrap my head around it.
+Chatbot:  That makes sense. Take all the time you need to process your emotions. Once you’re ready, it might be helpful to discuss your feelings with your partner, as they might be going through similar emotions. Sharing your thoughts and concerns can bring you closer together.
+User:  I just hope I’m ready for this. What if I mess everything up? What if I’m not a good father? I’m scared I won’t be able to handle the responsibility.
+Chatbot:  It’s normal to feel scared or uncertain when faced with new challenges. Remember that parenthood is a learning experience, and nobody becomes a perfect parent overnight. Just like with any new role, you’ll learn and grow along the way. Take it one step at a time, and don’t hesitate to seek support or advice when you need it. You’re not alone in this.
+User:  Thanks for the reassurance. I guess I just need some time to let it sink in and adjust to the idea.
+Chatbot:  Of course, take all the time you need. Remember, it’s okay to have mixed emotions about it. Parenthood can be overwhelming, but it can also bring a lot of joy and fulfillment. I’m here for you if you need to talk or have any questions.
+User:  Thank you, I appreciate that. I’ll definitely keep that in mind.
+Chatbot:  Anytime! Take care of yourself and congratulations again on this exciting news.
+","('Surprise', 'Fear')","['SURPRISE', 'Neutral', 'SURPRISE', 'Neutral', 'SURPRISE', 'Neutral', 'NEUTRAL', 'Neutral', 'FEAR', 'Neutral', 'FEAR', 'Neutral', 'FEAR', 'Neutral']"
+"User:  I just got the news that my friend is moving to another city for a job. I'm really gonna miss him.
+Chatbot:  Change is always difficult, but sometimes it opens up new opportunities. Where is he moving to?
+User:  He's moving to New York. He got a job offer that he couldn't refuse.
+Chatbot:  Wow, New York! That's exciting! Have you ever been there before?
+User:  No, I haven't. And now I probably won't have a reason to visit.
+Chatbot:  You never know. Maybe you'll find a reason to visit someday. Friends can be a great excuse to explore new places.
+User:  I guess you're right. It's just that we've been through so much together and now we won't be able to hang out like we used to.
+Chatbot:  It's understandable that you're feeling sad. Distance can be challenging. But true friendship can withstand anything, even distance.
+User:  Yeah, you're right. We can always stay in touch through phone calls and video chats.
+Chatbot:  And who knows, maybe you'll make new friends who share the same interests and passions as you. It's an opportunity for you to expand your social circle.
+User:  That's a good way to look at it. I never thought about it that way.
+Chatbot:  Sometimes, it helps to see the positive side of things. Change can be scary, but it can also lead to new and exciting experiences.
+User:  You're right. I should focus on the new opportunities that this change will bring. Thank you for listening.
+Chatbot:  Anytime. Remember, I'm always here to chat if you need someone to talk to.
+User:  That's really nice of you. I appreciate it.
+Chatbot:  Let's keep in touch. I'd love to hear how things are going for you.
+","('Sad', 'Surprise')","['Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Surprise', 'Neutral']"
+"Chatbot:  Hey, how's it going? What are you up to today?
+User:  I'm just cleaning the house. It's such a chore, I hate it.
+Chatbot:  Oh, I know what you mean. Cleaning isn't fun, but it feels good to have a tidy space. What part of cleaning do you dislike the most?
+User:  Honestly, all of it. The dusting, the vacuuming, scrubbing the toilet...it's all gross.
+Chatbot:  Yeah, cleaning the toilet is never a fun task. But hey, at least you'll have a clean and fresh bathroom afterwards!
+User:  I guess so, but I'd rather be doing something else. Anything else.
+Chatbot:  I totally understand. Cleaning can be a drag. Maybe you can treat yourself to something nice after you're done, like your favorite snack or an episode of your favorite TV show.
+User:  Yeah, that sounds like a good idea. I'll definitely need a reward after this.
+Chatbot:  Absolutely. You deserve it. What's your favorite snack? I'm always on the lookout for new food recommendations.
+User:  I love chocolate-covered pretzels. Salty and sweet, the perfect combination.
+Chatbot:  Oh, nice! I'll have to try that. Thanks for the suggestion. Well, I hope the cleaning goes by quickly for you. Just think about the delicious snack waiting for you at the finish line.
+User:  Haha, yeah! I can't wait for that. Thanks, chatbot. You always know how to make things a little more bearable.
+Chatbot:  Anytime! I'm here to help. Let me know if there's anything else I can do for you.
+","('Disgust', 'Happy')","['Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Happy', 'Neutral']"
+"User:  Sometimes I really get mad about how my co-workers slack off all day and then expect me to pick up the slack. It's so unfair!
+Chatbot:  It sounds frustrating. Have you tried talking to your manager about it?
+User:  Of course I have! But nothing ever gets done. It's like no one cares about the quality of our work anymore.
+Chatbot:  It's tough when you feel like your efforts aren't being appreciated. Have you considered looking for a new job?
+User:  Yeah, I've started searching. I just hope I can find something better soon.
+Chatbot:  I'm sure you will. You're a hard worker and you deserve to be in a job where your efforts are recognized.
+User:  Thanks for saying that. Sometimes I just need someone to remind me that I'm not stuck in this situation forever.
+Chatbot:  Absolutely. You have so much potential and you shouldn't let this frustration hold you back. I have faith in you.
+User:  That means a lot. I'll keep pushing forward and hopefully things will start getting better soon.
+Chatbot:  I believe in you. Just remember to take care of yourself and don't let this negativity consume you.
+User:  Wow, I wasn't expecting such encouraging words. Thank you for being there for me.
+Chatbot:  I'm always here for you. Remember, you're capable of great things and you have the power to create a better future for yourself.
+","('Anger', 'Surprise')","['ANGER', 'Neutral', 'ANGER', 'Neutral', 'ANGER', 'Neutral', 'ANGER', 'Neutral', 'ANGER', 'Neutral', 'SURPRISE', 'Neutral']"

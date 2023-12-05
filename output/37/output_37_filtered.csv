@@ -1,0 +1,31 @@
+dialog,emotion,emotion_by_sentence
+"User:  Oh wow, I can't believe it's already September! The year is flying by so quickly!
+Chatbot:  It sure is, time seems to be moving faster and faster these days. Are there any particular reasons why September surprises you?
+User:  Well, a part of me was hoping to have accomplished more by this time of the year. I had set some goals for myself that I haven't quite met yet.
+Chatbot:  I can understand how that might be disappointing. Would you like to talk about those goals and what's been holding you back from achieving them?
+User:  It's just been a really hectic year, with work and personal life taking up most of my time and energy. I've been struggling to find the balance and it's been affecting my productivity and motivation.
+Chatbot:  It sounds like you're feeling overwhelmed. Finding a work-life balance can be tough, especially when there are so many demands on your time. Have you tried any strategies to help manage your stress and prioritize your goals?
+User:  I've been trying to incorporate some mindfulness techniques into my daily routine, but I'll admit I haven't been very consistent. Maybe I should give it another shot.
+Chatbot:  Mindfulness can be really helpful in reducing stress and increasing focus. If you need any guidance or resources, I'd be happy to help. Remember, progress often comes in small steps, so be patient with yourself.
+User:  Thank you, I appreciate your support. Sometimes it just feels like I'm stuck in this rut and can't find a way out. It's frustrating.
+Chatbot:  I understand, feeling stuck can be really tough. Just know that you're not alone and there are people who can support you. You're doing your best and that's what matters. Is there anything else you'd like to talk about or any specific goals you'd like to work on?
+User:  I think for now, I just need some time to reflect and figure things out. But I'll definitely keep your offer in mind. Thank you for listening, it means a lot.
+Chatbot:  Of course, anytime. Remember, you're capable of achieving great things and don't hesitate to reach out if you need someone to talk to. Take care and be kind to yourself.
+","('Surprise', 'Sad')","['Surprise', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral']"
+"User:  Hi there! How can I help you today?
+Chatbot:  Hey, I’ve been thinking about the trip we are planning for the summer and I wanted to talk to you about finances.
+User:  Yeah, great! What do you wanna talk about? Should we start saving up?
+Chatbot:  That’s the idea, yeah. I have been checking prices and I think it would be good if we start putting some money aside every month.
+User:  Sounds good. I can set up automatic transfers from my paycheck. Maybe we can both do that?
+Chatbot:  Sure, that’s a great idea. The more we save, the better. I don’t want to miss out on this opportunity.
+User:  Yeah, you're right. I have been going over my expenses and I’m worried that I won’t be able to save enough.
+Chatbot:  Don’t stress out too much. Let’s come up with a budget for both of us and stick to it. We can cut back on unnecessary expenses.
+User:  I don’t know if I’m good with budgeting. It just feels so restricting.
+Chatbot:  I get it, but it will be worth it in the long run. We don’t want to come back home from our trip with empty pockets, right?
+User:  No, definitely not. I just want to make sure I can still enjoy myself without breaking the bank.
+User:  I understand. We can still have a great time without splurging on everything. It’s all about finding the right balance.
+User:  You’re right. I just need to be more mindful of my spending habits. I don’t want to regret this later.
+Chatbot:  Exactly! We have plenty of time to plan and save. I’m here to support you every step of the way.
+User:  Thanks, that means a lot to me. I guess I’m just a little nervous about money sometimes.
+Chatbot:  It’s completely understandable. Money can be stressful. But with a little planning and discipline, we can make it work.
+","('Happy', 'Fear')","['Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Fear', 'Neutral', 'Fear', 'Neutral', 'Fear', 'Happy', 'Fear', 'Neutral', 'Fear', 'Neutral']"

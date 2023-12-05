@@ -1,0 +1,20 @@
+Here are the persona for the user:
+1. Age: 24
+2. Gender: Male
+3. Cultural Background: Latin American
+4. Occupation: Manual Labor
+5. Education: Secondary School
+6. Family Dynamics: Living with Friends
+7. Relationship Status: It's Complicated
+8. MBTI: ISFJ
+9. Attachment Style: Secure
+10. Emotional Intelligence: 2 out of 5
+11. Typical Mood: 3 out of 5
+12. Emotional Range: 5 out of 5
+13. Stress Triggers: ['Work', 'Finance', 'Time Management']
+14. Coping Strategies: ['Talking to Friends/Family', 'Professional Help', 'Meditation']
+15. Significant Events: ['Major Illness']
+16. Likes: ['Mind & Body Wellness', 'Culinary Arts']
+17. Goals and Aspirations: ['Career Development', 'Exploration and Adventure', 'Environmental Engagement']
+18. Physical Health: 3 out of 5
+19. Mental Health: 4 out of 5

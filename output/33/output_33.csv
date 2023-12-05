@@ -1,0 +1,180 @@
+dialog,emotion,emotion_by_sentence
+"Chatbot:  What's going on at work?
+User:  My boss just promoted my coworker Brad to a management position.
+Chatbot:  That's interesting. Is Brad qualified for the position?
+User:  No! He's always slacking off and making mistakes. He's a terrible employee.
+Chatbot:  I can see why you would be frustrated with that decision. Did you express your concerns to your boss?
+User:  Yes, I did. But my boss just brushed off my feedback and said that Brad has potential.
+Chatbot:  I can understand why that would be disappointing for you. Is there anything you can do to improve your chances of getting a promotion?
+User:  I guess I could try to take on more responsibilities and prove myself. But it's frustrating that hard work doesn't seem to be valued at my company.
+Chatbot:  It sounds like a tough situation. Remember that your hard work won't go unnoticed. Even if it doesn't lead to an immediate promotion, it can still benefit you in the long run.
+User:  Yeah, you're right. I just need to focus on doing my best and continue to grow in my role.
+Chatbot:  That's the spirit! Keep pushing yourself and staying motivated. You never know when a new opportunity might come your way.
+User:  Actually, I just received an email from a recruiter at another company. They're interested in interviewing me for a higher position.
+Chatbot:  Wow, that's great news! It seems like your hard work is starting to pay off. How do you feel about this opportunity?
+User:  I'm surprised, but also excited. It's nice to know that my skills and experience are valued elsewhere.
+Chatbot:  Absolutely. This could be a chance for you to explore new opportunities and advance your career. Good luck with the interview process!
+User:  Thank you! I'll do my best. I can't believe this is happening. I'm both nervous and excited at the same time.
+Chatbot:  It's completely understandable to feel that way. Embrace the excitement and use your nervous energy to prepare for the interview. I believe in you!
+User:  Thank you for the pep talk. I needed that. I'm feeling more confident now.
+Chatbot:  You're welcome! I'm always here to support you. Let me know if there's anything else I can do to help.
+","('Disgust', 'Surprise')","['Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Disgust', 'Neutral', 'Neutral', 'Neutral', 'Surprise', 'Neutral', 'Surprise', 'Neutral', 'Surprise', 'Neutral', 'Surprise', 'Neutral']"
+"User:  Hey there! How's your day going?
+Chatbot:  Hi! I'm good, thanks. How about you?
+User:  I'm doing great! I just got back from a wonderful vacation in Hawaii.
+Chatbot:  Oh, that sounds amazing! I've always wanted to go there. How was the weather?
+User:  The weather was perfect! Sunshine and clear skies every single day. It was like paradise.
+Chatbot:  That's incredible! What did you do during your trip?
+User:  Well, I spent a lot of time on the beach, relaxing and soaking up the sun. I also did some snorkeling and went on a volcano tour. It was all so much fun!
+Chatbot:  I can imagine. I'm sure it was a well-deserved break for you. Did you go with any friends or family?
+User:  No, I actually went by myself. It was a solo trip. I wanted some time to unwind and reflect on things.
+Chatbot:  That's brave of you. I'm glad you had a good time. Did you meet any interesting people during your trip?
+User:  Yes, I did! I made friends with a couple of other solo travelers at the hotel. We had a great time exploring the island together.
+Chatbot:  That's wonderful. It sounds like you had an unforgettable experience.
+User:  I definitely did. It was a much-needed break and I feel so grateful to have had the opportunity to go.
+","('Happy', 'Disgust')","['HAPPY', 'Neutral', 'HAPPY', 'Neutral', 'HAPPY', 'Neutral', 'HAPPY', 'Neutral', 'HAPPY', 'Neutral', 'HAPPY', 'Neutral', 'HAPPY']"
+"Chatbot:  Hi there, how are you feeling today?
+User:  Not so good, really. It's just been one of those days.
+Chatbot:  Aw, I'm sorry to hear that. Want to talk about it?
+User:  I don't know. Everything just seems so... I don't know, hopeless, I guess.
+Chatbot:  Yeah, I get that. Sometimes life can feel overwhelming. Is there something specific that's been bothering you lately?
+User:  I guess it's just a combination of things. Work is stressful, my family is going through some issues, and I just feel so lonely all the time.
+Chatbot:  It sounds like you've got a lot on your plate. I hope things start to look up for you soon.
+User:  Yeah, me too. I'm just tired of feeling down all the time.
+Chatbot:  Have you tried doing anything to help boost your mood? Like spending time with loved ones or doing activities that you enjoy?
+User:  I've been trying, but it's hard. I just don't have the energy sometimes.
+Chatbot:  I understand. Maybe you could start small, like taking a walk outside or calling up a friend for a chat. Sometimes even little things can make a difference.
+User:  Yeah, maybe you're right. I'll give it a try.
+Chatbot:  I believe in you. Remember, it's okay to have bad days, but there's always hope for better ones. You're strong, and you'll get through this.
+User:  Thank you, that means a lot. I really appreciate your support.
+Chatbot:  Of course! That's what friends are for. If you ever need someone to talk to, I'm here for you.
+User:  Thanks, I'll keep that in mind. I'm feeling a little better now.
+","('Sad', 'Happy')","['Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Happy', 'Neutral', 'Happy']"
+"Chatbot:  Hey there! How's it going?
+User:  Ugh, not so great.
+Chatbot:  What's wrong?
+User:  It's my family again. They're always getting involved in my business and it's driving me crazy.
+Chatbot:  That doesn't sound fun. What happened this time?
+User:  My mom called me this morning and said that she saw my ex-boyfriend with another woman. She thinks I should confront him about it.
+Chatbot:  That sounds like it could be awkward. How do you feel about it?
+User:  I'm scared! I don't want to make a scene, but I also don't want to be made a fool of.
+Chatbot:  That's understandable. Confrontations can be tough. Have you spoken to your ex about this yet?
+User:  No, I haven't. I've been trying to gather my thoughts and figure out what I want to say.
+Chatbot:  Take your time. It's important to be prepared. Maybe write down your thoughts before talking to him. It might help you feel more in control.
+User:  Yeah...that's a good idea. I just hope I can handle this situation without losing my cool.
+Chatbot:  I believe in you. You're a strong person, and you can handle this. Just remember to stay calm and express yourself clearly.
+User:  Thanks for the pep talk. I guess I needed a little push to face this head on.
+Chatbot:  You're welcome! Sometimes it's good to have someone to talk to. I'll always be here for you.
+User:  I appreciate that. It's nice to know I have a friend in my corner.
+Chatbot:  Of course, anytime. Just remember to breathe, and things will work out.
+","('Fear', 'Surprise')","['Neutral', 'Fear', 'Neutral', 'Fear', 'Neutral', 'Fear', 'Neutral', 'Fear', 'Neutral', 'Fear', 'Neutral', 'Fear', 'Neutral', 'Surprise', 'Neutral', 'Surprise', 'Neutral']"
+"User:  I can't believe how crowded this city is! There are way too many tourists here.
+Chatbot:  Yeah, it can get pretty crowded this time of year. But there's still a lot to see and do.
+User:  I don't care! I just want to walk down the street without bumping into people.
+Chatbot:  I understand your frustration. Maybe we can find a quieter neighborhood or a less popular attraction to visit?
+User:  That might help, but it's just so annoying to have all these tourists invading my city.
+Chatbot:  I know it can be overwhelming, but tourism does bring in a lot of benefits to the local economy. Plus, it's always interesting to meet people from different parts of the world.
+User:  I guess you're right. It's just hard to see the positive side when I'm constantly dodging selfie sticks and tour groups.
+Chatbot:  I get it. Maybe you can take a break and escape the crowds for a bit. Find a park or a quiet cafe where you can relax and recharge.
+User:  That's not a bad idea. I do love this city, and I shouldn't let the tourists ruin my mood. There's still so much to explore and enjoy.
+Chatbot:  Exactly! Embrace the beauty and excitement of your city, and don't let a few tourists get in the way of your happiness.
+User:  Thanks for listening and for the pep talk. I feel better now, ready to make the most of my day!
+Chatbot:  You're welcome! Have a fantastic time exploring and remember to take a deep breath and find joy in the little things.
+","('Anger', 'Happy')","['ANGER', 'Neutral', 'ANGER', 'Neutral', 'ANGER', 'Neutral', 'ANGER', 'Neutral', 'HAPPY', 'Neutral', 'HAPPY', 'Neutral']"
+"Chatbot:  Hi there! How can I assist you with your work today?
+","('Surprise', 'Sad')",['Neutral']
+"Chatbot:  Have you filed your taxes yet this year?
+User:  Just did my taxes last weekend. You know how it goes.
+Chatbot:  Did you have to pay a lot this year?
+User:  No, I actually got a refund this time.
+Chatbot:  That's great, did you have it directly deposited into your account?
+User:  Yes, it was much faster that way.
+Chatbot:  Good call on direct deposit. Hey, how are the kids doing these days?
+User:  The kids are doing well, thanks for asking. My daughter just bought her first car.
+Chatbot:  Wow, that's a big step. I'm sure she's excited. Did she get a good deal on it?
+User:  She did, but it's still quite an expense. She's trying to save up for a down payment on a house as well.
+Chatbot:  It's tough, isn't it? Buying a car and saving for a house at the same time. But it sounds like she's on the right track.
+User:  Yes, she's very responsible with her money. I tried to teach her the importance of financial planning from a young age.
+Chatbot:  That's wonderful. It's so important to have a good financial foundation. I'm sure she'll thank you for it later.
+User:  I just wish my ex-husband would contribute more to her expenses. He's always getting out of it somehow.
+Chatbot:  I can understand why that would be frustrating. Have you talked to him about it?
+User:  Yes, but he always has an excuse. It's just not fair, we're supposed to be co-parenting!
+Chatbot:  I'm sorry to hear that. It must be tough trying to manage everything on your own.
+User:  It is. I work hard and try to provide for my kids, but it feels like I'm doing it all by myself.
+Chatbot:  It sounds like you're feeling overwhelmed. Is there anything I can do to help?
+User:  It's nice of you to offer, but there's not much you can do. I just needed to vent.
+Chatbot:  I understand. Sometimes it helps to talk about it. If you ever need to vent again, you know where to find me.
+User:  Thanks, I appreciate it. I just need some time to cool off.
+","('Surprise', 'Anger')","['Neutral', 'SURPRISE', 'Neutral', 'NEUTRAL', 'Neutral', 'NEUTRAL', 'Neutral', 'NEUTRAL', 'Neutral', 'NEUTRAL', 'Neutral', 'NEUTRAL', 'Neutral', 'ANGER', 'Neutral', 'ANGER', 'Neutral', 'ANGER', 'Neutral', 'ANGER', 'Neutral', 'ANGER']"
+"User:  Hi there, I'm experiencing such a wonderful day!
+Chatbot:  It sounds like you're in a quite good mood. What has made your day so pleasant?
+User:  I spent the morning with my grandson, he always makes me smile!
+Chatbot:  Grandkids have a way of doing that! They can really brighten up your day.
+User:  Absolutely, he's the apple of my eye!
+Chatbot:  That's so sweet! Do you see him often?
+User:  I do, we try to get together at least once a week. He's growing up so fast, I don't want to miss a moment.
+Chatbot:  I can understand why. It's important to cherish those special moments with our loved ones.
+User:  You're absolutely right. Family is everything to me.
+Chatbot:  I can tell, you always light up when you talk about your grandson.
+User:  He's the joy of my life. I'm truly a happy and grateful Grandma.
+Chatbot:  You deserve all the happiness in the world. Family is such a wonderful source of joy and support.
+User:  Speaking of family, my son hasn't been returning my calls lately. It's not like him, I'm starting to worry.
+Chatbot:  I'm sure he's busy with something. Have you tried reaching out to his wife?
+User:  I have, but she's not giving me any details. I just hope everyone's okay.
+Chatbot:  I can sense your concern. Sometimes, our minds tend to jump to the worst-case scenario when we don't have all the information.
+User:  I know, but I can't help but worry. I'll try calling them again tonight.
+Chatbot:  That sounds like a good plan. I hope you're able to reach them and find some peace of mind.
+","('Happy', 'Fear')","['Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Happy', 'Neutral', 'Fear', 'Neutral', 'Fear', 'Neutral', 'Fear', 'Neutral']"
+"User:  I can't believe he did that to me.
+Chatbot:  What happened?
+User:  My ex-boyfriend just got engaged and he didn't even tell me about it. I found out through a mutual friend on Facebook.
+Chatbot:  Oh wow, that's surprising. How do you feel about it?
+User:  Honestly, it's a bit of a relief. I dodged a bullet with that one. But still, it's pretty disrespectful not to at least give me a heads up.
+Chatbot:  Yeah, I can see why you would feel that way. It sounds like you're handling it pretty well though.
+User:  Thanks, I'm trying. It's just a reminder that I need to focus on myself and my own happiness.
+Chatbot:  That's a healthy attitude to have. Do you have any plans for the future that you're excited about?
+User:  Not yet, but I've been thinking about taking a vacation somewhere. Maybe a spa retreat or a yoga retreat. Someplace where I can relax and recharge.
+Chatbot:  That sounds wonderful. It's important to take care of yourself and prioritize your own well-being.
+User:  Definitely. I've spent so much time and energy on relationships in the past, I think it's time for some me-time.
+Chatbot:  I think that's a great idea. You deserve to be happy and fulfilled, and sometimes that means taking a step back and focusing on yourself.
+User:  You're right. Thanks for listening, I appreciate it.
+Chatbot:  Of course, anytime. I'm here for you if you ever need to talk.
+","('Surprise', 'Disgust')","['SURPRISE', 'Neutral', 'SURPRISE', 'Neutral', 'SURPRISE', 'Neutral', 'SURPRISE', 'Neutral', 'SURPRISE', 'Neutral', 'SURPRISE', 'Neutral', 'SURPRISE', 'Neutral']"
+"Chatbot:  Did you hear the news about the old bakery downtown?
+User:  No, what happened?
+Chatbot:  Well, apparently they found something strange in the basement.
+User:  Really? What did they find?
+Chatbot:  A hidden room with all sorts of old relics and symbols on the walls. Some people think it's a secret meeting place for cults or something.
+User:  That's creepy. I used to live right next to that bakery.
+Chatbot:  It gets even creepier. The room was filled with candles and a book of dark rituals.
+User:  Oh my God, that's terrifying! I can't believe I used to live so close to something like that.
+Chatbot:  I know, right? They're still investigating, but I hope they catch whoever's behind it soon.
+","('Surprise', 'Fear')","['Neutral', 'Surprise', 'Neutral', 'Surprise', 'Neutral', 'Surprise', 'Neutral', 'Surprise', 'Neutral']"
+"User:  I'm feeling really down today.
+Chatbot:  I'm sorry to hear that. What's been going on?
+User:  I just found out that my favorite store is closing down. It's been a staple in our community for years.
+Chatbot:  Oh no, that's really sad news. I know how much you loved shopping there.
+User:  Yeah, it's such a shame. I'm going to miss it so much. It feels like everything is changing around here.
+Chatbot:  I understand why you feel that way. It can be hard to see familiar places go.
+User:  I just hope they replace it with something just as good. It's going to leave a void in our neighborhood.
+Chatbot:  That's true. Change can be tough, but sometimes it leads to new opportunities. You never know what might come next.
+User:  Yeah, I guess you're right. I'll try to stay positive about it. Thanks for listening.
+Chatbot:  Of course, anytime. Just remember, change can be surprising sometimes. You might end up finding something even better.
+","('Sad', 'Surprise')","['Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral', 'Sad', 'Neutral']"
+"Chatbot:  How was work today? Do you like your colleagues?
+User:  I absolutely hate it! My colleagues are so lazy and incompetent.
+","('Anger', 'Surprise')","['Neutral', 'ANGER']"
+"Chatbot:  Hi there! How are you doing today?
+User:  Hi! I'm doing great! How about you?
+Chatbot:  I'm just fine, thank you. Anything exciting happening in your day?
+User:  Oh yes actually. I just got a promotion at work! I'm so happy right now. All my hard work is finally paying off.
+Chatbot:  That's fantastic! Congratulations! You definitely deserve it. What will your new role entail?
+User:  Thank you so much. Well, I'll be managing a team of people and overseeing some major projects. It's going to be challenging but exciting.
+Chatbot:  I'm sure you'll excel in your new role. You've always been great at taking charge and leading others. I'm really happy for you.
+User:  Thanks, that means a lot to me. I'm just feeling so motivated and inspired right now. I can't wait to get started!
+Chatbot:  I can tell. Your enthusiasm is contagious. Your team is lucky to have you as their leader.
+User:  Aw, thank you! That's so sweet of you to say. I really appreciate your support.
+Chatbot:  Of course! Anytime you need someone to talk to or bounce ideas off of, I'm here for you.
+User:  Thanks, that means a lot. So, how's everything going with you? Any exciting news or updates?
+Chatbot:  Oh, nothing too exciting happening on my end. Just taking things one day at a time.
+","('Happy', 'Anger')","['Neutral', 'HAPPY', 'Neutral', 'HAPPY', 'Neutral', 'HAPPY', 'Neutral', 'HAPPY', 'Neutral', 'HAPPY', 'Neutral', 'HAPPY', 'Neutral']"

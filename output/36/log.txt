@@ -1,0 +1,69 @@
+Value Error while simulating: Happy_Disgust.txt
+Response: USER-Starting_Emotions: Happy
+...
+CHATBOT-Happy: Hey, how are you today?
+...
+USER-Happy: I'm great, thanks for asking. How about you?
+...
+CHATBOT-Happy: I'm doing well. I wanted to ask you something...
+...
+USER-Happy: Sure, what's up?
+...
+CHATBOT-Happy: Have you heard from Jane recently? We haven't talked in a while and I miss her.
+...
+USER-Happy: No, I haven't. I heard she started spending a lot of time with that new guy she met on that dating app. I think she's pretty smitten.
+...
+CHATBOT-Happy: Oh, really? Good for her. I hope things work out. Last time I saw her, she seemed genuinely happy.
+...
+USER-Happy: Yeah, me too. She deserves to be with someone who makes her happy. They're planning a trip together, I think.
+...
+CHATBOT-Neutral: That's exciting. Jane loves to travel. I remember when we all went on that road trip last summer. She had such a great time.
+...
+USER-Neutral: Yeah, good times. So, what did you want to ask me earlier?
+...
+CHATBOT-Neutral: Oh, it's not important. Just wanted to catch up with you. Anyway, I should get going. Talk to you later!
+...
+USER-Neutral: Alright, take care. Bye!
+Value Error while simulating: Surprise_Anger.txt
+Response: CHATBOT: Were you aware that tourism generates approximately 10% of the world's GDP? 
+USER-_SURPRISE_: Really? That sounds like an enormous contribution to the economy. 
+CHATBOT: It is. Tourism has a significant impact on employment and economic growth in many countries. It's also a major source of foreign exchange earnings. 
+USER-_NEUTRAL_: I never realized how important tourism is for the global economy. Where do you think the most popular tourist destinations are? 
+CHATBOT: Well, countries like France, the United States, and Spain are often at the top of the list. They have a rich history, cultural attractions, and many famous landmarks that attract millions of tourists each year. 
+USER-_NEUTRAL_: It's no surprise that those countries are popular. They have so much to offer in terms of history and culture. I'd love to visit some of those places someday. 
+CHATBOT: Me too. I've always wanted to visit the Louvre Museum in Paris and see the Mona Lisa in person. What about you? 
+USER-_NEUTRAL_: I'd love to visit the Statue of Liberty in New York and see the Grand Canyon in the United States. 
+CHATBOT: Both of those are iconic landmarks. I'm sure you'll have a great time exploring them whenever you get the chance. 
+USER:_NEUTRAL_: Yes, I hope so. I just need to save up enough money for the trip. 
+CHATBOT: Well, it's always good to have something to look forward to. Planning a future trip can be a great motivation to work hard and save money. 
+USER:_NEUTRAL_: You're right. I'll start putting some money aside every month. It will be worth it when I finally get to go on my dream vacation. 
+CHATBOT: I'm glad I could help you feel motivated. Remember, saving money doesn't mean sacrificing all your current enjoyment. Find a balance that works for you. 
+USER:_NEUTRAL_: Thanks for the advice. I'll keep that in mind. 
+CHATBOT: You're welcome. Let me know if there's anything else I can help you with.
+Value Error while simulating: Disgust_Surprise.txt
+Response: CHATBOT_PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER_PERSONA:
+Here are the persona for the user:
+1. Age: 20
+2. Gender: Male
+3. Cultural Background: African
+4. Occupation: Education
+5. Education: Secondary School
+6. Family Dynamics: Nuclear Family
+7. Relationship Status: Separated
+8. MBTI: ESFP
+9. Attachment Style: Secure
+10. Emotional Intelligence: 2 out of 5
+11. Typical Mood: 1 out of 5
+12. Emotional Range: 3 out of 5
+13. Stress Triggers: ['Relationships', 'Family', 'Finance']
+14. Coping Strategies: ['Hobbies', 'Meditation', 'Professional Help']
+15. Significant Events: ['Loss of a Loved One']
+16. Likes: ['Digital Entertainment', 'Physical Activities']
+17. Goals and Aspirations: ['Financial Goals', 'Personal Fulfillment', 'Relationships and Family']
+18. Physical Health: 4 out of 5
+19. Mental Health: 4 out of 5

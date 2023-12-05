@@ -1,0 +1,129 @@
+Value Error while simulating: Anger_Happy.txt
+Response: CHATBOT_PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER_PERSONA:
+Here are the persona for the user:
+1. Age: 22
+2. Gender: Male
+3. Cultural Background: White
+4. Occupation: Researcher
+5. Education: PhD
+6. Family Dynamics: Lives with parents
+7. Relationship Status: In a relationship
+8. MBTI: INTJ
+9. Emotional Intelligence: 3 out of 5
+10. Typical Mood: 4 out of 5
+11. Emotional Range: 2 out of 5
+12. Stress Triggers: ['Work', 'Relationships']
+13. Coping Strategies: ['Exercise', 'Journaling', 'Working on Hobbies']
+14. Likes: ['Reading', 'Video Games', 'Nature']
+15. Goals and Aspirations: ['Career Success', 'Personal and Intellectual Growth', 'Financial Stability']
+16. Physical Health: 5 out of 5
+17. Mental Health: 4 out of 5
+Value Error while simulating: Fear_Surprise.txt
+Response: CHATBOT: How is your relationship going with your partner/friends/relatives?
+USER-[EMOTION]: Fear
+USER_RESPOND_TIME: 9.94479166666673
+USER_RESPOND_LENGTH: 31
+USER_RESPONSE: Well, I've been having some issues with my partner lately. Things just seem a bit off and we're not communicating as well as we used to.
+Value Error while simulating: Happy_Disgust.txt
+Response: CHATBOT PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER PERSONA:
+Here are the persona for the user:
+1. Age: 43
+2. Gender: Female
+3. Cultural Background: African
+4. Occupation: Retired
+5. Education: Primary School
+6. Family Dynamics: Single
+7. Relationship Status: Married
+8. MBTI: ESTJ
+9. Attachment Style: Avoidant
+10. Emotional Intelligence: 1 out of 5
+11. Typical Mood: 1 out of 5
+12. Emotional Range: 3 out of 5
+13. Stress Triggers: ['Family', 'Relationships', 'Work']
+14. Coping Strategies: ['Problem-Solving', 'Meditation', 'Talking to Friends/Family']
+15. Significant Events: ['Marriage']
+16. Likes: ['Travel & Exploration', 'Creative Arts']
+17. Goals and Aspirations: ['Relationships and Family', 'Personal and Intellectual Growth', 'Personal Fulfillment']
+18. Physical Health: 4 out of 5
+19. Mental Health: 3 out of 5
+Value Error while simulating: Fear_Happy.txt
+Response: CHATBOT_PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER_PERSONA:
+Here are the persona for the user:
+1. Age: 27
+2. Gender: Female
+3. Cultural Background: Hindu
+4. Occupation: Employed
+5. Education: Bachelor's Degree
+6. Family Dynamics: Single
+7. Relationship Status: Single
+8. MBTI: ISFP
+9. Attachment Style: Secure
+10. Emotional Intelligence: 3 out of 5
+11. Typical Mood: 3 out of 5
+12. Emotional Range: 2 out of 5
+13. Stress Triggers: ['Family', 'Relationships', 'Work']
+14. Coping Strategies: ['Problem-Solving', 'Meditation', 'Talking to Friends/Family']
+15. Significant Events: ['Death of Loved One']
+16. Likes: ['Travel & Exploration', 'Creative Arts']
+17. Goals and Aspirations: ['Relationships and Family', 'Personal and Intellectual Growth', 'Personal Fulfillment']
+18. Physical Health: 4 out of 5
+19. Mental Health: 3 out of 5
+Value Error while simulating: Happy_Sad.txt
+Response: USER-[HAPPY]: Hello! How can I help you today?
+CHATBOT: Hi there! I'm just doing a quick health survey for research purposes. Would you mind answering a few questions?
+USER-[HAPPY]: Sure, I don't mind at all. What do you need to know?
+CHATBOT: Great! First question: On a scale of 1 to 5, with 1 being poor and 5 being excellent, how would you rate your overall physical health?
+USER-[HAPPY]: I would say a 4. I try to keep active and eat well, so I feel pretty good most of the time.
+CHATBOT: That's fantastic! It's important to take care of our bodies. Now, how about your mental health? How would you rate that?
+USER-[HAPPY]: I'd say a 3. I have my ups and downs, but overall, I feel pretty stable.
+CHATBOT: I see. It's completely normal to have fluctuations in our mental health. Do you have any coping strategies that you find helpful during challenging times?
+USER-[HAPPY]: Absolutely! I find that problem-solving and meditation really help me in difficult situations. And of course, talking to friends and family always provides some much-needed support.
+CHATBOT: That sounds like a great approach. It's important to have a variety of coping strategies in your toolkit. Do you have any specific stress triggers that you've identified?
+USER-[HAPPY]: Hmm, I would say my family, relationships, and work can sometimes be stress triggers for me. But I try my best to manage my stress and not let it overwhelm me.
+CHATBOT: It sounds like you've developed some excellent self-awareness. Being able to identify your stress triggers is the first step in dealing with them effectively. Is there anything else you'd like to share about your health or wellness?
+USER-[HAPPY]: Not at the moment, but thank you for asking. You know, it's always good to take a moment and check in with ourselves, isn't it?
+CHATBOT: Absolutely! Our health, both physical and mental, is so important. It was great talking to you, and I appreciate your willingness to participate in the survey.
+USER-[HAPPY]: No problem at all. Have a wonderful day!
+CHATBOT: You too! Take care and stay healthy!
+Value Error while simulating: Disgust_Happy.txt
+Response: CHATBOT PERSONA:
+Here are the persona for the chatbot:
+1. The chatbot should be have neutral personality with little emotion.
+2. The chatbot should use the clues from the USER persona to elicit the emotional shift.
+3. The chatbot should act as a friend for the user.
+USER PERSONA:
+Here are the persona for the user:
+1. Age: 43
+2. Gender: Female
+3. Cultural Background: African
+4. Occupation: Retired
+5. Education: Primary School
+6. Family Dynamics: Single
+7. Relationship Status: Married
+8. MBTI: ESTJ
+9. Attachment Style: Avoidant
+10. Emotional Intelligence: 1 out of 5
+11. Typical Mood: 1 out of 5
+12. Emotional Range: 3 out of 5
+13. Stress Triggers: ['Family', 'Relationships', 'Work']
+14. Coping Strategies: ['Problem-Solving', 'Meditation', 'Talking to Friends/Family']
+15. Significant Events: ['Marriage']
+16. Likes: ['Travel & Exploration', 'Creative Arts']
+17. Goals and Aspirations: ['Relationships and Family', 'Personal and Intellectual Growth', 'Personal Fulfillment']
+18. Physical Health: 4 out of 5
+19. Mental Health: 3 out of 5
