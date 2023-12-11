@@ -118,7 +118,14 @@ def read_human_annotation(data_dir: Path, lookup_tables: dict) -> pd.DataFrame:
     combined_df = fix_typo(combined_df)
     # cross validate and prune dialogue that has inconsistent emotion between annotators
     combined_df = cross_validate(combined_df)
+    
+    # merge with lookup table
+    combined_df['dialog'] = combined_df['dialog'].apply(lambda x: x.strip())
+    combined_df['emotion1'] = combined_df['emotion1'].apply(lambda x: x.strip().lower())
+    combined_df['emotion2'] = combined_df['emotion2'].apply(lambda x: x.strip().lower())
+    
     print(combined_df)
+
 
 def main():
     simulated_dir = [20, 21, 22, 26, 27, 28, 29, 30, 31, 33, 34, 35, 36, 37, 38]
