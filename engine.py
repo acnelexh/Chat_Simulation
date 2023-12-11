@@ -10,8 +10,14 @@ class Engine:
     '''
     Simulation engine for the chatbot
     '''
-    def __init__(self, save_dir: str, resume: Path = None):
+    def __init__(self, save_dir: str, resume: Path = None, gpt_trained: bool = False):
         # init openai client
+        self.gpt_trained = False
+        if gpt_trained:
+            # HARD CODE
+            self.gpt_name = "ft:gpt-3.5-turbo-0613:personal::8SCFgJgA"
+        else:
+            self.gpt_name = "ft:gpt-3.5-turbo"
         with open("MY_KEY", "r") as f:
             self.client = OpenAI(api_key=f.read().strip())
         # init emotion combination
@@ -152,18 +158,19 @@ class Engine:
         msg += f"4. Generate {params['TURNS PER SIMULATION']} turns of conversation, with the following format:\n"
         msg += f"{generation_format}\n"
         msg += f"5. Natural Display of Emotion: Use descriptive language that naturally conveys the USER's emotional state through their word choice, tone, and the content of their speech rather than explicitly stating the emotion state.Include subtle cues that indicate a shift in emotion, such as changes in the USER's responsiveness, the length of their messages, or their use of punctuation and capitalization.\n"
-        msg += f"6. Detailed and realistic conversation: USER should provide specific details about the trigger of their emotions to make it more believable, e.g. specific relationship drama or dynamic (e.g. cheating husband/wife, missed date, unbalanced relationship dynamic) that contribute to sadness or disgust, specific activity and role models (e.g. reading Socrates, Shakespear, etc) that brings them joy and excitement. \n"
-        msg += "7. Adopt the personality described in the character section below and respond to the last message in conversation history. Consider the complete conversation history, the additional context, the character's persona, emotional state and goals below when simulating.\n"
-        msg += "8. Avoid Forced Positivity: If the conversation naturally leads to a less positive conclusion, let it be. Not every conversation has to end on a high note, especially if it doesn't fit the flow of the dialogue\n"
-        msg += f"9. Varied Conversation Endings: The conversation doesn't need to end with USER thanking the CHATBOT for listening. Allow for a variety of conversation endings that are more aligned with the final emotion state of {params['USER ENDING EMOTION']}.\n"
-        msg += """10. Definition of EMOTIONs: 
+        msg += "6. Adopt the personality described in the character section below and respond to the last message in conversation history. Consider the complete conversation history, the additional context, the character's persona, emotional state and goals below when simulating.\n"
+        msg += "7. Avoid Forced Positivity: If the conversation naturally leads to a less positive conclusion, let it be. Not every conversation has to end on a high note, especially if it doesn't fit the flow of the dialogue\n"
+        msg += f"8. Varied Conversation Endings: The conversation doesn't need to end with USER thanking the CHATBOT for listening. Allow for a variety of conversation endings that are more aligned with the final emotion state of {params['USER ENDING EMOTION']}.\n"
+        msg += """9. Definition of EMOTIONs: 
         Happy/Joy - is often defined as a pleasant emotional state that is characterized by feelings of contentment, joy, gratification, satisfaction, and well-being.
         Sadness - Sadness is another type of emotion often defined as a transient emotional state characterized by feelings of disappointment, grief, hopelessness, disinterest, and dampened mood. Like other emotions, sadness is something that all people experience from time to time. In some cases, people can experience prolonged and severe periods of sadness that can turn into depression. Sadness can be expressed in a number of ways including: Crying, Dampened mood, Lethargy, Quietness, Withdrawal from others.
         Fear - Fear is a powerful emotion that can also play an important role in survival. When you face some sort of danger and experience fear, you go through what is known as the fight or flight response.
         Disgust - This sense of revulsion can originate from a number of things, including an unpleasant taste, sight, or smell. Researchers believe that this emotion evolved as a reaction to foods that might be harmful or fatal. When people smell or taste foods that have gone bad, for example, disgust is a typical reaction. Poor hygiene, infection, blood, rot, and death can also trigger a disgust response. This may be the body's way of avoiding things that may carry transmittable diseases.Digust could also be related to contempt of another person or situation.
         Anger - Anger can be a particularly powerful emotion characterized by feelings of hostility, agitation, frustration, and antagonism towards others. Like fear, anger can play a part in your body's fight or flight response.
         Surprise - Surprise is usually quite brief and is characterized by a physiological startle response following something unexpected. A pleasant surprise would be arriving home to find that your closest friends have gathered to celebrate your birthday. \n"""
-        msg += "11. Use daily dialogue examples as reference for the simulation to generate realistic emotion through conversation.\n"
+        if self.gpt_trained:
+            msg += "10. Use daily dialogue examples as reference for the simulation to generate realistic emotion through conversation.\n"
+            msg += f"11. Detailed and realistic conversation: USER should provide specific details about the trigger of their emotions to make it more believable, e.g. specific relationship drama or dynamic (e.g. cheating husband/wife, missed date, unbalanced relationship dynamic) that contribute to sadness or disgust, specific activity and role models (e.g. reading Socrates, Shakespear, etc) that brings them joy and excitement. \n"
         return msg.strip()
 
     def simulate(self, emotion_shift):
@@ -183,6 +190,7 @@ class Engine:
         system = "CHATBOT PERSONA:\n" + self.chatbot_persona + "\n"
         system += "USER PERSONA:\n" + self.user_persona + "\n"
         dd_example = Path("dd_examples.txt").read_text()
+        dd_example = ""
         content = f"{dd_example}\n\n{params_str}\n\n{msg}\n\nResponse:\n"
         # save to tmp to see format, sanity check
         with open(f'{self.output_dir}/{self.format_save_name(emotion_shift)}', 'w') as f:
@@ -261,7 +269,7 @@ class Engine:
             
         '''
         completion = self.client.chat.completions.create(
-            model="gpt-3.5-turbo",
+            model=self.gpt_name,
             messages=[
                 {"role": "system", "content": system},
                 {"role": "user", "content": content}])
